@@ -3,17 +3,17 @@
   "description": "Install drops-8 with Composer on Pantheon.",
   "type": "project",
   "license": "MIT",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    },
-    "commerce_base": {
-      "type": "vcs",
-      "url": "https://github.com/drupalcommerce/commerce_base"
-    }
-  ],
-    "require": {
+  "repositories": {
+      "drupal": {
+          "type": "composer",
+          "url": "https://packages.drupal.org/8"
+      },
+      "commerce_base": {
+          "type": "vcs",
+          "url": "https://github.com/drupalcommerce/commerce_base"
+      }
+  },
+  "require": {
     "composer/installers": "^1.0.20",
     "cweagans/composer-patches": "^1.0",
     "drupal-composer/drupal-scaffold": "^2.0.1",
