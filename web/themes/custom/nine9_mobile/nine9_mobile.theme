@@ -1,0 +1,312 @@
+<?php
+use Drupal\image\Entity\ImageStyle;
+use Drupal\Component\Utility\SafeMarkup;
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function nine9_mobile_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $type = $node->bundle();
+  if ($type == 'article') {
+    foreach ($variables['content']['field_tags'] as $key => $value) {
+      if (is_numeric($key)) {
+        $items[] = $value;
+      }
+    }
+
+    $variables['content']['field_tags'] = array(
+      '#theme' => 'item_list',
+      '#items' => $items,
+      '#type' => 'ul',
+      '#attributes' => array(
+        'class' => array('node-news__category')
+      ),
+    );
+  }
+}
+
+function nine9_mobile_preprocess_field(&$variables, $hook) {
+  $element = $variables['element'];
+  if ($element['#field_name'] == 'field_block_custom' && $element['#bundle'] == 'promotion') {
+    $items = $element['#items'];
+    for ($i=0; $i < $items->count(); $i++) {
+      $field_image = $element[$i]['field_image'];
+      $field_link = $element[$i]['field_link'];
+      $variables['items'][$i]['content']['background'] = '';
+      $variables['items'][$i]['content']['more_link_url'] = '';
+      if (isset($field_image[0])) {
+        $cover_image = $field_image[0]['#item']->entity->getFileUri();
+        $image_url = ImageStyle::load('large')->buildUrl($cover_image);
+        $variables['items'][$i]['content']['background'] = $image_url;
+      }
+    }
+  }
+  //Alter field image in Pragraph "Product List"
+  if ($element['#field_name'] == 'field_image' && $element['#bundle'] == 'product_list') {
+    $object = $element['#object'];
+    $field_link = $object->get('field_link')->get(0);
+    if (!empty($field_link)) {
+      $url = $field_link->getUrl();
+      $variables['items'][0]['content']['#url'] = $url;
+    }
+  }
+  if ($element['#field_name'] == 'field_product_ref' && $element['#bundle'] == 'product_list') {
+    $object = $element['#object'];
+    $field_link = $object->get('field_link')->get(0);
+    $field_style = $object->get('field_product_list_style')->get(0);
+    if (!empty($field_style)) {
+      $variables['product_list_style'] = $field_style->getValue()['value'];
+    }
+    if (!empty($field_link)) {
+      $link = $field_link->view();
+      $link['#options']['attributes']['class'][] = 'more-link';
+      $active = SafeMarkup::format('<p class="promote__cta btn--cta">@label</p>', array('@label' => $link['#title']));
+      $link['#title'] = $active;
+      $image = $object->get('field_image')->first();
+      $file_entity_uri = $image->entity->getFileUri();
+      $image_url = ImageStyle::load('large')->buildUrl($file_entity_uri);
+
+      $image = array(
+        '#item' => $image,
+        '#theme' => 'image_formatter',
+        '#image_style' => 'medium',
+      );
+      $variables['item_addition'] = array(
+        'wrap' => array(
+          '#theme_wrappers' => array('container'),
+          '#attributes' => array(
+            'class' => array(
+              'product-list last-item last'
+            ),
+            'style' => "background-image:url('https://o2.15gifts.com/public/leap/public/images/ShopHomeBg.png');"
+          ),
+          'read_more' => $link,
+        ),
+      );
+    }
+    //We alter markup field product if product_list_style == 'big'
+    if ($variables['product_list_style'] == 'big') {
+      foreach ($variables['items'] as $key => &$item) {
+        $product = $item['content']['#commerce_product'];
+        $product_price = $product->get('variations')->first()->entity->get('price')->view();
+        $product_price = $product_price[0]['#markup'];
+        $product_title = $product->getTitle();
+        $product_image = $product->get('field_images');
+        if (!$product_image->isEmpty()) {
+          $product_image = $product_image->first()->entity->getFileUri();
+          $product_image = ImageStyle::load('large')->buildUrl($product_image);
+        }
+        $content = array(
+          'link' => array(
+            '#type' => 'html_tag',
+            '#tag' => 'a',
+            '#attributes' => array(
+              'href' => $product->Url(),
+            ),
+            '#value' => '<div class="promote__content"><h3 class="promote__heading">'.$product_title.'</h3><div class="promote__text">'.$product_price.'</div><p class="promote__cta btn--cta">' . t('Read more') . '</p></div>',
+          ),
+          '#theme_wrappers' => array(
+            'container',
+          ),
+          '#attributes' => array(
+            'class' => array('promote__item'),
+            'style' => 'background-image:url("'.$product_image.'")',
+          ),
+        );
+        $item['content'] = $content;
+      }
+    }
+  }
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds body classes if certain regions have content.
+ */
+function nine9_mobile_preprocess_html(&$variables) {
+  // Add information about the number of sidebars.
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-two-sidebars';
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-first';
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-second';
+  }
+  else {
+    $variables['attributes']['class'][] = 'layout-no-sidebars';
+  }
+
+  if (!empty($variables['page']['featured_top'])) {
+    $variables['attributes']['class'][] = 'has-featured-top';
+  }
+  // Admore about layout
+  // if (isset($variables['node_type'])) {
+  //   $node_page_full = in_array($variables['node_type'], array('landing_page', 'service'));
+  //   if ($node_page_full) {
+  //     $variables['attributes']['class'][] = 'layout-full';
+  //   }
+  // }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function nine9_mobile_preprocess_page(&$variables) {
+  if (isset($variables['node'])) {
+    $node = $variables['node'];
+    if ($node->bundle() == 'landing_page') {
+      $variables['page']['layout_full'] = TRUE;
+    }
+    if ($node->bundle() == 'landing_page' ||
+        $node->bundle() == 'service' ||
+        $node->bundle() == 'article' ||
+        $node->bundle() == 'landing_service') {
+
+      unset($variables['page']['highlighted']['nine9_mobile_page_title']);
+    }
+  }
+  $product = \Drupal::routeMatch()->getParameter('commerce_product');
+  if ($product) {
+    unset($variables['page']['highlighted']['nine9_mobile_page_title']);
+    $variables['page']['layout_full'] = TRUE;
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph()
+ */
+function nine9_mobile_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $variables['attributes']['data-id'] = 'paragraph-item-'.$paragraph->id();
+  if ($paragraph->bundle() == 'promotion' || $paragraph->bundle() == 'item_list') {
+    $modified = $paragraph->get('field_promote_styling');
+    $modified = $modified->first()->getValue();
+    if (!empty($modified['value']) && $modified['value'] != '1column') {
+      $variables['attributes']['class'][] = 'grid--'. $modified['value'];
+    }
+    // if ($modified['value'] == '3column') {
+    //   $variables['attributes']['class'][] = 'grid--nopading';
+    // }
+  }
+  if ($paragraph->bundle() == 'product_list') {
+    $modified = $paragraph->get('field_product_list_style');
+    $modified = $modified->first();
+    if (!empty($modified)) {
+      $modified = $modified->getValue();
+      $variables['attributes']['class'][] = 'paragraph--'. str_replace('_', '-', $paragraph->bundle()). '--'. $modified['value'];
+      $variables['product_list_style'] = $modified['value'];
+    }
+  }
+  if ($paragraph->bundle() == 'stack_item') {
+    $modified = $paragraph->get('field_position');
+    $modified = $modified->first();
+    if (!empty($modified)) {
+      $modified = $modified->getValue();
+      $variables['attributes']['class'][] = 'paragraph--'. str_replace('_', '-', $paragraph->bundle()). '--'. $modified['value'];
+    }
+  }
+}
+
+/**
+ * Prepares variables for product templates.
+ *
+ * Default template: commerce-product.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing rendered fields.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function nine9_mobile_preprocess_commerce_product(&$variables) {
+  $product_entity = $variables['product_entity'];
+  $field_paragraphs = $product_entity->get('field_paragraphs');
+  $number_rows = $field_paragraphs->count();
+  $field_paragraphs_view = $field_paragraphs->view();
+  $scrollspy_build = array(
+    '#theme' => 'item_list',
+    '#attributes' => array(
+      'class' => array('info-links-list')
+    ),
+  );
+  if ($number_rows) {
+    $scrollspy_build['#items'][] = array(
+      '#markup' => render($variables['product']['title'][0]),
+      '#wrapper_attributes' => array('class' => array('title'))
+    );
+  }
+  for ($i = 0; $i < $number_rows; $i++){
+    $paragraph = $field_paragraphs_view[$i]['#paragraph'];
+    $title = $paragraph->get('field_text')->first();
+    if (!empty($title)) {
+      $title = $title->getValue();
+      $title = $title['value'];
+      $scrollspy_build['#items'][] = array(
+        '#markup' => '<a href="#paragraph-item-'.$paragraph->id().'">' . $title . '</a>',
+        '#wrapper_attributes' => array(),
+      );
+    }else {
+      $scrollspy_build['#items'][] = array(
+        '#markup' => '<a href="#paragraph-item-'.$paragraph->id().'">Empty</a>',
+        '#wrapper_attributes' => array(),
+      );
+    }
+  }
+  $variables['scrollspy_build'] = $scrollspy_build;
+  $variables['background'] = '';
+  if (isset($variables['product']['field_images'][0])) {
+    $field_images = $variables['product']['field_images'];
+    $cover_image = $field_images[0]['#item']->entity->getFileUri();
+    $image_url = ImageStyle::load('large')->buildUrl($cover_image);
+    $variables['background'] = $image_url;
+    foreach ($variables['product']['field_images'] as $key => $value) {
+      if (!is_numeric($key)) {
+        unset($variables['product']['field_images'][$key]);
+      }
+    }
+  }
+
+
+}
+
+function nine9_mobile_preprocess_views_view_field(&$variables) {
+  $view = $variables['view'];
+  if ($view->id() == 'news' && $view->current_display == 'block_1') {
+    $row = $variables['row'];
+    if ($row->index == 0 && $variables['field']->field == 'field_image') {
+      $variables['field']->options['settings']['image_style'] = 'medium';
+    }else {
+      $variables['field']->options['settings']['image_style'] = 'news_teaser';
+    }
+  }
+  $variables['output'] = $variables['field']->advancedRender($variables['row']);
+}
+
+/**
+ * Implements template_preprocess_views_view
+ */
+function nine9_mobile_preprocess_views_view(&$variables) {
+  // kint($variables);
+  // die;
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ * Add theme suggestion to page
+ */
+function nine9_mobile_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__'.$content_type;
+  }
+}
+
+
+
+

@@ -1,0 +1,131 @@
+.news-list {
+  &__item {
+    border-bottom: 1px solid $gray-da;
+    padding: 15px 0;
+    overflow: hidden;
+    transition: .5s;
+    margin-bottom: 20px;
+
+    @include susy-media(tablet) {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      @include susy-media(desktop) {
+        background: $gray-f6;
+        padding-left: 15px;
+        transition: .5s;
+      }
+    }
+  }
+}
+
+.node-news {
+  &__image {
+
+    line-height: 1;
+    margin-bottom: 15px;
+
+    @include susy-media(tablet) {
+      max-width: 250px;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+    @include susy-media(desktop) {
+      max-width: 300px;
+    }
+
+    *{
+      line-height: 1;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &__category {
+    @extend %clearfix;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    li {
+      float: left;
+      margin:0 15px 0 0;
+
+      a {
+        color: $primary-color;
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__title {
+    text-transform: capitalize;
+
+    a {
+      color: $black;
+    }
+  }
+
+  &__summary {
+    font-size: 15px;
+  }
+
+  &__submitted {
+     @extend %clearfix;
+    margin-bottom: 10px;
+
+    li {
+      float: left;
+      margin-right: 5px;
+      font-size: 14px;
+      color: $primary-color;
+      font-weight: lighter;
+      font-weight: bold;
+    }
+  }
+
+
+  .field--name-field-image {
+    margin-bottom: 20px;
+  }
+}
+
+.add-to-any {
+  margin-bottom: 20px;
+}
+
+
+.field--name-field-tags {
+  .field__item {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.caption-img {
+  background: #f1f1f1 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  color: #888;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  padding: 4px;
+  text-align: center;
+  display: block;
+
+  > figcaption {
+    display: block;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
