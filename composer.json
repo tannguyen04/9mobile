@@ -7,6 +7,10 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
+    },
+    "commerce_base": {
+      "type": "vcs",
+      "url": "https://github.com/drupalcommerce/commerce_base"
     }
   ],
     "require": {
@@ -20,7 +24,28 @@
     "drupal/simple_block": "^1.0@beta",
     "drush/drush": "~8",
     "rvtraveller/qs-composer-installer": "^1.1",
-    "webflo/drupal-core-strict": "^8"
+    "webflo/drupal-core-strict": "^8",
+    "drupal/commerce": "dev-2.x",
+    "drupalcommerce/commerce_base": "dev-8.x-1.x",
+    "drupal/paragraphs": "1.1",
+    "drupal/search_api": "1.0-rc2",
+    "drupal/facets": "1.x-dev",
+    "drupal/examples": "1.x-dev",
+    "drupal/ckeditor_media_embed": "^1.0",
+    "drupal/devel": "1.0-rc1",
+    "drupal/menu_block": "^1.4",
+    "drupal/features": "^3.5",
+    "mautic/api-library": "^2.6",
+    "drupal/media_entity": "^1.6",
+    "drupal/media_entity_image": "^1.2",
+    "drupal/file_browser": "^1.0@alpha",
+    "drupal/color_field": "2.x-dev",
+    "drupal/addtoany": "^1.8",
+    "drupal/bootstrap": "^3.3",
+    "drupal/block_visibility_groups": "^1.1",
+    "drupal/metatag": "^1.1",
+    "drupal/pathauto": "^1.0",
+    "drupal/google_analytics": "^2.1"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",
@@ -39,7 +64,7 @@
   "conflict": {
       "drupal/drupal": "*"
   },
-  "minimum-stability": "alpha",
+  "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
     "classmap": [
@@ -72,6 +97,7 @@
       "web/modules/contrib/{$name}": ["type:drupal-module"],
       "web/profiles/contrib/{$name}": ["type:drupal-profile"],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "web/libraries/{$name}": ["type:drupal-library"],
       "drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "build-env": {
