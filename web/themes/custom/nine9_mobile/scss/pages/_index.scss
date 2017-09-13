@@ -1,0 +1,47 @@
+// INDEX
+// Please define all styles for the index page in this file.
+// For each new page template added to /templates/pages/*.twig,
+// please add a corresponding file in /assets/scss/pages/*.scss.
+
+.welcome-paragraph {
+  padding: rem(40px 0);
+}
+
+.techical-full {
+  .row {
+    margin-bottom: 30px;
+
+    @include susy-media(tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .col-sm-6 {
+      @include susy-media(tablet) {
+        width: calc((100% - 30px) / 2);
+      }
+    }
+  }
+
+  .specificationheader {
+    background-color: $gray-3;
+    border-color: $gray-3;
+    color: #fff;
+    z-index: 2;
+  }
+
+  li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      margin-right: 20px;
+    }
+  }
+}

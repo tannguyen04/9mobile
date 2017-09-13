@@ -1,0 +1,20 @@
+{
+  "name": "ffw-styleguide",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "susy": "~2.2.6",
+    "bower.json": "~0.6.9",
+    "slick-carousel": "^1.7.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "install": {
+    "path": "../vendor"
+  }
+}

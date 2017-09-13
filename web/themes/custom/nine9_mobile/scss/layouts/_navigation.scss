@@ -1,0 +1,289 @@
+// Navigation.
+.nav {
+  ul {
+    margin-bottom: rem(10px);
+  }
+}
+
+.nav {
+  &-primary {
+    // background-image: linear-gradient(to bottom, $gray-f9 0, #eaeaea 100%);
+    background-color: #010101;
+    border-bottom: 1px solid #121212;
+    position: relative;
+  }
+
+  &-inner {
+    @include susy-media(mobileOnly) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include susy-media(tablet) {
+      position: relative;
+      padding-left: rem(160px);
+    }
+  }
+}
+
+.logo {
+  @include susy-media(tablet) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: rem(30px 0 20px 0);
+  }
+  padding: rem(20px 0 10px 10px);
+  max-width: 110px;
+}
+
+%icon-submenu {
+  position: relative;
+
+  &:after {
+    content: "";
+    cursor: pointer;
+    font-size: 16px;
+    height: 34px;
+    line-height: 35px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 20px;
+    z-index: 1;
+    color: #fafafa;
+  }
+
+  &.has-submenu {
+    &:after {
+      content: "»";
+    }
+  }
+
+  &:hover {
+    &:after {
+      color: $primary-color;
+    }
+  }
+}
+
+.sub-menu {
+  display: none;
+  background-color: #010101;
+  white-space: nowrap;
+
+  @include susy-media(tablet) {
+    position: absolute;
+    left: 0;
+    min-width: 180px;
+
+    .sub-menu {
+      left: 100%;
+      right: auto;
+      top: -1px;
+      border-width: 1px;
+    }
+  }
+
+  li {
+    @extend %icon-submenu;
+
+    a {
+      height: rem(35px);
+      line-height: rem(35px);
+      padding: rem(0 15px);
+      border-bottom: 1px solid #121212;
+      font-size: rem(14px);
+      color: #fafafa;
+    }
+
+    &:hover,
+    &.active {
+      > a {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+#main-menu {
+  @include susy-media(mobileOnly) {
+    position: absolute;
+    right: rem(-400px);
+    top: 32px;
+    transition: all 0.3s;
+  }
+}
+
+.active + #main-menu  {
+  right: 0;
+}
+
+.main-menu {
+  display: flex;
+  position: relative;
+  z-index: 999;
+
+  @include susy-media(mobileOnly) {
+    flex-direction: column;
+    background-color: #010101;
+  }
+
+  @include susy-media(tablet) {
+    flex-direction: row;
+  }
+
+  li {
+    position: relative;
+
+    @include susy-media(tablet) {
+      &:hover {
+        >.sub-menu {
+          display: block;
+        }
+      }
+    }
+  }
+
+  a {
+    display: block;
+  }
+
+  dt {
+    font-size: rem(18px);
+  }
+
+  dd {
+    font-size: rem(13px);
+    color: #747474;
+  }
+
+  > li {
+    > a {
+      padding: rem(24px 15px 24px 10px);
+      border-color: transparent;
+      border-style: dotted;
+      border-width: 0px 1px;
+      color: #fafafa;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &.active {
+      > a {
+        @include susy-media(tablet) {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  > .has-submenu {
+    @extend %icon-submenu;
+    padding-right: 0;
+
+    &:after {
+      display: none;
+    }
+
+    @include susy-media(mobileOnly) {
+      padding-right: 30px;
+      border-bottom: 1px solid #121212;
+
+      &:after {
+        display: inline-block;
+        top: 33px;
+        background: #010101;
+        font-size: 20px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+.toggle-button {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  cursor: pointer;
+  top: 33px;
+  height: 35px;
+  display: none;
+  z-index: 99;
+  display: block;
+
+  @include susy-media(tablet) {
+    display: none;
+  }
+
+  &.active {
+    ~ .sub-menu {
+      display: block;
+    }
+  }
+
+  .sub-menu & {
+    top: 0;
+  }
+}
+
+
+.menu-button {
+  border: 1px solid $gray-d9;
+  cursor: pointer;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  position: relative;
+  vertical-alinav-togglegn: middle;
+  width: 32px;
+  z-index: 1;
+  margin-top: 20px;
+  @include susy-media(tablet) {
+    display: none;
+  }
+
+  &__item {
+    opacity: 1;
+    transform: 0;
+    display: inline-block;
+    height: 2px;
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    background-color: $gray-5b;
+    transition: all .27s cubic-bezier(0, 0, .58, 1) 0s;
+
+    &:nth-child(2) {
+      top: 15px;
+    }
+
+    &:nth-child(3) {
+      top: 20px;
+    }
+  }
+
+  &.active {
+    background: $white;
+    border-bottom: none;
+
+    .menu-button__item {
+      &:nth-child(1) {
+        transform: translate3d(0px, 5px, 0) rotate(-45deg) scale(.8);
+      }
+
+      &:nth-child(3) {
+        transform: translate3d(0px, 15px, 0);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg) scale(.8);
+      }
+    }
+  }
+}
