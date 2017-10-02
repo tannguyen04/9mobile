@@ -1,0 +1,10 @@
+uuid: 4d4ff9cf-8151-425a-9fc1-8755d0b2198c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Wu2B9oW26blH5for4sk5dz25Zv2MCTR0yrSp5ISVrf0
+id: social-menu
+label: 'Social Menu'
+description: ''
+locked: false

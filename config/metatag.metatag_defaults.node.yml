@@ -1,0 +1,28 @@
+uuid: f7644e4d-da3f-4dde-a130-22b2db94f5a7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uKgwQEQEWbnGjAqxKpZufzhnECt1acCS2-zF_mF6nFo
+id: node
+label: Content
+tags:
+  title: '[node:title] | [site:name]'
+  image_src: 'https://www.9mobile.vn/sites/default/files/inline-images/share.jpg'
+  content_language: vi
+  description: '[node:summary]'
+  fb_app_id: '507172256282912'
+  fb_pages: 9mobilevnn
+  fb_admins: '100000180194204'
+  og_type: website
+  og_image_url: 'https://www.9mobile.vn/sites/default/files/inline-images/share.jpg'
+  og_email: 9mobilevn@gmail.com
+  og_locale: vi_VN
+  og_title: '[node:title] | [site:name]'
+  og_country_name: 'Viet Nam'
+  og_description: '[node:summary]'
+  og_site_name: '[site:name]'
+  og_image: '[node:field_image:sharing]'
+  og_street_address: 'Kiot 9 - Khách sạn Bắc Giang - Đường Nguyễn Văn Cừ - TP Bắc Giang'
+  og_phone_number: '+84975236632'
+  og_locality: 'Bac Giang'

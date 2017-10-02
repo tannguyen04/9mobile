@@ -1,0 +1,23 @@
+uuid: 2af09d5a-5e7b-4637-916d-43b255ee5edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.promote
+    - field.storage.block_content.field_background_color
+  module:
+    - options
+_core:
+  default_config_hash: ZUq_pz-aWw3_0Lo1A_40JBZDsrxY3kdyoOXj95JiLpY
+id: block_content.promote.field_background_color
+field_name: field_background_color
+entity_type: block_content
+bundle: promote
+label: 'Background color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

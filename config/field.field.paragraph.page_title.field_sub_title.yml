@@ -1,0 +1,21 @@
+uuid: 740e8123-9334-48d6-a143-101aa976ffab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_title
+    - paragraphs.paragraphs_type.page_title
+_core:
+  default_config_hash: ZqrgDUhybT6bis8s4jfFqPO7V5v-cRpneB88cWDgtXI
+id: paragraph.page_title.field_sub_title
+field_name: field_sub_title
+entity_type: paragraph
+bundle: page_title
+label: 'Sub Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+uuid: 12743354-a193-4f72-9978-47b9deeea9ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment_example
+id: off_site
+label: 'Off Site'
+weight: null
+plugin: example_offsite_redirect
+configuration:
+  redirect_method: post
+  mode: test
+  payment_method_types:
+    - credit_card

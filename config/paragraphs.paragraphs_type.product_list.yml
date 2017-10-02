@@ -1,0 +1,9 @@
+uuid: cdfee4f7-75ec-4ed2-8e6c-ae6e3e584177
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wvE312I3UTi4Mt5yy20CndqZGt_aoTQxid4UvR2lwDM
+id: product_list
+label: 'Product List'
+behavior_plugins: {  }

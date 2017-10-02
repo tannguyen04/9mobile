@@ -1,0 +1,40 @@
+uuid: ad24b8cf-9d0e-4099-aadf-04baf069b16b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_service.body
+    - field.field.node.landing_service.field_image
+    - field.field.node.landing_service.field_meta_tags
+    - field.field.node.landing_service.field_node_reference
+    - field.field.node.landing_service.field_service_ref
+    - field.field.node.landing_service.field_yoast_seo
+    - node.type.landing_service
+  module:
+    - text
+    - user
+id: node.landing_service.teaser
+targetEntityType: node
+bundle: landing_service
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_image: true
+  field_meta_tags: true
+  field_node_reference: true
+  field_service_ref: true
+  field_yoast_seo: true
+  langcode: true

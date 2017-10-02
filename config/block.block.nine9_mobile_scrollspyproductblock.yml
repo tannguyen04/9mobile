@@ -1,0 +1,20 @@
+uuid: 50af0258-074d-4233-b14a-c7b4ae4779ce
+langcode: en
+status: false
+dependencies:
+  module:
+    - nine_mobile_product
+  theme:
+    - nine9_mobile
+id: nine9_mobile_scrollspyproductblock
+theme: nine9_mobile
+region: header
+weight: 0
+provider: null
+plugin: scrollspy_product_block
+settings:
+  id: scrollspy_product_block
+  label: 'Scrollspy product block'
+  provider: nine_mobile_product
+  label_display: visible
+visibility: {  }

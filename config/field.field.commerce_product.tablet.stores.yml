@@ -1,0 +1,23 @@
+uuid: 1d41d9c3-c735-43d7-b5ff-02d93f16b296
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet
+    - field.storage.commerce_product.stores
+_core:
+  default_config_hash: 8eO-6gO0X7OtWTc2S8VulLq8OBTSNanLLw12BePgUoM
+id: commerce_product.tablet.stores
+field_name: stores
+entity_type: commerce_product
+bundle: tablet
+label: Stores
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_store'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: a19f879c-5754-4dca-8978-d59a957132be
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: daP0VdDXN9X-pQ9C2pLYXb5VoIMn1VZPiPbhsd5OPqo
+name: stack_item
+label: 'Stack Item'
+effects:
+  8d7f7579-766b-415d-ab8d-b12c51efc2e7:
+    uuid: 8d7f7579-766b-415d-ab8d-b12c51efc2e7
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false

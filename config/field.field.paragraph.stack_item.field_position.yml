@@ -1,0 +1,25 @@
+uuid: b55f8000-3b04-4262-b4d2-8c199fa9a555
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.stack_item
+  module:
+    - options
+_core:
+  default_config_hash: 7MNR7r28RuGRHB2K4Z5y20LGzddmnoTJzA4nq2v8n-Q
+id: paragraph.stack_item.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: stack_item
+label: Position
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

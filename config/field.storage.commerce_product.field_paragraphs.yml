@@ -1,0 +1,23 @@
+uuid: d4508463-41e4-4a5f-951e-cc4c8350aea5
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: 3J6TvQ7T4aZWQk0SdyYnjPaS0qp_ogB6aulAOB1p6QE
+id: commerce_product.field_paragraphs
+field_name: field_paragraphs
+entity_type: commerce_product
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

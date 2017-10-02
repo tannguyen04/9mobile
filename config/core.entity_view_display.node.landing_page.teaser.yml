@@ -1,0 +1,32 @@
+uuid: 6af41176-4eb6-46e1-bada-4f54a09d58a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_paragraphs
+    - field.field.node.landing_page.field_sharing
+    - field.field.node.landing_page.field_tags
+    - field.field.node.landing_page.field_yoast_seo
+    - node.type.landing_page
+  module:
+    - user
+_core:
+  default_config_hash: Utf2Ow2o3sHowHb6VBKChSxs_bS3k28P2pf_nXJqN9E
+id: node.landing_page.teaser
+targetEntityType: node
+bundle: landing_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_meta_tags: true
+  field_paragraphs: true
+  field_sharing: true
+  field_tags: true
+  field_yoast_seo: true
+  langcode: true

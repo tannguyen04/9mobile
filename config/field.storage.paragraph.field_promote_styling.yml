@@ -1,0 +1,35 @@
+uuid: 506e6e5e-c99a-4940-91c8-12181c70203a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: BXtrljJOuwl6XIjO5aaxobP_3LY14DuqUhnwPh3PkPQ
+id: paragraph.field_promote_styling
+field_name: field_promote_styling
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 4column
+      label: '4 Column'
+    -
+      value: 3column
+      label: '3 Column'
+    -
+      value: 2column
+      label: '2 Column'
+    -
+      value: 1column
+      label: '1 Column'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: cb3a8572-3f7b-420d-aa97-cfac20cda982
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZPaG3AP02orbv6Gw8FtioxFn4KSZ5h6kzDyGWeI70m4
+id: product_promotion
+label: 'Product Promotion'
+behavior_plugins: {  }

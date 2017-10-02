@@ -1,0 +1,9 @@
+uuid: f725926a-3d86-4040-a3e2-468dc8e177c3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hD3dm2cEuzSJsl0syxnfc2EdoeU9fvbfysR-CodhctU
+id: stack_left_right
+label: 'Stack Left - Right'
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: b077f404-1d0e-46e0-b660-202469fc7816
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.slide
+  module:
+    - options
+_core:
+  default_config_hash: JR32cYk3XQVTkQl_cTkHhRyye2y3RUn4b5tyLqE-mbU
+id: paragraph.slide.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: slide
+label: Position
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

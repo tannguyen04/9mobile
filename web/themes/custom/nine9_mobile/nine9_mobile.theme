@@ -118,6 +118,9 @@ function nine9_mobile_preprocess_field(&$variables, $hook) {
     }
   }
 
+  if ($element['#field_name'] == 'price') {
+    $variables['label'] = t('Giá');
+  }
 }
 
 /**

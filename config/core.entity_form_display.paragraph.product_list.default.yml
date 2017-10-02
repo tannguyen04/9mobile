@@ -1,0 +1,65 @@
+uuid: a9a099ad-8722-480f-92e1-f18908f9f916
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_list.field_image
+    - field.field.paragraph.product_list.field_link
+    - field.field.paragraph.product_list.field_product_list_style
+    - field.field.paragraph.product_list.field_product_ref
+    - field.field.paragraph.product_list.field_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.product_list
+  module:
+    - image
+    - link
+_core:
+  default_config_hash: gCxtEsmMuWg3QIvzdrfceDTGAFmt_ZsmqAYaGw9kHSM
+id: paragraph.product_list.default
+targetEntityType: paragraph
+bundle: product_list
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_product_list_style:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_product_ref:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

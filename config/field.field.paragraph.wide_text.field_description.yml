@@ -1,0 +1,23 @@
+uuid: 39d301db-5124-4af1-b27e-22a96271da02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.wide_text
+  module:
+    - text
+_core:
+  default_config_hash: 7YXhRvZnl0eNOu4xWQUcJhfxrHQPdZ71jqnJV-ymdu0
+id: paragraph.wide_text.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: wide_text
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

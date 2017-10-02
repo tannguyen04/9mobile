@@ -1,0 +1,37 @@
+uuid: 1cb4fa97-98be-4fe4-bb68-6ed22beac8db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wide_text.field_description
+    - field.field.paragraph.wide_text.field_text
+    - paragraphs.paragraphs_type.wide_text
+  module:
+    - text
+_core:
+  default_config_hash: AkI_zRmzC1LQRUKu9v3Egk5scke-dgUwAMVlYY8AdkM
+id: paragraph.wide_text.default
+targetEntityType: paragraph
+bundle: wide_text
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

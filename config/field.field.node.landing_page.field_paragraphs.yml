@@ -1,0 +1,79 @@
+uuid: a4b16fe2-1b36-4bc4-a2b0-8026588fb48e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.item_list
+    - paragraphs.paragraphs_type.page_title
+    - paragraphs.paragraphs_type.product_list
+    - paragraphs.paragraphs_type.product_promotion
+    - paragraphs.paragraphs_type.promotion
+    - paragraphs.paragraphs_type.stack_left_right
+    - paragraphs.paragraphs_type.wide_text
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: fL0QSeJbcE8oBh3x1IBNwKtygyg9DAIHNn0lHlRGR-I
+id: node.landing_page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: landing_page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      carousel: carousel
+      page_title: page_title
+      product_list: product_list
+      product_promotion: product_promotion
+      promotion: promotion
+      item_list: item_list
+      stack_left_right: stack_left_right
+      wide_text: wide_text
+    target_bundles_drag_drop:
+      carousel:
+        enabled: true
+        weight: 2
+      page_title:
+        enabled: true
+        weight: 10
+      product_list:
+        enabled: true
+        weight: 11
+      product_promotion:
+        enabled: true
+        weight: 12
+      promotion:
+        enabled: true
+        weight: 13
+      item_list:
+        enabled: true
+        weight: 14
+      slide:
+        weight: 14
+        enabled: false
+      list_item:
+        weight: 15
+        enabled: false
+      stack_left_right:
+        enabled: true
+        weight: 15
+      wide_text:
+        enabled: true
+        weight: 16
+      stack:
+        weight: 21
+        enabled: false
+      stack_item:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions
