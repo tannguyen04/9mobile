@@ -1,6 +1,7 @@
 <?php
 use Drupal\image\Entity\ImageStyle;
 use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
 /**
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
@@ -116,6 +117,10 @@ function nine9_mobile_preprocess_field(&$variables, $hook) {
         $item['content'] = $content;
       }
     }
+  }
+
+  if ($element['#field_name'] == 'price' && $element['#entity_type'] == 'commerce_product_variation') {
+    $variables['label'] = new TranslatableMarkup('Giá');
   }
 
 }
