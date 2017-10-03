@@ -1,9 +1,0 @@
-uuid: a8b2ea0d-6b6d-4376-911c-7d13d0ea1eae
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: t7t_xebL0xcyTbAxf8e4a1h9XUzwvyOjEmr3ZBIbUPw
-id: memory
-label: Memory
-elementType: select

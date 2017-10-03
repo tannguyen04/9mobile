@@ -1,9 +1,0 @@
-uuid: d284e38d-eb95-413b-9a31-dffe5b730bdd
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 1vNMxBf9u17xzXdPMCC-Mtijmr8UvpD9BoyzTi21LtU
-id: stack_item
-label: 'Stack Item'
-behavior_plugins: {  }

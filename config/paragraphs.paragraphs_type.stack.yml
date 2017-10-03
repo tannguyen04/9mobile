@@ -1,9 +1,0 @@
-uuid: d6a60616-9c37-4f3a-8f4f-1e53b45bbe92
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: Tly2ThU3y4VfCjAqoNPLz3-C9gdg_oV2nJav2OYelwY
-id: stack
-label: Stack
-behavior_plugins: {  }

@@ -1,9 +1,0 @@
-uuid: c7b4d80b-0611-4e98-a43e-1a0f7fae8ed8
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: Yj6Q0ZagcNy9L0ZHcv1qND3vOqMeLXhn2Al0MLHWeGE
-id: wide_text
-label: 'Wide text'
-behavior_plugins: {  }

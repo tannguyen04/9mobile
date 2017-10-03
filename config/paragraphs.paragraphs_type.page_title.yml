@@ -1,9 +1,0 @@
-uuid: caa2b9cd-f1eb-4412-b2a5-5b46905bed3a
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 8jyysVltuQkvnIeLiOqO7h_v5QGJnH6_Xf9-exutDtU
-id: page_title
-label: 'Page Title'
-behavior_plugins: {  }

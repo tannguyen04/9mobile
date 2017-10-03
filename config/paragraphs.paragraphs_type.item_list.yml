@@ -1,7 +1,0 @@
-uuid: ffad7eef-c91a-438b-89a6-73ea5f6b1904
-langcode: en
-status: true
-dependencies: {  }
-id: item_list
-label: 'Item List'
-behavior_plugins: {  }
