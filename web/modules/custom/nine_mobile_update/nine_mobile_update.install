@@ -4,5 +4,23 @@
  * Implements hook_install()
  */
 function nine_mobile_update_install() {
-  \Drupal::service('module_installer')->install(['color_field']);
+  nine_mobile_update_update_8001();
+}
+
+/**
+ * Implements hook_update_N()
+ * Update url alias
+ */
+function nine_mobile_update_update_8001() {
+  $connection = \Drupal::database();
+  $num_updated = $connection->update('url_alias')
+  ->fields([
+    'langcode' => 'vi'
+  ])
+  ->execute();
+  $messages = array();
+  if ($num_updated) {
+    $messages[] = t('Updated @num alias', array('@num' => $num_updated));
+  }
+  return implode('</br>', $messages);
 }
