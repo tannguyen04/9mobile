@@ -51,7 +51,7 @@
     <div class="content-inner">
       {% block title %}
         {% if content.field_text.0 %}
-          <h2 class="paragraph__title">{{ content.field_text }}</h2>
+          <h2 class="paragraph__title" id="paragraph-item-{{ paragraph.id() }}">{{ content.field_text }}</h2>
         {% endif %}
       {% endblock %}
 
