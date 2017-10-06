@@ -97,12 +97,14 @@
     <div class="service__content">
       {{ content.field_summary }}
     </div>
-    <div class="service__price">
-      {{ content.field_number_integer }}
-    </div>
+    {% if node.field_number_integer[0] %}
+      <div class="service__price">
+        {{ content.field_number_integer }}
+      </div>
+    {% endif %}
   </div>
   </div>
-  
+
   {{ content.body }}
 
   {{ content.field_tags }}
