@@ -70,5 +70,7 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   }
 }
 
+//Configs
+$config['system.site']['name'] = '9Mobile.vn - iPhone, Sammsung, Oppo tốt';
 
 
