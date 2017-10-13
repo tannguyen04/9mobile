@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7289c38dc9180719977f4939084df6e",
+    "content-hash": "b8070a9dc56bdee5a4df81ed7c39b739",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -590,6 +590,28 @@
             ],
             "description": "Provides a way to patch Composer packages.",
             "time": "2017-08-30T16:41:23+00:00"
+        },
+        {
+            "name": "desandro/imagesloaded",
+            "version": "4.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/desandro/imagesloaded/archive/v4.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "desandro/masonry",
+            "version": "4.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/desandro/masonry/archive/v4.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
         },
         {
             "name": "dflydev/dot-access-configuration",
@@ -4821,6 +4843,17 @@
                 "validator"
             ],
             "time": "2017-02-03T22:48:59+00:00"
+        },
+        {
+            "name": "enyo/dropzone",
+            "version": "4.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/enyo/dropzone/archive/v4.3.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
         },
         {
             "name": "gabordemooij/redbean",
@@ -10119,9 +10152,10 @@
     "stability-flags": {
         "drupal/color_field": 20,
         "drupal/commerce": 20,
+        "drupal/dropzonejs": 15,
+        "drupal/entity_embed": 10,
         "drupal/examples": 20,
         "drupal/facets": 20,
-        "drupal/file_browser": 15,
         "drupal/redirect": 10,
         "drupal/simple_block": 10,
         "drupalcommerce/commerce_base": 20
