@@ -93,7 +93,7 @@
     {{ label }}
   </h1>
   <div class="clearfix">
-  <div class="service__summary">
+  <div class="service__summary{{ node.field_number_integer[0] ? '-price' }}">
     <div class="service__content">
       {{ content.field_summary }}
     </div>
