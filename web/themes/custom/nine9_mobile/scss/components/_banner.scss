@@ -82,8 +82,10 @@
       margin-bottom: 5px;
     }
   }
+}
 
-  &__content {
+.service__summary-price {
+  .service__content {
     @include susy-media(tablet) {
       width: 70%;
       float: left;
@@ -91,8 +93,7 @@
       padding-right: 50px;
     }
   }
-
-  &__price {
+  .service__price {
     background: $gray-ef;
     padding: 15px;
 
