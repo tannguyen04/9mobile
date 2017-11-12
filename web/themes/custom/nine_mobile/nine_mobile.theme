@@ -43,6 +43,7 @@ function nine_mobile_preprocess_field(&$variables, $hook) {
       );
     }
   }
+
 }
 
 /**

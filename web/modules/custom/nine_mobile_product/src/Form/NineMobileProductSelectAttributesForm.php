@@ -73,10 +73,20 @@ class NineMobileProductSelectAttributesForm extends FormBase {
 
     foreach ($items as $key => $item) {
       $product_variation = $item->entity;
+      if (!$product_variation->isActive()) {
+        continue;
+      }
       $currency_code = $product_variation->getPrice()->getCurrencyCode();
       $currency = $currencies[$currency_code];
       $color = $product_variation->getAttributeValue('attribute_color')->get('field_color')->first()->getValue();
-      $number = $product_variation->getPrice()->getNumber();
+
+      if (!$product_variation->get('field_badge')->isEmpty()) {
+        $price = $product_variation->get('field_badge')->first()->view();
+        $price = \Drupal::service('renderer')->render($price);
+      }else {
+        $price = $product_variation->getPrice()->getNumber();
+        $price = $this->numberFormatter->formatCurrency($price, $currency);
+      }
       $product_variations[] = array(
         'product_variant_id' => $product_variation->Id(),
         'attribute_color' => array(
@@ -88,7 +98,7 @@ class NineMobileProductSelectAttributesForm extends FormBase {
           'name' => $product_variation->getAttributeValue('attribute_memory')->label(),
           'id' => $product_variation->getAttributeValueId('attribute_memory'),
         ),
-        'price' => $this->numberFormatter->formatCurrency($number, $currency),
+        'price' => $price,
       );
     }
     //Set product variation in form stata

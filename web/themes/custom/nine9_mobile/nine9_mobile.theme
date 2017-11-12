@@ -28,8 +28,9 @@ function nine9_mobile_preprocess_node(&$variables) {
 
 function nine9_mobile_preprocess_field(&$variables, $hook) {
   $element = $variables['element'];
+  $items = $element['#items'];
+  $object = $element['#object'];
   if ($element['#field_name'] == 'field_block_custom' && $element['#bundle'] == 'promotion') {
-    $items = $element['#items'];
     for ($i=0; $i < $items->count(); $i++) {
       $field_image = $element[$i]['field_image'];
       $field_link = $element[$i]['field_link'];
@@ -44,7 +45,6 @@ function nine9_mobile_preprocess_field(&$variables, $hook) {
   }
   //Alter field image in Pragraph "Product List"
   if ($element['#field_name'] == 'field_image' && $element['#bundle'] == 'product_list') {
-    $object = $element['#object'];
     $field_link = $object->get('field_link')->get(0);
     if (!empty($field_link)) {
       $url = $field_link->getUrl();
@@ -52,7 +52,6 @@ function nine9_mobile_preprocess_field(&$variables, $hook) {
     }
   }
   if ($element['#field_name'] == 'field_product_ref' && $element['#bundle'] == 'product_list') {
-    $object = $element['#object'];
     $field_link = $object->get('field_link')->get(0);
     $field_style = $object->get('field_product_list_style')->get(0);
     if (!empty($field_style)) {
@@ -121,6 +120,12 @@ function nine9_mobile_preprocess_field(&$variables, $hook) {
 
   if ($element['#field_name'] == 'price' && $element['#entity_type'] == 'commerce_product_variation') {
     $variables['label'] = new TranslatableMarkup('Giá');
+    if (!$object->get('field_badge')->isEmpty()) {
+      //$variables['items'] = array();
+      $variables['label'] = '';
+      $variables['items'][0]['content'] = array($object->get('field_badge')->first()->view());
+
+    }
   }
 
 }
