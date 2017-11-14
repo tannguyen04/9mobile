@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: bg-blue
+    -
+      label: bg-green
+    -
+      label: bg-white

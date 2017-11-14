@@ -1,0 +1,28 @@
+uuid: ce8323ec-46a6-4146-9a5d-6a9178f7b112
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_ref
+    - node.type.landing_service
+    - taxonomy.vocabulary.services
+id: node.landing_service.field_service_ref
+field_name: field_service_ref
+entity_type: node
+bundle: landing_service
+label: 'Loại dịch vụ'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      services: services
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+display:
+  default:
+    display_title: Chính
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Áp dụng'
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
+      fields:
+        created:
+          label: 'Ngày tháng'
+        rendered_entity:
+          label: 'Thông điệp'
+        uid:
+          label: 'Người dùng'
+      arguments:
+        source_entity_id:
+          exception:
+            title: 'Tất cả'
+        source_entity_type:
+          exception:
+            title: 'Tất cả'
+  block_1:
+    display_title: Khối

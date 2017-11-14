@@ -1,0 +1,7 @@
+content:
+  field_color:
+    settings:
+      shape: square
+      width: '10'
+      height: '10'
+      opacity: '1'

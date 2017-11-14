@@ -1,0 +1,22 @@
+uuid: 61e48d31-ab2b-4fc0-bfd6-24de9ceca8f7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nine9_mobile
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: nine9_mobile_local_tasks
+theme: nine9_mobile
+region: content
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

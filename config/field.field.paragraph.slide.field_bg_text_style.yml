@@ -1,0 +1,21 @@
+uuid: b247fe48-3d8c-4eac-aaf7-9b7f265be303
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_text_style
+    - paragraphs.paragraphs_type.slide
+  module:
+    - options
+id: paragraph.slide.field_bg_text_style
+field_name: field_bg_text_style
+entity_type: paragraph
+bundle: slide
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

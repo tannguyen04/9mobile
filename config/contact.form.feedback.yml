@@ -1,0 +1,14 @@
+uuid: ce135daa-7260-4d72-bd92-4e728ab2b760
+langcode: vi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - raucaixanh04@gmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

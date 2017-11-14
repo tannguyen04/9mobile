@@ -1,0 +1,41 @@
+uuid: e29ed093-5701-422e-baab-5cfef6e5abff
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stack.field_paragraph
+    - field.field.paragraph.stack.field_text
+    - paragraphs.paragraphs_type.stack
+  module:
+    - paragraphs
+_core:
+  default_config_hash: hgo4e8SEMo5B-YADVr-gv6mcIto5vooNeZm80_Ff5Os
+id: paragraph.stack.default
+targetEntityType: paragraph
+bundle: stack
+mode: default
+content:
+  field_paragraph:
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: stack_item
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

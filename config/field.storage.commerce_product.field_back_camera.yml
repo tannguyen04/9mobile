@@ -1,0 +1,18 @@
+uuid: 070dd877-e96a-4df1-973e-ed935a8fa05e
+langcode: vi
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_back_camera
+field_name: field_back_camera
+entity_type: commerce_product
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

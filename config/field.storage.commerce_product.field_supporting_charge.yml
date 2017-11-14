@@ -1,0 +1,27 @@
+uuid: fc38301c-fae2-438e-890c-f50b40028e2f
+langcode: vi
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product.field_supporting_charge
+field_name: field_supporting_charge
+entity_type: commerce_product
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: charge_quickly
+      label: 'Hỗ trợ sạc nhanh'
+    -
+      value: charge_no_wire
+      label: 'Hỗ trợ sạc không dây'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

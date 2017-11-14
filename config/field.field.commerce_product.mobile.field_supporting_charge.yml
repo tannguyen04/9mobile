@@ -1,0 +1,21 @@
+uuid: c70bcc70-64d0-4467-9154-183a3b381c8b
+langcode: vi
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mobile
+    - field.storage.commerce_product.field_supporting_charge
+  module:
+    - options
+id: commerce_product.mobile.field_supporting_charge
+field_name: field_supporting_charge
+entity_type: commerce_product
+bundle: mobile
+label: 'Supporting charge'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

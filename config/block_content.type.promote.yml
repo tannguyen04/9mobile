@@ -1,0 +1,10 @@
+uuid: 0f7ef38e-e796-4dac-a1c6-c2da8240bcfe
+langcode: vi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fvvMulTFRbqm1AOKd_yqzVcEUaEAl14XD_x-gEM0nxw
+id: promote
+label: Promote
+revision: 0
+description: 'Dùng để tạo các block quảng cáo, CTA'

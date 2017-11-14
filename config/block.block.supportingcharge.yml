@@ -1,0 +1,28 @@
+uuid: 919c1f5c-ec01-4877-b24b-8ce58148f6db
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.supporting_charge
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - nine9_mobile
+id: supportingcharge
+theme: nine9_mobile
+region: content_top
+weight: 0
+provider: null
+plugin: 'facet_block:supporting_charge'
+settings:
+  id: 'facet_block:supporting_charge'
+  label: 'Supporting charge'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
