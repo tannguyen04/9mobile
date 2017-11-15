@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:product_range_internal_memory'
 settings:
   id: 'facet_block:product_range_internal_memory'
-  label: 'Product Range Internal memory'
+  label: 'Bộ nhớ trong'
   provider: facets
   label_display: visible
 visibility:

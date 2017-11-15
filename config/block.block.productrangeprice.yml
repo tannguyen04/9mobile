@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:product_range_price'
 settings:
   id: 'facet_block:product_range_price'
-  label: 'Product Range Price'
+  label: 'Giá'
   provider: facets
   label_display: visible
 visibility:

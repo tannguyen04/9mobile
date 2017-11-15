@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:product_front_camera'
 settings:
   id: 'facet_block:product_front_camera'
-  label: 'Product Front Camera'
+  label: 'Camera trước'
   provider: facets
   label_display: visible
 visibility:

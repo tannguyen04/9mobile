@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:product_range_size_screenn'
 settings:
   id: 'facet_block:product_range_size_screenn'
-  label: 'Product Range size screenn'
+  label: 'Kích thước màn hình'
   provider: facets
   label_display: visible
 visibility:

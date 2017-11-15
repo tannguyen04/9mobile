@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:product_range_capacity_power'
 settings:
   id: 'facet_block:product_range_capacity_power'
-  label: 'Product Range capacity power'
+  label: 'Dung lượng pin'
   provider: facets
   label_display: visible
 visibility:

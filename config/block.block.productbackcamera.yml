@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:product_back_camera'
 settings:
   id: 'facet_block:product_back_camera'
-  label: 'Product Back Camera'
+  label: 'Camera sau'
   provider: facets
   label_display: visible
 visibility:
