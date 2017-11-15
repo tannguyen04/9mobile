@@ -63,7 +63,7 @@ class AddRangeCamera extends ProcessorPluginBase {
       $front_camera_pixel = floatval($front_camera_pixel['value']);
       if ($front_camera_pixel <= 3) {
         $range_front_camera = '<=3';
-      }elseif ($price >= 3 && $price <= 8) {
+      }elseif ($front_camera_pixel >= 3 && $front_camera_pixel <= 8) {
         $range_front_camera = '3-8';
       }else {
         $range_front_camera = '>=8';
