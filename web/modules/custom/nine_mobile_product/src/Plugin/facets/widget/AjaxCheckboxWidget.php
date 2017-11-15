@@ -34,7 +34,6 @@ class AjaxCheckboxWidget extends LinksWidget {
         return $this->buildListItems($facet, $result);
       }
     }, $facet->getResults());
-    kint($items);
     $build['tan'] = array('#markup' => 'asdd');
 
     return $build;

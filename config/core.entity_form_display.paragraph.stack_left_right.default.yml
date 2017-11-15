@@ -1,0 +1,42 @@
+uuid: d802d5f1-0e62-46f4-acf1-fcc9570fbf40
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stack_left_right.field_block_custom
+    - field.field.paragraph.stack_left_right.field_text
+    - paragraphs.paragraphs_type.stack_left_right
+  module:
+    - inline_entity_form
+_core:
+  default_config_hash: XWtwwG1PkewWuplEjaCUgAiJbgodOQhybC-IwHXP8yE
+id: paragraph.stack_left_right.default
+targetEntityType: paragraph
+bundle: stack_left_right
+mode: default
+content:
+  field_block_custom:
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

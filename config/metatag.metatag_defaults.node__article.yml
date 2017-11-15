@@ -1,0 +1,9 @@
+uuid: d8ce0d86-5c51-49f9-834a-9abdda48008a
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  og_image_url: '[node:field_image:sharing]'
+  og_image: '[node:field_image:sharing]'

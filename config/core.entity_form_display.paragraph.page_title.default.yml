@@ -1,0 +1,35 @@
+uuid: ba1de25a-1a90-4386-be27-25bf83306d6e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_title.field_sub_title
+    - field.field.paragraph.page_title.field_text
+    - paragraphs.paragraphs_type.page_title
+_core:
+  default_config_hash: qEXkDGfREOJ_rll7BW4J8Lji6jqay-WnGlgaCq8T5gI
+id: paragraph.page_title.default
+targetEntityType: paragraph
+bundle: page_title
+mode: default
+content:
+  field_sub_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

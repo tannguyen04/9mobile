@@ -1,0 +1,9 @@
+uuid: 1b31d702-62d7-4153-98d8-872ce4a436af
+langcode: vi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _jiLZKTaZC4JDyiTQPPsbwY1dVfV4kCEk45JxeWXNMQ
+id: promotion
+label: Promotion
+behavior_plugins: {  }

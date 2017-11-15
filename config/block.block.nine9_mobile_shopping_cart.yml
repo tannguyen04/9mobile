@@ -1,0 +1,24 @@
+uuid: b9be813e-d0e8-4ddc-9e3e-bb40aa67c55a
+langcode: en
+status: false
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - nine9_mobile
+_core:
+  default_config_hash: UQ9l8BkgFPcF7r-8VwsTIxC1bOMlI0iQLrJUS95c1E8
+id: nine9_mobile_shopping_cart
+theme: nine9_mobile
+region: header
+weight: -10
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+  item_text: items
+visibility: {  }

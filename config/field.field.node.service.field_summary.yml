@@ -1,0 +1,23 @@
+uuid: a9b1aacb-da8f-4dc7-ad74-c838ed2c1c38
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.service
+  module:
+    - text
+_core:
+  default_config_hash: QoayxoCjxia6djlTIYhEgm0Y_MXFefZzuq4yy-Zb1ck
+id: node.service.field_summary
+field_name: field_summary
+entity_type: node
+bundle: service
+label: Summary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

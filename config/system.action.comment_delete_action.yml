@@ -1,0 +1,11 @@
+uuid: 9e7fab1d-b259-417a-a55d-b2be9f85c5e8
+langcode: vi
+status: true
+dependencies:
+  module:
+    - comment
+id: comment_delete_action
+label: 'Delete comment'
+type: comment
+plugin: comment_delete_action
+configuration: {  }

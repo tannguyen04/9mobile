@@ -1,0 +1,32 @@
+uuid: 4bdf6cbf-b9f0-4ac6-82cd-b723f2ad3b0c
+langcode: vi
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.color
+    - field.field.commerce_product_attribute_value.color.field_color
+    - field.field.commerce_product_attribute_value.color.field_hex_color
+  module:
+    - color_field
+_core:
+  default_config_hash: NGpEqJGx0PlbjSIv-kafMU3KiHx583jZ6noV6IMjZiI
+id: commerce_product_attribute_value.color.default
+targetEntityType: commerce_product_attribute_value
+bundle: color
+mode: default
+content:
+  field_color:
+    weight: 0
+    label: hidden
+    settings:
+      shape: square
+      width: '10'
+      height: '10'
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_swatch
+    region: content
+hidden:
+  field_hex_color: true
+  langcode: true
+  name: true

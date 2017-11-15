@@ -65,3 +65,16 @@ function nine_mobile_product_views_pre_build($view) {
     }
   }
 }
+
+/**
+ * template_preprocess_field()
+ * Alter markup of some fields
+ */
+function nine_moble_product_preprocess_field(&$variables, $hook) {
+  kint($variables);
+  die;
+}
+
+
+
+

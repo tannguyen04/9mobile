@@ -1,0 +1,18 @@
+uuid: a6d743ef-a8db-4dee-ba84-c712f867c581
+langcode: vi
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_size_screen
+field_name: field_size_screen
+entity_type: commerce_product
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

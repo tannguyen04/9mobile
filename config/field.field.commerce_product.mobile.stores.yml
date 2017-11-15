@@ -1,0 +1,23 @@
+uuid: fdd63030-508b-4f1a-a00f-03d52c833ac5
+langcode: vi
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mobile
+    - field.storage.commerce_product.stores
+_core:
+  default_config_hash: QsQZKDFJKXf9I0StomhZIM7AM8wIuuK3Us2yTV38ghk
+id: commerce_product.mobile.stores
+field_name: stores
+entity_type: commerce_product
+bundle: mobile
+label: Stores
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_store'
+  handler_settings: {  }
+field_type: entity_reference

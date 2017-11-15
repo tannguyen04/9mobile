@@ -1,0 +1,22 @@
+uuid: 4bb5abea-97c9-4c7e-a04b-eac789322bbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_article
+label: 'Node Article'
+type: 'canonical_entities:node'
+pattern: '/tin-cong-nghe/[node:title]'
+selection_criteria:
+  f54e23f8-9cb3-4fe4-9c1d-91a81668508d:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f54e23f8-9cb3-4fe4-9c1d-91a81668508d
+selection_logic: and
+weight: -5
+relationships: {  }

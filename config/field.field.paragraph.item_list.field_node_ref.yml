@@ -1,0 +1,34 @@
+uuid: bf6e99e9-85b8-496a-acb3-db70058404a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_node_ref
+    - node.type.article
+    - node.type.landing_page
+    - node.type.landing_service
+    - node.type.service
+    - paragraphs.paragraphs_type.item_list
+id: paragraph.item_list.field_node_ref
+field_name: field_node_ref
+entity_type: paragraph
+bundle: item_list
+label: Content
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      landing_page: landing_page
+      landing_service: landing_service
+      service: service
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

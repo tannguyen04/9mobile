@@ -1,0 +1,27 @@
+uuid: 8942bddd-ec87-44f6-a175-ddf96fc0372c
+langcode: vi
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product_variation.field_badge
+field_name: field_badge
+entity_type: commerce_product_variation
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: comming_soon
+      label: 'Hàng đang về'
+    -
+      value: tmp_out_stock
+      label: 'Hànd tạm hết'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

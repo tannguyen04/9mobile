@@ -1,0 +1,25 @@
+uuid: bd6c0b2b-59bf-4738-9c6e-7730a416ca93
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.promote
+    - field.storage.block_content.field_link
+  module:
+    - link
+_core:
+  default_config_hash: X6b7ezwb80oEljK-syKNk6S3pT61FhSSMz-bcLv2DSw
+id: block_content.promote.field_link
+field_name: field_link
+entity_type: block_content
+bundle: promote
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

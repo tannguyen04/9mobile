@@ -1,0 +1,9 @@
+uuid: 5a1139b1-8eb9-417b-abf2-3e0a0258f647
+langcode: vi
+status: true
+dependencies: {  }
+name: News
+vid: news
+description: ''
+hierarchy: 0
+weight: 0
