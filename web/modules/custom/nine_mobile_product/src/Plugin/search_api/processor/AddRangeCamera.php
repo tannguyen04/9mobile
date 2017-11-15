@@ -60,7 +60,7 @@ class AddRangeCamera extends ProcessorPluginBase {
     $range_front_camera = '';
     if ($product->hasField('field_front_camera') && !$product->get('field_front_camera')->isEmpty()) {
       $front_camera_pixel = $product->get('field_front_camera')->first()->getValue();
-      $front_camera_pixel = floatval($front_camera_pixel);
+      $front_camera_pixel = floatval($front_camera_pixel['value']);
       if ($front_camera_pixel <= 3) {
         $range_front_camera = '<=3';
       }elseif ($price >= 3 && $price <= 8) {
@@ -82,7 +82,7 @@ class AddRangeCamera extends ProcessorPluginBase {
     $range_back_camera = '';
     if ($product->hasField('field_back_camera') && !$product->get('field_back_camera')->isEmpty()) {
       $front_camera_pixel = $product->get('field_back_camera')->first()->getValue();
-      $front_camera_pixel = floatval($front_camera_pixel);
+      $front_camera_pixel = floatval($front_camera_pixel['value']);
       if ($front_camera_pixel <= 5) {
         $range_back_camera = '<=5';
       }elseif ($price >= 5 && $price <= 12) {
