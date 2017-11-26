@@ -1,0 +1,10 @@
+uuid: 553365e1-3dd4-4f18-a841-624a6388bddb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.item_list
+label: 'Item List'
+targetEntityType: node
+cache: true

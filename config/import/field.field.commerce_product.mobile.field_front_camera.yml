@@ -1,0 +1,23 @@
+uuid: 8920b96a-222c-4fa3-a874-8acd695d1342
+langcode: vi
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mobile
+    - field.storage.commerce_product.field_front_camera
+id: commerce_product.mobile.field_front_camera
+field_name: field_front_camera
+entity_type: commerce_product
+bundle: mobile
+label: 'Front Camera'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: MP
+field_type: float

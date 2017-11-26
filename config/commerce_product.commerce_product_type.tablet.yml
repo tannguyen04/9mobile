@@ -1,0 +1,12 @@
+uuid: 888639ab-1064-4e17-a611-364c9c09dd9a
+langcode: vi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HmzoU0hH2Ojfxoln-IxLGcZo46O8z8FE9pnkc9lGPpU
+id: tablet
+label: Tablet
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }

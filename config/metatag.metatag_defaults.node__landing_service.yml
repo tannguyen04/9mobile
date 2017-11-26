@@ -1,0 +1,7 @@
+uuid: 3c18d0a1-844d-4bd0-8f0b-6318357428ed
+langcode: en
+status: true
+dependencies: {  }
+id: node__landing_service
+label: 'Content: Landing service'
+tags: {  }

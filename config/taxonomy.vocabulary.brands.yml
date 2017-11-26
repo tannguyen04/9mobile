@@ -1,0 +1,11 @@
+uuid: 4f6d6b74-5849-4086-993e-bf434a009a04
+langcode: vi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZbURFkAybiP43fsq7EKNow1drM3OjiH8SY9cbSa0GEM
+name: Brands
+vid: brands
+description: ''
+hierarchy: 1
+weight: 0

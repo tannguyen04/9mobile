@@ -1,0 +1,23 @@
+uuid: b0aa80ce-3f18-46f3-bf4e-a9b33dfd9c89
+langcode: vi
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mobile
+    - field.storage.commerce_product.field_back_camera
+id: commerce_product.mobile.field_back_camera
+field_name: field_back_camera
+entity_type: commerce_product
+bundle: mobile
+label: 'Back camera'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: MP
+field_type: float

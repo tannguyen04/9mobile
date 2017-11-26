@@ -1,0 +1,10 @@
+settings:
+  allowed_values:
+    -
+      label: top
+    -
+      label: right
+    -
+      label: bottom
+    -
+      label: left

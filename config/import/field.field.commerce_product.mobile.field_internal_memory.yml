@@ -1,0 +1,23 @@
+uuid: 0d63d49d-d78c-471d-86f3-9b41a71ebb64
+langcode: vi
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mobile
+    - field.storage.commerce_product.field_internal_memory
+id: commerce_product.mobile.field_internal_memory
+field_name: field_internal_memory
+entity_type: commerce_product
+bundle: mobile
+label: 'Internal memory'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: GB
+field_type: integer

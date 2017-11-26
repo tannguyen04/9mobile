@@ -1,0 +1,28 @@
+uuid: 00529dc6-ca7d-4283-9ead-c7be459d13c1
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_range_internal_memory
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - nine9_mobile
+id: productrangeinternalmemory
+theme: nine9_mobile
+region: content_top
+weight: 0
+provider: null
+plugin: 'facet_block:product_range_internal_memory'
+settings:
+  id: 'facet_block:product_range_internal_memory'
+  label: 'Bộ nhớ trong'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

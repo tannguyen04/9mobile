@@ -1,0 +1,11 @@
+uuid: f743c0eb-8252-4d71-989c-fce0ab703df3
+langcode: vi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ipSvUK4FmG23ZLQThetWcfZPGdqUAiD5RjMQq5JeB70
+name: Condition/availability
+vid: condition_availability
+description: ''
+hierarchy: 0
+weight: 0

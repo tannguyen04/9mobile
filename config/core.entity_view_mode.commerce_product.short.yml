@@ -1,0 +1,12 @@
+uuid: 705eba88-f295-4e16-a7a5-2dd6ec3f364d
+langcode: vi
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: ndz4k-d3turx--k5DiGPbP3OaAupbRgdjhl07i2sag0
+id: commerce_product.short
+label: Short
+targetEntityType: commerce_product
+cache: true

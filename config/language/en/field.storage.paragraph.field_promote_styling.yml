@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: '3 Column'
+    -
+      label: '2 Column'
+    -
+      label: '1 Column'

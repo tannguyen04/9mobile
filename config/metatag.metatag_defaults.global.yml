@@ -1,0 +1,11 @@
+uuid: 80502fef-9af4-4a91-9c4e-d2376fe60f87
+langcode: vi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b-qxCu1VLGWjqvXKv4Nt7y2BUo5VSGpEIj8gb6C_PUY
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'
+  hreflang_xdefault: vi-vn

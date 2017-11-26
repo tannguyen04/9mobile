@@ -1,0 +1,8 @@
+uuid: null
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__product_index___page_2
+name: 'search_api:views_page__product_index___page_2'
+filter_key: p
+url_processor: query_string
