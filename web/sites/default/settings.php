@@ -16,6 +16,11 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 include __DIR__ . "/settings.pantheon.php";
 
+$matbao_settings = __DIR__ . "/settings.matbao.php";
+if (file_exists($matbao_settings)) {
+  include $matbao_settings;
+}
+
 /**
  * Place the config directory outside of the Drupal root.
  */
