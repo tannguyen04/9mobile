@@ -6,8 +6,9 @@
 
 ## Install
 1. Install Docksal
-2. Clone project `git clone git@github.com:tannguyen04/9mobile.git`
-3. ```
+2. ```
+   git clone git@github.com:tannguyen04/9mobile.git
+   cd 9mobile
    composer install
    fin init
    ```
