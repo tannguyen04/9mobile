@@ -22,3 +22,4 @@ bower install
 Please setup sass for local machine and free use sass. For more information please visit here https://sass-lang.com/
 ### Manage external libraries
 We use `bower` for manage external libraries (update, install). More information to use `bower` please visit here https://bower.io/
+Install new external library `bower install PACKAGE --save`
