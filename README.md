@@ -9,7 +9,7 @@
 2. ```
    git clone git@github.com:tannguyen04/9mobile.git
    cd 9mobile
-   composer install
+   composer install --dev
    fin init
    ```
 ## Work with theme
