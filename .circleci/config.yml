@@ -47,7 +47,6 @@ jobs:
       - run: |
           source /root/google-cloud-sdk/completion.bash.inc
           source /root/google-cloud-sdk/path.bash.inc
-          exec -l $SHELL
           gcloud --quiet components update
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
           gcloud compute ssh raucaixanh04@mobilevn
