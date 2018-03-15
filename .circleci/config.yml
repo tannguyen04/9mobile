@@ -40,7 +40,7 @@ jobs:
       - checkout
       - run:
           name: Install Google Cloud SDK
-          command: curl https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init
+          command: curl https://sdk.cloud.google.com | bash --yes && exec -l $SHELL && gcloud init
       - run:
           name: Just test
           command: echo $GCLOUD_SERVICE_KEY | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json
