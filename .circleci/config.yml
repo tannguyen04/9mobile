@@ -40,7 +40,7 @@ jobs:
       - checkout
       - run:
           name: Install Google Cloud SDK
-          command: export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+          command: apt-get install lsb-release && export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
       - run:
           name: Just test
           command: echo $GCLOUD_SERVICE_KEY | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json
