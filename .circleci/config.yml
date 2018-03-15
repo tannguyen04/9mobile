@@ -40,7 +40,7 @@ jobs:
       - checkout
       - run:
           name: Just test
-          command: echo 'abc'
+          command: echo 'abc a'
   # test:
   #   <<: *defaults
   #   steps:
