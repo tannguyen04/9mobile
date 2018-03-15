@@ -40,7 +40,7 @@ jobs:
       - checkout
       - run:
           name: Just test
-          command: echo 'abc a'
+          command: echo $GCLOUD_SERVICE_KEY | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json
   # test:
   #   <<: *defaults
   #   steps:
