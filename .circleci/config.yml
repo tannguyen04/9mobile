@@ -1,0 +1,63 @@
+# PHP CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-php/ for more details
+#
+defaults: &defaults
+  docker:
+    # Use custom docker
+    - image: juampynr/drupal8ci:latest
+    # Mysql
+    - image: mysql:latest
+      restart: always
+      environment:
+        MYSQL_DATABASE: 9mobilevn
+        MYSQL_ROOT_PASSWORD: 9mobilevn
+  working_directory: /var/www/html
+version: 2
+jobs:
+  # build:
+  #   <<: *defaults
+  #   steps:
+  #     - checkout
+  #     - add_ssh_keys:
+  #         fingerprints:
+  #           - "6f:50:74:c1:cb:66:d5:27:4c:65:6a:40:02:a2:a4:61"
+  #     #- run:
+  #         name: Composer install
+  #         command: composer install --dev
+  #     #- run:
+  #         name: Install Drupal site A
+  #         command: vendor/drupal/console/bin/drupal site:install  standard --account-name="admin" --site-mail="admin@example.com" --site-name="drupal8" --db-name="drupal8_circleci" --db-user="root" --db-pass="sentius" --no-interaction
+  #     - run:
+  #         name: Access Matbao hosting & go to iphonebacgiang.com directory
+  #         command: echo $SSH_KEY >> ~/.ssh/known_hosts && chmod +x ./deploy.sh
+  #     - run:
+  #         name: Deploy nao
+  #         command: ./deploy.sh
+  deploy_9mobile_google_cloud:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Just test
+          command: echo 'abc'
+  # test:
+  #   <<: *defaults
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         name: Composer install
+  #         command: composer install --dev
+  #     - run:
+  #         name: Set install paths for coder_sniffer
+  #         command: vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
+  #     - run: vendor/bin/phpcs --standard=Drupal web/core/modules/node/node.module
+  #     - run: echo "Hello Tan Tan"
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - deploy_9mobile_google_cloud:
+          filters:
+            branches:
+              only: dev
