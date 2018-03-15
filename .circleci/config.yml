@@ -41,7 +41,6 @@ jobs:
       - run: |
           export CLOUDSDK_CORE_DISABLE_PROMPTS=1
           curl https://sdk.cloud.google.com | bash
-          exec -l $SHELL
           source /root/google-cloud-sdk/completion.bash.inc
           source /root/google-cloud-sdk/path.bash.inc
       - run:
