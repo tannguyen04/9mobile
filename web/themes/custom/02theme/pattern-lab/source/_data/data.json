@@ -1,0 +1,42 @@
+{
+  "tablet": "(min-width: 768px)",
+  "mainMenu": [
+    {
+      "link": {
+        "href": "#",
+        "text": "Work",
+        "class": ""
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "Services"
+      }
+    },
+    {
+      "link": {
+        "href": "",
+        "text": "Resources"
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "Blog"
+      }
+    },
+    {
+      "link": {
+        "href": "",
+        "text": "About"
+      }
+    },
+    {
+      "link": {
+        "href": "",
+        "text": "Contact"
+      }
+    }
+  ]
+}

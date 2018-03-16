@@ -31,6 +31,10 @@ web/sites/example.sites.php
 web/update.php
 web/web.config
 
+#Ignore theme
+web/themes/custom/02theme/.npm/node_modules
+web/themes/custom/02theme/.npm/bower_modules
+
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.
 
