@@ -1,8 +1,9 @@
 #!/bin/bash
 ssh -o "StrictHostKeyChecking no" raucaixanh04@35.186.148.73 << EOF
   cd /var/www/html/9mobile.vn
+  git fetch origin
   git checkout dev
-  git pull origin dev
+  git merge -X theirs origin/dev
   composer install
   cd web && drush updb -y
   drush cim --source=../config -y
