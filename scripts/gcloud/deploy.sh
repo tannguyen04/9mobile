@@ -1,4 +1,5 @@
 #!/bin/bash
+ssh -o "StrictHostKeyChecking no" raucaixanh04@35.186.148.73
 cd /var/www/html/9mobile.vn
 git pull origin dev
 composer install
