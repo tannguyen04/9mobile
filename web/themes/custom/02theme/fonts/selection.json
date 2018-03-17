@@ -303,7 +303,7 @@
   ],
   "height": 1024,
   "metadata": {
-    "name": "o2"
+    "name": "phones"
   },
   "preferences": {
     "showGlyphs": true,
@@ -314,7 +314,7 @@
     "fontPref": {
       "prefix": "icon-",
       "metadata": {
-        "fontFamily": "o2",
+        "fontFamily": "phones",
         "majorVersion": 1,
         "minorVersion": 0
       },
