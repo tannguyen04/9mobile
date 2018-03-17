@@ -52,8 +52,8 @@ jobs:
           source /root/google-cloud-sdk/path.bash.inc
           gcloud --quiet components update
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
-          echo $SSH_KEY >> ~/.ssh/known_hosts
-          ssh raucaixanh04@35.186.148.73 
+          #echo $SSH_KEY >> ~/.ssh/known_hosts
+          ssh -v raucaixanh04@35.186.148.73 
           gcloud info
   # test:
   #   <<: *defaults
