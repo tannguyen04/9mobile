@@ -53,7 +53,7 @@ jobs:
           gcloud --quiet components update
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
           #echo $SSH_KEY >> ~/.ssh/known_hosts
-          ssh -v raucaixanh04@35.186.148.73 
+          ssh -o "StrictHostKeyChecking no" raucaixanh04@35.186.148.73 
           gcloud info
   # test:
   #   <<: *defaults
