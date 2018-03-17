@@ -15,8 +15,7 @@
 ## Work with theme
 We use `spectre` theme for styling 9mobile.vn
 ```
-cd web/themes/custom/spectre
-bower install
+cd web/themes/custom/spectre/.npm && npm install && gulp
 
 ```
 Please setup sass for local machine and free use sass. For more information please visit here https://sass-lang.com/
@@ -24,10 +23,5 @@ Please setup sass for local machine and free use sass. For more information plea
 We use `bower` for manage external libraries (update, install). More information to use `bower` please visit here https://bower.io/
 
 Install new external library `bower install PACKAGE --save`
-### Style guide driven
-We use pattern lab for working in style guide driven
-```
-cd web/themes/custom/spectre/pattern-lab
-composer start
-```
+
 For more information how to use pattern lab please visit here http://patternlab.io/
