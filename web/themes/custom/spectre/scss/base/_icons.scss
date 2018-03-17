@@ -1,0 +1,64 @@
+%icons {
+  font-family: 'phones';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  &:before {
+    @extend %icons;
+  }
+}
+
+.icon-chevron-down:before {
+  content: "\e900";
+}
+.icon-plus:before {
+  content: "\e901";
+}
+.icon-triangle-down:before {
+  content: "\e902";
+}
+.icon-arrow-down:before {
+  content: "\e903";
+}
+.icon-play:before {
+  content: "\e905";
+}
+.icon-instagram:before {
+  content: "\e906";
+}
+.icon-twitter:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-facebook-f:before {
+  content: "\e908";
+}
+.icon-magnifying-glass:before {
+  content: "\e909";
+}
+.icon-search:before {
+  content: "\e909";
+}
+.icon-glass:before {
+  content: "\e909";
+}
+.icon-magnifier:before {
+  content: "\e909";
+}
+.icon-lookup:before {
+  content: "\e909";
+}
+.icon-cheveron-right:before {
+  content: "\e904";
+}

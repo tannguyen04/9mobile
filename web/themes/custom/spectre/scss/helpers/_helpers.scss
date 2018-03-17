@@ -1,0 +1,51 @@
+.link--arrow {
+  font-size: .875em;
+  position: relative;
+  display: block;
+  @include FrutigerRoman;
+  padding-left: rem(20px);
+  margin-bottom: rem(8px);
+
+  &:before {
+    @extend %icons;
+    @extend .icon-cheveron-right;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: rem(12px);
+    border: rem(1px) solid $primary-color;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  &__cicle-blig {
+    font-size: rem(1.3125rem);
+    padding-left: rem(28px);
+
+    @include susy-media(tablet) {
+      font-size: 1.5625rem;
+    }
+
+    &:before {
+      font-size: rem(18px);
+    }
+  }
+}
+
+.bg {
+  &--secondary {
+    background-color: $secondary-color;
+  }
+
+  &--primary{
+    background-color: $primary-color;
+  }
+
+  &-light {
+    &--gray {
+      background-color: $gray-ef;
+    }
+  }
+}
