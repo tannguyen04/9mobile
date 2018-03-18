@@ -1,0 +1,21 @@
+uuid: 0be7d580-6f60-4d49-bcd3-ff7da82339c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.accessory
+    - field.storage.commerce_product_variation.field_badge
+  module:
+    - options
+id: commerce_product_variation.accessory.field_badge
+field_name: field_badge
+entity_type: commerce_product_variation
+bundle: accessory
+label: Badge
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
