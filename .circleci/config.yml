@@ -15,25 +15,25 @@ defaults: &defaults
   working_directory: /var/www/html
 version: 2
 jobs:
-  # build:
-  #   <<: *defaults
-  #   steps:
-  #     - checkout
-  #     - add_ssh_keys:
-  #         fingerprints:
-  #           - "6f:50:74:c1:cb:66:d5:27:4c:65:6a:40:02:a2:a4:61"
-  #     #- run:
-  #         name: Composer install
-  #         command: composer install --dev
-  #     #- run:
-  #         name: Install Drupal site A
-  #         command: vendor/drupal/console/bin/drupal site:install  standard --account-name="admin" --site-mail="admin@example.com" --site-name="drupal8" --db-name="drupal8_circleci" --db-user="root" --db-pass="sentius" --no-interaction
-  #     - run:
-  #         name: Access Matbao hosting & go to iphonebacgiang.com directory
-  #         command: echo $SSH_KEY >> ~/.ssh/known_hosts && chmod +x ./deploy.sh
-  #     - run:
-  #         name: Deploy nao
-  #         command: ./deploy.sh
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "6f:50:74:c1:cb:66:d5:27:4c:65:6a:40:02:a2:a4:61"
+      - run:
+          name: Composer install
+          command: composer install --dev
+      - run:
+          name: Install Drupal site A
+          command: vendor/drupal/console/bin/drupal site:install  standard --account-name="admin" --site-mail="admin@example.com" --site-name="drupal8" --db-name="drupal8_circleci" --db-user="root" --db-pass="sentius" --no-interaction
+      - run:
+          name: Import config
+          command: vendor/drupal/console/bin/drupal config:import --directory=config
+      - run: |
+          vendor/drupal/console/bin/drupal update:execute
+          vendor/drupal/console/bin/drupal cr all
   deploy_9mobile_google_cloud:
     <<: *defaults
     steps:
@@ -71,7 +71,10 @@ workflows:
   checking_standard_code_and_build:
     jobs:
       - checking_standard_code
+      - test
       - deploy_9mobile_google_cloud:
+          requires:
+            - test
           filters:
             branches:
               only: dev
