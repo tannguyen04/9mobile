@@ -1,0 +1,20 @@
+{
+  "pageHeading": {
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "//unsplash.it/1400/130",
+            "alt": "Image",
+            "width": "1400",
+            "height": "130"
+          }
+        },
+        "only": true
+      }
+    },
+    "pageTitle": "Shop",
+    "description" : "Get free delivery on all our products"
+  }
+}

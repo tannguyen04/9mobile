@@ -31,7 +31,11 @@
 }
 
 @mixin FrutigerLight {
-  font-family: "Frutiger LT 45 Light", Helvetica, Arial, sans-serif;
+  font-family: "FrutigerLT45LightRegular", sans-serif;
+}
+
+@mixin FrutigerLightItalic {
+  font-family: "FrutigerLightItalic", sans-serif;
 }
 
 @mixin FrutigerRoman {
