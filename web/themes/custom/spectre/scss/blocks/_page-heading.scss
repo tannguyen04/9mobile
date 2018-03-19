@@ -1,13 +1,9 @@
 .page-heading {
-  height: rem(160px);
+  height: rem(60px);
   overflow: hidden;
   position: relative;
 
-  @include susy-media(tabletOnly) {
-    height: rem(200px);
-  }
-
-  @include susy-media(desktop) {
+  @include susy-media(tablet) {
     height: rem(130px);
   }
 
@@ -22,6 +18,10 @@
       top: 50%;
       transform: translate(-50%, -50%);
       width: auto;
+
+      @include susy-media(mobileOnly) {
+        height: auto;
+      }
     }
   }
 
@@ -39,17 +39,23 @@
     z-index: 2;
     color: $white;
 
-    @include susy-media(mobileTabletOnly) {
+    @include susy-media(mobileOnly) {
       padding: rem(0 10px);
+    }
+  }
+
+  .page-title {
+    @include susy-media(mobileOnly) {
+      font-size: 1.5em;
     }
   }
 
   &__description {
     @include FrutigerLightItalic;
-    font-size: 1em;
+    font-size: 1.125em;
 
-    @include susy-media(tablet) {
-      font-size: 1.125em;
+    @include susy-media(mobileOnly) {
+      display: none;
     }
   }
 }
