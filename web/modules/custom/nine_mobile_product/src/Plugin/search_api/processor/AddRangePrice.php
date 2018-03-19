@@ -37,7 +37,7 @@ class AddRangePrice extends ProcessorPluginBase {
         'processor_id' => $this->getPluginId(),
       ];
       $properties['product_range_price'] = new ProcessorProperty($definition);
-      //$properties['product_range_front_camera'] = new ProcessorProperty($definition);
+      // $properties['product_range_front_camera'] = new ProcessorProperty($definition);
     }
 
     return $properties;
@@ -47,10 +47,10 @@ class AddRangePrice extends ProcessorPluginBase {
    * {@inheritdoc}
    */
   public function addFieldValues(ItemInterface $item) {
-    $prices = array();
+    $prices = [];
     $product = $item->getOriginalObject();
     $product_variations = $product->getValue()->getVariations();
-    //Add range price
+    // Add range price.
     $range_price = '';
     foreach ($product_variations as $variation) {
       if (!$variation->isActive()) {
@@ -59,11 +59,14 @@ class AddRangePrice extends ProcessorPluginBase {
       $price = (int) $variation->getPrice()->getNumber();
       if ($price <= 3000000) {
         $range_price = '<=3000000';
-      }elseif ($price >= 3000000 && $price <= 6000000) {
+      }
+      elseif ($price >= 3000000 && $price <= 6000000) {
         $range_price = '3000000-6000000';
-      }elseif ($price >= 6000000 && $price <= 9000000) {
+      }
+      elseif ($price >= 6000000 && $price <= 9000000) {
         $range_price = '6000000-9000000';
-      }else {
+      }
+      else {
         $range_price = '>=9000000';
       }
       if (!empty($range_price)) {
@@ -77,4 +80,5 @@ class AddRangePrice extends ProcessorPluginBase {
       }
     }
   }
+
 }

@@ -26,6 +26,9 @@ class ScrollspyProductBlock extends BlockBase {
 
 }
 
+/**
+ *
+ */
 function commerce_product_load() {
   return 'tan';
 }

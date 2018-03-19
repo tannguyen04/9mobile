@@ -1,13 +1,11 @@
 <?php
+
 namespace Drupal\nine_mobile_product\Plugin\facets\widget;
 
 use Drupal\facets\FacetInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\facets\Plugin\facets\widget\LinksWidget;
 use Drupal\facets\Result\Result;
-use Drupal\facets\Result\ResultInterface;
-
-
 
 /**
  * The checkbox ajax widget.
@@ -19,6 +17,7 @@ use Drupal\facets\Result\ResultInterface;
  * )
  */
 class AjaxCheckboxWidget extends LinksWidget {
+
   /**
    * {@inheritdoc}
    */
@@ -34,7 +33,7 @@ class AjaxCheckboxWidget extends LinksWidget {
         return $this->buildListItems($facet, $result);
       }
     }, $facet->getResults());
-    $build['tan'] = array('#markup' => 'asdd');
+    $build['tan'] = ['#markup' => 'asdd'];
 
     return $build;
   }
@@ -45,12 +44,13 @@ class AjaxCheckboxWidget extends LinksWidget {
   public function buildConfigurationForm(array $form, FormStateInterface $form_state, FacetInterface $facet) {
     $config = $this->getConfiguration();
     $form = parent::buildConfigurationForm($form, $form_state, $facet);
-    $form['numeric_value'] = array(
+    $form['numeric_value'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Values'),
       '#required' => TRUE,
       '#default_value' => $config['numeric_value'],
-    );
+    ];
     return $form;
   }
+
 }

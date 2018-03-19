@@ -5,13 +5,8 @@ namespace Drupal\nine_mobile_product\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Ajax\AjaxResponse;
-use Drupal\Core\Ajax\AlertCommand;
-use Drupal\Core\Ajax\HtmlCommand;
-use Drupal\Core\Ajax\ReplaceCommand;
-use Drupal\Core\Ajax\AppendCommand;
 use Drupal\Core\Ajax\InvokeCommand;
 use Drupal\Core\Field\FieldItemListInterface;
-use CommerceGuys\Intl\Formatter\NumberFormatterInterface;
 use Drupal\commerce_price\NumberFormatterFactoryInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -37,7 +32,7 @@ class NineMobileProductSelectAttributesForm extends FormBase {
     $this->numberFormatter = $number_formatter_factory->createInstance();
     $this->numberFormatter->setMaximumFractionDigits(6);
     $this->numberFormatter->setMinimumFractionDigits(0);
-    //$this->numberFormatter->setCurrencyDisplay(NumberFormatterInterface::CURRENCY_DISPLAY_CODE);
+    // $this->numberFormatter->setCurrencyDisplay(NumberFormatterInterface::CURRENCY_DISPLAY_CODE);.
   }
 
   /**
@@ -62,9 +57,9 @@ class NineMobileProductSelectAttributesForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state, FieldItemListInterface $items = NULL) {
     $form['#attached']['library'][] = 'nine_mobile_product/mobile_product_select_attributes';
-    $product_variation_ids = array();
-    //Build array product variation with attributes
-    $product_variations = array();
+    $product_variation_ids = [];
+    // Build array product variation with attributes.
+    $product_variations = [];
     foreach ($items as $delta => $item) {
       $product_variation = $item->entity;
       $currency_codes[] = $product_variation->getPrice()->getCurrencyCode();
@@ -83,106 +78,110 @@ class NineMobileProductSelectAttributesForm extends FormBase {
       if (!$product_variation->get('field_badge')->isEmpty()) {
         $price = $product_variation->get('field_badge')->first()->view();
         $price = \Drupal::service('renderer')->render($price);
-      }else {
+      }
+      else {
         $price = $product_variation->getPrice()->getNumber();
         $price = $this->numberFormatter->formatCurrency($price, $currency);
       }
-      $product_variations[] = array(
+      $product_variations[] = [
         'product_variant_id' => $product_variation->Id(),
-        'attribute_color' => array(
+        'attribute_color' => [
           'name' => $product_variation->getAttributeValue('attribute_color')->label(),
           'id' => $product_variation->getAttributeValue('attribute_color')->Id(),
           'hex' => $color['color'],
-        ),
-        'attribute_memory' => array(
+        ],
+        'attribute_memory' => [
           'name' => $product_variation->getAttributeValue('attribute_memory')->label(),
           'id' => $product_variation->getAttributeValueId('attribute_memory'),
-        ),
+        ],
         'price' => $price,
-      );
+      ];
     }
-    //Set product variation in form stata
+    // Set product variation in form stata.
     $form_state->set('product_variations', $product_variations);
-    //Get color by product variant id
+    // Get color by product variant id.
     $product_variation_default = $product_variations[0];
-    $options_color = array();
-    $list_color = array();
+    $options_color = [];
+    $list_color = [];
     foreach ($product_variations as $key => $value) {
       $options_color[$value['attribute_color']['id']] = $value['attribute_color']['name'];
-      $list_color[$value['attribute_color']['id']] = array(
-        '#wrapper_attributes' => array(
-          'style' => 'background-color: '.$value['attribute_color']['hex'].'; width: 37px; height: 37px;',
+      $list_color[$value['attribute_color']['id']] = [
+        '#wrapper_attributes' => [
+          'style' => 'background-color: ' . $value['attribute_color']['hex'] . '; width: 37px; height: 37px;',
           'data-color-id' => $value['attribute_color']['id'],
-        ),
-        '#markup' => ''
-      );
+        ],
+        '#markup' => '',
+      ];
     }
     $color_ids = array_keys($list_color);
     if (!empty($color_ids)) {
       $list_color[$color_ids[0]]['#wrapper_attributes']['class'] = 'active';
     }
-    $form['attribute_color_list'] = array(
+    $form['attribute_color_list'] = [
       '#theme' => 'item_list',
       '#items' => $list_color,
-      '#attributes' => array(
-        'class' => array('product__attributes-colors')
-      ),
-    );
-    $form['attribute_color'] = array(
+      '#attributes' => [
+        'class' => ['product__attributes-colors'],
+      ],
+    ];
+    $form['attribute_color'] = [
       '#title' => 'Color',
       '#type' => 'select',
       '#options' => $options_color,
       '#default_value' => $product_variation_default['attribute_color']['id'],
-      '#ajax' => array(
-        'callback' => '::ajaxCallback'
-      ),
+      '#ajax' => [
+        'callback' => '::ajaxCallback',
+      ],
       '#prefix' => '<div class="hidden">',
       '#suffix' => '</div>',
-    );
+    ];
 
-    //We need get list memory base on color
-    $memory_options = array();
-    $list_memory = array();
+    // We need get list memory base on color.
+    $memory_options = [];
+    $list_memory = [];
     foreach ($product_variations as $key => $value) {
       if ($product_variation_default['attribute_color']['id'] == $value['attribute_color']['id']) {
         $memory_options[$value['attribute_memory']['id']] = $value['attribute_memory']['name'];
-        $list_memory[$value['attribute_memory']['id']] = array(
-          '#wrapper_attributes' => array(
+        $list_memory[$value['attribute_memory']['id']] = [
+          '#wrapper_attributes' => [
             'data-memory-id' => $value['attribute_memory']['id'],
-          ),
-          '#markup' => $value['attribute_memory']['name']
-        );
+          ],
+          '#markup' => $value['attribute_memory']['name'],
+        ];
       }
     }
     $memory_ids = array_keys($list_memory);
     if (!empty($memory_ids)) {
       $list_memory[$memory_ids[0]]['#wrapper_attributes']['class'] = 'active';
     }
-    $form['attribute_memory_list'] = array(
+    $form['attribute_memory_list'] = [
       '#theme' => 'item_list',
       '#items' => $list_memory,
-      '#attributes' => array(
-        'class' => array('product__attributes-memory')
-      ),
-      //'#title' => t('Memory'),
-    );
-    $form['attribute_memory'] = array(
+      '#attributes' => [
+        'class' => ['product__attributes-memory'],
+      ],
+      // '#title' => t('Memory'),.
+    ];
+    $form['attribute_memory'] = [
       '#type' => 'select',
       '#options' => $memory_options,
       '#default_value' => $product_variation_default['attribute_memory']['id'],
-      '#ajax' => array(
-        'callback' => '::ajaxCallback'
-      ),
+      '#ajax' => [
+        'callback' => '::ajaxCallback',
+      ],
       '#validated' => TRUE,
       '#prefix' => '<div class="hidden">',
       '#suffix' => '</div>',
-    );
+    ];
     return $form;
   }
 
+  /**
+   *
+   */
   public function ajaxCallback(array $form, FormStateInterface $form_state, $items) {
     $response = new AjaxResponse();
-    $memory_options = array();
+    $memory_options = [];
     $product_variations = $form_state->get('product_variations');
     $product_variation_default = $product_variations[0];
     $trigger_element = $form_state->getTriggeringElement();
@@ -196,22 +195,24 @@ class NineMobileProductSelectAttributesForm extends FormBase {
             $product_variation_default = $product_variations[$key];
             $selected = 'selected="selected"';
             $active = 'class="active"';
-          }else {
+          }
+          else {
             $selected = '';
             $active = '';
           }
           $i++;
-          $memory_options[$value['attribute_memory']['id']] = '<option '.$selected.' value="'.$value['attribute_memory']['id'].'">'.$value['attribute_memory']['name'].'</option>';
-          $memory_list[$value['attribute_memory']['id']] = '<li '.$active.' data-memory-id="'.$value['attribute_memory']['id'].'">'.$value['attribute_memory']['name'].'</li>';
+          $memory_options[$value['attribute_memory']['id']] = '<option ' . $selected . ' value="' . $value['attribute_memory']['id'] . '">' . $value['attribute_memory']['name'] . '</option>';
+          $memory_list[$value['attribute_memory']['id']] = '<li ' . $active . ' data-memory-id="' . $value['attribute_memory']['id'] . '">' . $value['attribute_memory']['name'] . '</li>';
         }
       }
       $price = $product_variation_default['price'];
       $memory_options = implode('', $memory_options);
       $memory_list = implode('', $memory_list);
-      $response->addCommand(new InvokeCommand('#edit-attribute-memory', 'html', array($memory_options)));
-      $response->addCommand(new InvokeCommand('.product__attributes-memory', 'html', array($memory_list)));
-    }else {
-      //Get Price
+      $response->addCommand(new InvokeCommand('#edit-attribute-memory', 'html', [$memory_options]));
+      $response->addCommand(new InvokeCommand('.product__attributes-memory', 'html', [$memory_list]));
+    }
+    else {
+      // Get Price.
       foreach ($product_variations as $key => $value) {
         if ($value['attribute_color']['id'] == $color_id && $value['attribute_memory']['id'] == $memory_id) {
           $product_variation_default = $product_variations[$key];
@@ -220,13 +221,13 @@ class NineMobileProductSelectAttributesForm extends FormBase {
         }
       }
     }
-    $response->addCommand(new InvokeCommand('.field--name-price .field__item', 'html', array($price)));
+    $response->addCommand(new InvokeCommand('.field--name-price .field__item', 'html', [$price]));
     return $response;
   }
 
   /**
-    * {@inheritdoc}
-    */
+   * {@inheritdoc}
+   */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     parent::validateForm($form, $form_state);
   }
@@ -237,7 +238,7 @@ class NineMobileProductSelectAttributesForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     // Display result.
     foreach ($form_state->getValues() as $key => $value) {
-        drupal_set_message($key . ': ' . $value);
+      drupal_set_message($key . ': ' . $value);
     }
 
   }

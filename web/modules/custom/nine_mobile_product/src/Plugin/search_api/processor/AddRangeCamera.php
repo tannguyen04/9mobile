@@ -56,16 +56,18 @@ class AddRangeCamera extends ProcessorPluginBase {
   public function addFieldValues(ItemInterface $item) {
     $origin_object = $item->getOriginalObject();
     $product = $origin_object->getValue();
-    //Add value for product_range_front_camera
+    // Add value for product_range_front_camera.
     $range_front_camera = '';
     if ($product->hasField('field_front_camera') && !$product->get('field_front_camera')->isEmpty()) {
       $front_camera_pixel = $product->get('field_front_camera')->first()->getValue();
       $front_camera_pixel = floatval($front_camera_pixel['value']);
       if ($front_camera_pixel <= 3) {
         $range_front_camera = '<=3';
-      }elseif ($front_camera_pixel >= 3 && $front_camera_pixel <= 8) {
+      }
+      elseif ($front_camera_pixel >= 3 && $front_camera_pixel <= 8) {
         $range_front_camera = '3-8';
-      }else {
+      }
+      else {
         $range_front_camera = '>=8';
       }
       if (!empty($range_front_camera)) {
@@ -78,16 +80,18 @@ class AddRangeCamera extends ProcessorPluginBase {
         }
       }
     }
-    //Add value for product_range_back_camera
+    // Add value for product_range_back_camera.
     $range_back_camera = '';
     if ($product->hasField('field_back_camera') && !$product->get('field_back_camera')->isEmpty()) {
       $front_camera_pixel = $product->get('field_back_camera')->first()->getValue();
       $front_camera_pixel = floatval($front_camera_pixel['value']);
       if ($front_camera_pixel <= 5) {
         $range_back_camera = '<=5';
-      }elseif ($price >= 5 && $price <= 12) {
+      }
+      elseif ($price >= 5 && $price <= 12) {
         $range_back_camera = '5-12';
-      }else {
+      }
+      else {
         $range_back_camera = '>=12';
       }
       if (!empty($range_back_camera)) {
@@ -102,4 +106,5 @@ class AddRangeCamera extends ProcessorPluginBase {
     }
 
   }
+
 }

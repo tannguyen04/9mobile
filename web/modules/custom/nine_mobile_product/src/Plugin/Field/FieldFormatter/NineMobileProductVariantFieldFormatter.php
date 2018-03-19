@@ -7,7 +7,7 @@ use Drupal\Core\Field\FieldItemInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Form\FormState;
+
 /**
  * Plugin implementation of the 'product_variant_field_formatter' formatter.
  *
@@ -45,7 +45,6 @@ class NineMobileProductVariantFieldFormatter extends FormatterBase {
   public function settingsSummary() {
     $summary = [];
     // Implement settings summary.
-
     return $summary;
   }
 

@@ -19,11 +19,11 @@ class Libre8MauticCreateUser extends ControllerBase {
    */
   public function CreateUser() {
     $submission = \Drupal::request()->request->get('mautic.form_on_submit');
-    $message = array(
-      'tan' => 'tam'
-    );
+    $message = [
+      'tan' => 'tam',
+    ];
     if (!empty($submission)) {
-      \Drupal::logger('my_module')->error(''. print_r($submission, TRUE) .'');
+      \Drupal::logger('my_module')->error('' . print_r($submission, TRUE) . '');
     }
 
     return [

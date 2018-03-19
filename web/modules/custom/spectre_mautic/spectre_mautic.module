@@ -5,6 +5,7 @@
  * Contains spectre_mautic.module.
  */
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Mautic\MauticApi;
 use Mautic\Auth\ApiAuth;
@@ -28,14 +29,14 @@ function spectre_mautic_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_entity_insert()
  */
-function spectre_mautic_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+function spectre_mautic_entity_insert(EntityInterface $entity) {
   if ($entity->getEntityTypeId() == 'user') {
-    $settings = array(
+    $settings   = [
       'userName'   => 'admin',
-      'password'   => 'admin@123'
-    );
-    $initAuth = new ApiAuth();
-    $auth = $initAuth->newAuth($settings, 'BasicAuth');
+      'password'   => 'admin@123',
+    ];
+    $initAuth   = new ApiAuth();
+    $auth       = $initAuth->newAuth($settings, 'BasicAuth');
     $apiUrl     = "http://mautic.ffwvn.com";
     $api        = new MauticApi();
     $contactApi = $api->newApi("contacts", $auth, $apiUrl);
@@ -43,12 +44,12 @@ function spectre_mautic_entity_insert(Drupal\Core\Entity\EntityInterface $entity
     $first_name = $entity->getDisplayName();
     $email = $entity->getEmail();
 
-    $data = array(
+    $data = [
       'firstname' => $first_name,
       'email'     => $email,
       'ipAddress' => $_SERVER['REMOTE_ADDR'],
-    );
-    // if (isset($_COOKIE['mtc_sid'])) {
+    ];
+    // If (isset($_COOKIE['mtc_sid'])) {
     //   $data['mtc_sid'] = $_COOKIE['mtc_sid'];
     // }
     // if (isset($_COOKIE['mtc_id'])) {
@@ -61,7 +62,7 @@ function spectre_mautic_entity_insert(Drupal\Core\Entity\EntityInterface $entity
     $contact = $contactApi->create($data);
     if (isset($contact['contact']['id'])) {
       $campaignApi = $api->newApi("campaigns", $auth, $apiUrl);
-      $response = $campaignApi->addContact(9 , $contact['contact']['id']);
+      $response = $campaignApi->addContact(9, $contact['contact']['id']);
       if (!isset($response['success'])) {
         drupal_set_message(t('Add to Welcome campaign'), 'status');
       }
@@ -71,8 +72,8 @@ function spectre_mautic_entity_insert(Drupal\Core\Entity\EntityInterface $entity
 }
 
 /**
- * Implements hook_page_attachments_alter();
+ * Implements hook_page_attachments_alter();.
  */
 function spectre_mautic_page_attachments_alter(&$page) {
-  //$page['#attached']['library'][] = 'spectre_mautic/mautic-tracking-js';
+  // $page['#attached']['library'][] = 'spectre_mautic/mautic-tracking-js';.
 }

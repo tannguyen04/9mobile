@@ -48,15 +48,17 @@ class AddRangeInternalMemory extends ProcessorPluginBase {
   public function addFieldValues(ItemInterface $item) {
     $origin_object = $item->getOriginalObject();
     $product = $origin_object->getValue();
-    //Add value for product_range_internal_memory
+    // Add value for product_range_internal_memory.
     if ($product->hasField('field_internal_memory') && !$product->get('field_internal_memory')->isEmpty()) {
       $internal_memory = $product->get('field_internal_memory')->first()->getValue();
       $internal_memory = (int) $internal_memory['value'];
       if ($internal_memory <= 32) {
         $range_internal_memory = '<=32';
-      }elseif ($internal_memory >= 32 && $internal_memory <= 128) {
+      }
+      elseif ($internal_memory >= 32 && $internal_memory <= 128) {
         $range_internal_memory = '32-128';
-      }else {
+      }
+      else {
         $range_internal_memory = '>=128';
       }
       if (isset($range_internal_memory)) {
@@ -70,4 +72,5 @@ class AddRangeInternalMemory extends ProcessorPluginBase {
       }
     }
   }
+
 }

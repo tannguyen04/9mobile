@@ -18,6 +18,7 @@ use Drupal\commerce_product\Entity\ProductAttributeInterface;
  * )
  */
 class NineMobileProductAttributesOverview extends ProductAttributesOverview {
+
   /**
    * Gets the renderable item list of attributes.
    *
@@ -52,4 +53,5 @@ class NineMobileProductAttributesOverview extends ProductAttributesOverview {
 
     return $build;
   }
+
 }

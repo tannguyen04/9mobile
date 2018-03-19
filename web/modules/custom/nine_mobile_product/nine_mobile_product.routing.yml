@@ -23,4 +23,3 @@ nine_mobile_product.nine_mobile_product_select_attributes_form:
     _title: 'NineMobileProductSelectAttributesForm'
   requirements:
     _access: 'TRUE'
-  

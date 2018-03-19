@@ -48,15 +48,17 @@ class AddRangeSizeScreen extends ProcessorPluginBase {
   public function addFieldValues(ItemInterface $item) {
     $origin_object = $item->getOriginalObject();
     $product = $origin_object->getValue();
-    //Add value for product_range_capacity_power
+    // Add value for product_range_capacity_power.
     if ($product->hasField('field_size_screen') && !$product->get('field_size_screen')->isEmpty()) {
       $size_screen = $product->get('field_size_screen')->first()->getValue();
       $size_screen = floatval($size_screen['value']);
       if ($size_screen <= 4) {
         $range_size_screen = '<=4';
-      }elseif ($size_screen >= 4 && $size_screen <= 6) {
+      }
+      elseif ($size_screen >= 4 && $size_screen <= 6) {
         $range_size_screen = '4-6';
-      }else {
+      }
+      else {
         $range_size_screen = '>=6';
       }
       if (isset($range_size_screen)) {
@@ -70,4 +72,5 @@ class AddRangeSizeScreen extends ProcessorPluginBase {
       }
     }
   }
+
 }

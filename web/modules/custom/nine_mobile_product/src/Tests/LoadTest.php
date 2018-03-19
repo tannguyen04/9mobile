@@ -10,7 +10,7 @@ use Drupal\simpletest\WebTestBase;
  *
  * @group nine_mobile_product
  */
-class LoadTest extends WebTestBase{
+class LoadTest extends WebTestBase {
 
   /**
    * Modules to enable.

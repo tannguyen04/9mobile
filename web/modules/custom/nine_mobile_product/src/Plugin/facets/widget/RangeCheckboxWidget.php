@@ -4,8 +4,6 @@ namespace Drupal\nine_mobile_product\Plugin\facets\widget;
 
 use Drupal\facets\FacetInterface;
 use Drupal\facets\Plugin\facets\widget\CheckboxWidget;
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\facets\Widget\WidgetPluginBase;
 
 /**
  * The range checkbox / radios widget.
@@ -28,27 +26,29 @@ class RangeCheckboxWidget extends CheckboxWidget {
   }
 
   /**
-   * Build new result for display range facet
+   * Build new result for display range facet.
    */
   public function build_new_results(FacetInterface $facet) {
-    //Rebuild new results with new display value
+    // Rebuild new results with new display value.
     $field_identifier = $facet->getFieldIdentifier();
-    $new_results = array();
+    $new_results = [];
     switch ($field_identifier) {
       case 'product_range_price':
         $results = $facet->getResults();
         foreach ($results as $result) {
           $raw_value = $result->getRawValue();
           $display_value = $raw_value;
-          if(strpos($raw_value, '<=') === 0) {
+          if (strpos($raw_value, '<=') === 0) {
             $range = explode('<=', $raw_value);
-            $display_value = t('Nhỏ hơn @price', array('@price' => $range[1]));
-          }elseif(strpos($raw_value, '-')) {
+            $display_value = t('Nhỏ hơn @price', ['@price' => $range[1]]);
+          }
+          elseif (strpos($raw_value, '-')) {
             $range = explode('-', $raw_value);
-            $display_value = t('Từ @from_price đến @to_price', array('@from_price' => $range[0], '@to_price' => $range[1]));
-          }elseif (strpos($raw_value, '>=') === 0) {
+            $display_value = t('Từ @from_price đến @to_price', ['@from_price' => $range[0], '@to_price' => $range[1]]);
+          }
+          elseif (strpos($raw_value, '>=') === 0) {
             $range = explode('>=', $raw_value);
-            $display_value = t('Lớn hơn @price', array('@price' => $range[1]));
+            $display_value = t('Lớn hơn @price', ['@price' => $range[1]]);
           }
           $result->setDisplayValue($display_value);
           $new_results[] = $result;
@@ -64,15 +64,17 @@ class RangeCheckboxWidget extends CheckboxWidget {
         foreach ($results as $result) {
           $raw_value = $result->getRawValue();
           $display_value = $raw_value;
-          if(strpos($raw_value, '<=') === 0) {
+          if (strpos($raw_value, '<=') === 0) {
             $range = explode('<=', $raw_value);
-            $display_value = t('Nhỏ hơn @camera_pixel', array('@camera_pixel' => $range[1]));
-          }elseif(strpos($raw_value, '-')) {
+            $display_value = t('Nhỏ hơn @camera_pixel', ['@camera_pixel' => $range[1]]);
+          }
+          elseif (strpos($raw_value, '-')) {
             $range = explode('-', $raw_value);
-            $display_value = t('Từ @from đến @to', array('@from' => $range[0], '@to' => $range[1]));
-          }elseif (strpos($raw_value, '>=') === 0) {
+            $display_value = t('Từ @from đến @to', ['@from' => $range[0], '@to' => $range[1]]);
+          }
+          elseif (strpos($raw_value, '>=') === 0) {
             $range = explode('>=', $raw_value);
-            $display_value = t('Lớn hơn @camera_pixel', array('@camera_pixel' => $range[1]));
+            $display_value = t('Lớn hơn @camera_pixel', ['@camera_pixel' => $range[1]]);
           }
           $result->setDisplayValue($display_value);
           $new_results[] = $result;
@@ -85,4 +87,5 @@ class RangeCheckboxWidget extends CheckboxWidget {
     }
     $facet->setResults($new_results);
   }
+
 }

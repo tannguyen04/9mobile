@@ -48,15 +48,17 @@ class AddRangeCapacityPower extends ProcessorPluginBase {
   public function addFieldValues(ItemInterface $item) {
     $origin_object = $item->getOriginalObject();
     $product = $origin_object->getValue();
-    //Add value for product_range_capacity_power
+    // Add value for product_range_capacity_power.
     if ($product->hasField('field_capacity_power') && !$product->get('field_capacity_power')->isEmpty()) {
       $capacity_power = $product->get('field_capacity_power')->first()->getValue();
       $capacity_power = (int) $capacity_power['value'];
       if ($capacity_power <= 3000) {
         $range_capacity_power = '<=3000';
-      }elseif ($capacity_power >= 3000 && $capacity_power <= 5000) {
+      }
+      elseif ($capacity_power >= 3000 && $capacity_power <= 5000) {
         $range_capacity_power = '3000-5000';
-      }else {
+      }
+      else {
         $range_capacity_power = '>=5000';
       }
       if (isset($range_capacity_power)) {
@@ -70,4 +72,5 @@ class AddRangeCapacityPower extends ProcessorPluginBase {
       }
     }
   }
+
 }
