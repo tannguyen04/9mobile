@@ -19,12 +19,20 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "c6:a8:cc:ad:e4:fe:de:62:c6:e4:20:0a:e1:f8:ae:67"
       - run:
           name: Composer install
           command: composer install --dev
       - run:
           name: Install Drupal site A
           command: vendor/drupal/console/bin/drupal site:install  standard --account-name="admin" --site-mail="admin@example.com" --site-name="drupal8" --db-name="9mobilevn" --db-user="root" --db-pass="9mobilevn" --no-interaction
+      - run: |
+          ssh -o "StrictHostKeyChecking no" raucaixanh04@35.186.148.73 "cd /var/www/html/9mobile.vn/web && drush sql-dump --gzip --result-file=../db-backup.sql && cd ../ && ls -l && exit"
+          scp raucaixanh04@35.186.148.73:/var/www/html/9mobile.vn/db-backup.sql.gz /var/www/html/db-backup.sql.gz
+          ssh -o "StrictHostKeyChecking no" raucaixanh04@35.186.148.73 "rm /var/www/html/9mobile.vn/db-backup.sql.gz"
+          gunzip db-backup.sql.gz && vendor/drupal/console/bin/drupal database:restore < db-backup.sql
       - run:
           name: Import config
           command: vendor/drupal/console/bin/drupal config:import --directory=../config
@@ -49,7 +57,6 @@ jobs:
           source /root/google-cloud-sdk/path.bash.inc
           gcloud --quiet components update
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
-          #echo $SSH_KEY >> ~/.ssh/known_hosts
           ./scripts/gcloud/deploy.sh
           gcloud info
   checking_standard_code:
