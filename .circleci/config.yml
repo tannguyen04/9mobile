@@ -27,7 +27,7 @@ jobs:
           command: vendor/drupal/console/bin/drupal site:install  standard --account-name="admin" --site-mail="admin@example.com" --site-name="drupal8" --db-name="9mobilevn" --db-user="root" --db-pass="9mobilevn" --no-interaction
       - run:
           name: Import config
-          command: vendor/drupal/console/bin/drupal config:import --directory=config
+          command: vendor/drupal/console/bin/drupal config:import --directory=../config
       - run: |
           vendor/drupal/console/bin/drupal update:execute
           vendor/drupal/console/bin/drupal cr all
