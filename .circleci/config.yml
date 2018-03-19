@@ -32,7 +32,7 @@ jobs:
           ssh -o "StrictHostKeyChecking no" raucaixanh04@35.186.148.73 "cd /var/www/html/9mobile.vn/web && drush sql-dump --gzip --result-file=../db-backup.sql && cd ../ && ls -l && exit"
           scp raucaixanh04@35.186.148.73:/var/www/html/9mobile.vn/db-backup.sql.gz /var/www/html/db-backup.sql.gz
           ssh -o "StrictHostKeyChecking no" raucaixanh04@35.186.148.73 "rm /var/www/html/9mobile.vn/db-backup.sql.gz"
-          gunzip db-backup.sql.gz && vendor/drupal/console/bin/drupal database:restore --file db-backup.sql
+          gunzip db-backup.sql.gz && vendor/drupal/console/bin/drupal database:restore --file db-backup.sql && vendor/drupal/console/bin/drupal cache:rebuild all
       - run:
           name: Import config
           command: vendor/drupal/console/bin/drupal config:import --directory=../config
