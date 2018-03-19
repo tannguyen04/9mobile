@@ -97,6 +97,8 @@
     "drupal/media_entity_image": "^1.2",
     "drupal/menu_block": "^1.4",
     "drupal/metatag": "^1.1",
+    "drupal/page_manager": "^4.0@beta",
+    "drupal/panels": "^4.2",
     "drupal/paragraphs": "^1.2",
     "drupal/pathauto": "^1.0",
     "drupal/redirect": "^1.0@beta",
@@ -115,19 +117,19 @@
     "webflo/drupal-core-strict": "^8.4"
   },
   "require-dev": {
-    "mikey179/vfsstream": "^1.2",
     "behat/behat": "3.*",
     "behat/mink": "^1.7",
     "behat/mink-extension": "^2.2",
     "behat/mink-goutte-driver": "^1.2",
-    "jcalderonzumba/gastonjs": "^1.0.2",
-    "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
+    "drupal/coder": "^8.2",
     "drupal/drupal-extension": "^3.1",
     "drush-ops/behat-drush-endpoint": "^0.0.4",
+    "jcalderonzumba/gastonjs": "^1.0.2",
+    "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
+    "mikey179/vfsstream": "^1.2",
     "pantheon-systems/quicksilver-pushback": "~1",
     "phpunit/phpunit": "^4.8",
-    "symfony/css-selector": "^2.8",
-    "drupal/coder": "^8.2"
+    "symfony/css-selector": "^2.8"
   },
   "conflict": {
       "drupal/drupal": "*"
@@ -194,6 +196,9 @@
     "patches": {
       "drupal/facets": {
         "critical error thrown": "https://www.drupal.org/files/issues/critical_error_thrown-2917323-14.patch"
+      },
+      "drupal/page_manager": {
+        "Update 'page_manager.variant_route_filter' service according to core changes": "https://www.drupal.org/files/issues/2918564-22.patch"
       }
     }
   },
