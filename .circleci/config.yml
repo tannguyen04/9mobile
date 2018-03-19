@@ -55,22 +55,22 @@ jobs:
           #echo $SSH_KEY >> ~/.ssh/known_hosts
           ./scripts/gcloud/deploy.sh
           gcloud info
-  # test:
-  #   <<: *defaults
-  #   steps:
-  #     - checkout
-  #     - run:
-  #         name: Composer install
-  #         command: composer install --dev
-  #     - run:
-  #         name: Set install paths for coder_sniffer
-  #         command: vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
-  #     - run: vendor/bin/phpcs --standard=Drupal web/core/modules/node/node.module
-  #     - run: echo "Hello Tan Tan ad"
+  checking_standard_code:
+     <<: *defaults
+     steps:
+       - checkout
+       - run:
+           name: Composer install
+           command: composer install --dev
+       - run:
+           name: Set install paths for coder_sniffer
+           command: vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
+       - run: vendor/bin/phpcs --standard=Drupal web/modules/custom && vendor/bin/phpcs --standard=Drupal web/modules/features
 workflows:
   version: 2
-  build_and_test:
+  checking_standard_code_and_build:
     jobs:
+      - checking_standard_code
       - deploy_9mobile_google_cloud:
           filters:
             branches:
