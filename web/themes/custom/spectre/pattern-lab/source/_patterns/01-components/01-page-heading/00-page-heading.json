@@ -5,7 +5,7 @@
         "pattern": "base-elements-image",
         "with": {
           "image": {
-            "src": "//unsplash.it/1400/130",
+            "src": "../../../../images/pageheading.png",
             "alt": "Image",
             "width": "1400",
             "height": "130"
