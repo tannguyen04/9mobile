@@ -31,9 +31,15 @@ web/sites/example.sites.php
 web/update.php
 web/web.config
 
+<<<<<<< HEAD
 # Ignore theme
 web/themes/custom/spectre/.npm/bower_components
 web/themes/custom/spectre/.npm/node_modules
+=======
+#Ignore theme
+web/themes/custom/02theme/.npm/node_modules
+web/themes/custom/02theme/.npm/bower_modules
+>>>>>>> master
 
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.

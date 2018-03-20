@@ -1,0 +1,31 @@
+@viewport{
+  zoom: 1;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1;
+}
+
+//Enable font-smoothing
+html {
+  @include FrutigerLight;
+  font-size: $base-font-size; // Don't modify static unit.
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  line-height: $base-line-height;
+  height: 100%;
+}
+
+body {
+  // Disable in production mode;
+  // @include show-breakpoints;
+  -webkit-tap-highlight-color: transparent;
+  color: $text-color;
+  font-size: rem(14px);
+  text-size-adjust: none;
+  word-wrap: break-word;
+  height: 100%;
+}
