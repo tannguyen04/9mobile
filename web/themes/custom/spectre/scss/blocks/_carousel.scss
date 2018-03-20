@@ -1,7 +1,13 @@
 .carousel {
-  height: rem(400px);
-  overflow: hidden;
-  position: relative;
+  &__item {
+    height: rem(400px);
+    overflow: hidden;
+    position: relative;
+
+    @include susy-media(desktopSuperWide) {
+      height: calc(100vw * 400 / 1400);
+    }
+  }
 
   &__media {
     img {
@@ -18,18 +24,30 @@
   }
 
   &__content {
-    align-content: stretch;
+    align-content: flex-start;
     align-items: stretch;
-    bottom: 0;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-flow: column wrap;
+    height: 100%;
     justify-content: center;
     left: 0;
+    padding-bottom: rem(50px);
     position: absolute;
-    right: 0;
-    text-align: center;
     top: 0;
-    z-index: 3;
+    width: 100%;
+    z-index: 2;
+
+    @include susy-media(tablet) {
+      justify-content: flex-end;
+      padding-bottom: rem(194px);
+    }
+
+    @include susy-media(desktopSuperWide) {
+      padding-bottom: calc((100vw * 400 / 1400) * 36 /100);
+    }
+  }
+
+  &__caption {
+    width: 100%;
   }
 }
