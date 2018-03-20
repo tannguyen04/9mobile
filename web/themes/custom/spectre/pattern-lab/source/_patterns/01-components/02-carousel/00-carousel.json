@@ -1,0 +1,114 @@
+{
+  "carousel": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-carousel-item",
+          "with": {
+            "carouselItem": {
+              "urlThumb": "../../images/carousel/thumb1.jpg",
+              "imageUrl": "../../images/carousel/carousel1.jpg",
+              "title": "Save £100 on iPad 9.7",
+              "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle-blig",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-carousel-item",
+          "with": {
+            "carouselItem": {
+              "urlThumb": "../../images/carousel/thumb2.jpg",
+              "imageUrl": "../../images/carousel/carousel2.jpg",
+              "title": "Save £100 on iPad 9.7",
+              "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle-blig",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-carousel-item",
+          "with": {
+            "carouselItem": {
+              "urlThumb": "../../images/carousel/thumb3.jpg",
+              "imageUrl": "../../images/carousel/carousel3.jpg",
+              "title": "Save £100 on iPad 9.7",
+              "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle-blig",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-carousel-item",
+          "with": {
+            "carouselItem": {
+              "urlThumb": "../../images/carousel/thumb4.jpg",
+              "imageUrl": "../../images/carousel/carousel4.jpg",
+              "title": "Save £100 on iPad 9.7",
+              "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle-blig",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}
