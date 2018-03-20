@@ -6,7 +6,10 @@
           "pattern": "components-carousel-item",
           "with": {
             "carouselItem": {
+              "bgColor": "bg-light--gray",
+              "position": "position--right",
               "urlThumb": "../../images/carousel/thumb1.jpg",
+              "titleImage": "Samsung Galaxy S9",
               "imageUrl": "../../images/carousel/carousel1.jpg",
               "title": "Save £100 on iPad 9.7",
               "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
@@ -33,7 +36,10 @@
           "pattern": "components-carousel-item",
           "with": {
             "carouselItem": {
+              "bgColor": "bg-light--gray",
+              "position": "position--right",
               "urlThumb": "../../images/carousel/thumb2.jpg",
+              "titleImage": "SIMO 20GB for £20",
               "imageUrl": "../../images/carousel/carousel2.jpg",
               "title": "Save £100 on iPad 9.7",
               "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
@@ -60,7 +66,10 @@
           "pattern": "components-carousel-item",
           "with": {
             "carouselItem": {
+              "bgColor": "bg-dark--black",
+              "position": "position--right",
               "urlThumb": "../../images/carousel/thumb3.jpg",
+              "titleImage": "iPhone 7",
               "imageUrl": "../../images/carousel/carousel3.jpg",
               "title": "Save £100 on iPad 9.7",
               "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
@@ -87,7 +96,10 @@
           "pattern": "components-carousel-item",
           "with": {
             "carouselItem": {
+              "bgColor": "bg-dark--black",
+              "position": "position--right",
               "urlThumb": "../../images/carousel/thumb4.jpg",
+              "titleImage": "iPad 9.7",
               "imageUrl": "../../images/carousel/carousel4.jpg",
               "title": "Save £100 on iPad 9.7",
               "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",

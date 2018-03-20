@@ -1,11 +1,13 @@
-<div class="carousel__item">
-  <div class="carousel__media"><img data-thumb="{{ carouselItem.urlThumb }}" src="{{ carouselItem.imageUrl }}"></div>
+<div class="carousel__item {{carouselItem.bgColor}}">
+  <div class="carousel__media"><img data-thumb="{{ carouselItem.urlThumb }}" data-title="{{ carouselItem.titleImage }}" src="{{ carouselItem.imageUrl }}"></div>
   <div class="carousel__content">
     <div class="carousel__caption">
       <div class="container">
-        <h2 class="carousel__title">{{ carouselItem.title }}</h2>
-        <div class="carousel__description">{{ carouselItem.description }}</div>
-        <div class="carousel__link">{{ carouselItem.link }}</div>
+        <div class="carousel__grid {{ carouselItem.position }}">
+          <h2 class="carousel__title">{{ carouselItem.title }}</h2>
+          <div class="carousel__description">{{ carouselItem.description }}</div>
+          <div class="carousel__link">{{ carouselItem.link }}</div>
+        </div>
       </div>
     </div>
   </div>

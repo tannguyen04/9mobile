@@ -3,6 +3,7 @@
 
 //Breakpoints
 $mobile-landscape: 480px;
+$mobile-large: 568px;
 $tablet: 768px;
 $desktop: 1024px;
 $desktop-wide: 1280px;
@@ -13,8 +14,8 @@ $desktop-superwide-large: 1500px;
 $container-margin: 10px;
 $container-margin-tablet: 20px;
 $container-margin-desktop: 65px;
-$container-desktop: 1100px;
-$container-desktop-wide: 1176px;
+// $container-desktop: 1100px;
+$container-desktop-wide: 1100px;
 
 $column-mobile: 4;
 $column-tablet: 8;

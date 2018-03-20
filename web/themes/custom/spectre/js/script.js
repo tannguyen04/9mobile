@@ -14,21 +14,79 @@
   $(".js-carousel").slick({
     autoplay: true,
     dots: true,
+    speed: 500,
     customPaging: function(slick,index) {
-      var pager = $(slick.$slides[index]).find('img').data('thumb');
-      return '<a><img src="'+pager+'"></a>';
+      var thumb = $(slick.$slides[index]).find('img').data('thumb');
+      var title = $(slick.$slides[index]).find('img').data('title');
+      return '<div><span data-slick-index="0" class="progressBar"></span><span class="thumb-title">'+title+'</span><img src="'+thumb+'"></div>';
     },
+    nextArrow: '<div class="slick--next">Next</div>',
+    prevArrow: '<div class="slick--prev">Prev</div>',
 
     responsive: [{
-        breakpoint: 500,
+        breakpoint: 568,
         settings: {
-            dots: false,
-            arrows: false,
-            infinite: false,
-            slidesToShow: 2,
-            slidesToScroll: 2
+            speed: 500,
+            dots: true,
+            arrows: true,
+            infinite: true,
+            customPaging: function(slick,index) {
+              return index;
+          },
         }
     }]
+  });
+  //ticking machine
+  var percentTime;
+  var tick;
+  var time = 1;
+  var progressBarIndex = 0;
+
+  $('.slick-dots .progressBar').each(function(index) {
+      var progress = "<div class='inProgress inProgress" + index + "'></div>";
+      $(this).html(progress);
+  });
+
+  function startProgressbar() {
+      resetProgressbar();
+      percentTime = 0;
+      tick = setInterval(interval, 3);
+  }
+
+  function interval() {
+      if (($('.carousel-list .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
+          progressBarIndex = $('.carousel-list .slick-track div[aria-hidden="false"]').data("slickIndex");
+          startProgressbar();
+      } else {
+          percentTime += 1 / (time + 5);
+          $('.inProgress' + progressBarIndex).css({
+              width: percentTime + "%"
+          });
+          if (percentTime >= 100) {
+              $('.js-carousel').slick('slickNext');
+              progressBarIndex++;
+              if (progressBarIndex > 2) {
+                  progressBarIndex = 0;
+              }
+              startProgressbar();
+          }
+      }
+  }
+
+  function resetProgressbar() {
+      $('.inProgress').css({
+          width: 0 + '%'
+      });
+      clearInterval(tick);
+  }
+  startProgressbar();
+  // End ticking machine
+
+  $('js-carousel .slick-dots div').click(function () {
+    clearInterval(tick);
+    var goToThisIndex = $(this).find("span").data("slickIndex");
+    $('.js-carousel').slick('slickGoTo', goToThisIndex, false);
+    startProgressbar();
   });
 
 

@@ -41,7 +41,7 @@ $susy-tablet: (
 
 $susy-desktop: (
   container-position: rem($container-margin-desktop),
-  container: rem($container-desktop),
+  container: auto,
   columns: $column-desktop,
   gutters: 24px / 76px,
   column-width: false,
@@ -63,6 +63,13 @@ $susy-desktop-wide: (
 
 // Pick specific breakpoint.
 $susy-media: (
+
+  // max-width: 568px
+  mobileLargeOnly: (
+    media: screen,
+    max-width: em($mobile-large - 1) * 1em,
+  ),
+
   // max-width: 769px
   mobileOnly: (
     media: screen,
@@ -89,6 +96,9 @@ $susy-media: (
 
   // min-width: 480px
   mobileLandscape: em($mobile-landscape) * 1em,
+
+  // min-width: 568px
+  mobileLarge: em($mobile-large) * 1em,
 
   // min-width: 768px and max-width: 1023px
   tabletOnly: (

@@ -21,7 +21,7 @@
   }
 
   &__cicle-blig {
-    font-size: rem(1.3125rem);
+    font-size: 1.3125rem;
     padding-left: rem(28px);
 
     @include susy-media(tablet) {
@@ -41,11 +41,59 @@
 
   &--primary{
     background-color: $primary-color;
+    color: $white;
   }
 
   &-light {
     &--gray {
       background-color: $gray-ef;
+      color: $text-color;
     }
+  }
+
+  &-dark {
+    &--black {
+      background-color: $black;
+      color: $white;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+.text {
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}
+
+
+.position {
+  &--left {
+    float: left;
+  }
+
+  &--right {
+    float: right;
+  }
+
+  &--center {
+    margin: 0 auto;
+    text-align: center;
   }
 }
