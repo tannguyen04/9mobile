@@ -5,6 +5,9 @@ packgage: Custom
 core: 8.x
 base theme: classy
 
+libraries:
+  - spectre/global-style
+
 regions:
   header: Header
   primary_menu: 'Primary menu'

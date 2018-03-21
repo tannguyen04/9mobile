@@ -1,1 +1,11 @@
+global-style:
+  version: VERSION
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
 
