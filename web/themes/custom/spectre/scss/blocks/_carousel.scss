@@ -1,0 +1,252 @@
+.carousel {
+  position: relative;
+
+  &__item {
+    height: rem(240px);
+    overflow: hidden;
+    position: relative;
+
+    @include susy-media(mobileLarge) {
+      height: rem(400px);
+    }
+  }
+
+  &__media {
+    img {
+      bottom: auto;
+      height: 100%;
+      left: 50%;
+      max-width: inherit;
+      position: absolute;
+      right: auto;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      object-position: 100% 50%;
+      object-fit: cover;
+
+      @include susy-media(mobileLarge) {
+        width: auto;
+      }
+    }
+  }
+
+  &__content {
+    align-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__grid {
+    width: 50%;
+  }
+
+  &__inner {
+    @include susy-media(mobileLargeOnly) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__caption {
+    width: 100%;
+
+    @include susy-media(mobileLargeOnly) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__link {
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__title {
+    @include FrutigerLight;
+    font-size: 1.375rem;
+    margin-bottom: 8px;
+
+    @include susy-media(tablet) {
+      font-size: 1.875rem;
+    }
+
+    @include susy-media(desktop) {
+      font-size: 2.875rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    line-height: 17px;
+    margin-bottom: 25px;
+    font-size: .75rem;
+
+    @include susy-media(mobileLargeTabletOnly) {
+      font-size: .875rem;
+      line-height: 20px;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    z-index: 4;
+    width: 80%;
+    margin: 0 auto;
+
+    @include susy-media(mobileLarge) {
+      width: 100%;
+      bottom: -2px;
+    }
+
+    li {
+      display: inline-block;
+      text-align: center;
+      overflow: hidden;
+      background-color: $white;
+      margin: 0 2px;
+      cursor: pointer;
+
+      @include susy-media(mobileLargeOnly) {
+        border: 1px solid transparent;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        text-indent: -999em;
+
+        &.slick-active {
+          background-color: $primary-color;
+          border-color: $white;
+        }
+      }
+
+      @include susy-media(mobileLarge) {
+        margin: 0 5px;
+        height: 32px;
+        transition: height 0.5s ease;
+
+        .inProgress {
+          height: 2px;
+          background-color: transparent;
+        }
+
+        &.slick-active {
+          height: 54px;
+
+          .inProgress {
+            background: rgba($black, .5);
+          }
+
+          .thumb-title {
+            display: none;
+          }
+        }
+
+        .thumb-title {
+          font-size: 10px;
+          width: 90px;
+          padding: 0 5px;
+          background: $white;
+          white-space: nowrap;
+          overflow: hidden;
+          display: block;
+          height: 19px;
+          line-height: 19px;
+          @include FrutigerRoman;
+          text-overflow: ellipsis;
+        }
+
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .slick {
+    &-arrow {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      text-indent: -999em;
+      width: 100%;
+      height: rem(39px);
+      cursor: pointer;
+      background-color: rgba(0,0,0,.5);
+
+      @include susy-media(mobileLarge) {
+        width: rem(39px);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:before {
+        text-indent: 0;
+        position: absolute;
+        @extend %icons;
+        color: $white;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-size: 18px;
+        width: 39px;
+      }
+    }
+
+    &--next {
+      right: 0;
+
+      @include susy-media(desktop) {
+        right: 8%;
+      }
+
+      &:before {
+        @extend .icon-chevron-thin-right;
+        right: 0;
+      }
+    }
+
+    &--prev {
+      left: 0;
+
+      @include susy-media(desktop) {
+        left: 8%;
+      }
+
+      &:before {
+        @extend .icon-chevron-thin-left;
+        left: 0;
+      }
+    }
+  }
+
+  .position {
+    &--right {
+      @include susy-media(mobileLargeOnly) {
+        float: left;
+      }
+
+      @include susy-media(mobileLarge) {
+        padding-right: 50px;
+      }
+
+      @include susy-media(desktop) {
+        padding-right: 100px;
+        padding-left: 50px;
+      }
+    }
+  }
+}

@@ -34,9 +34,9 @@
 @import 'base/form';
 
 // Vendors
-//@import 'vendors/chosen';
+@import 'vendors/slick';
 
-// Block
+@import 'blocks/carousel';
 @import 'blocks/page-heading';
 
 // Layouts
