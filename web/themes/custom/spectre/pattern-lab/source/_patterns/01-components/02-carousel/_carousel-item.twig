@@ -1,0 +1,18 @@
+<div class="carousel__item {{carouselItem.bgColor}}">
+  <div class="carousel__media">
+    {{ carouselItem.image }}
+  </div>
+  <div class="carousel__content">
+    <div class="carousel__caption">
+      <div class="container">
+        <div class="carousel__grid {{ carouselItem.position }}">
+          <div class="carousel__inner">
+            <h2 class="carousel__title">{{ carouselItem.title }}</h2>
+            <div class="carousel__description">{{ carouselItem.description }}</div>
+          </div>
+          <div class="carousel__link">{{ carouselItem.link }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
