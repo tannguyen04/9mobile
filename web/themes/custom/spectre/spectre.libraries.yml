@@ -4,8 +4,8 @@ global-style:
     theme:
       css/styles.css: {}
   js:
+    .npm/bower_components/slick-carousel/slick/slick.min.js
     js/script.js: {}
   dependencies:
     - core/jquery
     - core/drupal
-

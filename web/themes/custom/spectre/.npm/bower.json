@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "susy": "~2.2.6"
+    "susy": "~2.2.6",
+    "slick-carousel": "^1.8.1"
   },
   "install": {
     "path": "../vendor",
