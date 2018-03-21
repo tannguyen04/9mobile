@@ -1,5 +1,6 @@
 {
-  "tablet": "(min-width: 768px)",
+  "tablet": "(min-width: 567px)",
+  "desktop": "(min-width: 768px)",
   "mainMenu": [
     {
       "link": {

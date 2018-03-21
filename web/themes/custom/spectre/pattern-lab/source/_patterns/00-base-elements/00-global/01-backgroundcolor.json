@@ -21,6 +21,10 @@
         {
           "label": "bg--secondary",
           "code": "#032b5a"
+        },
+        {
+          "label": "bg-dark--black",
+          "code": "#000000"
         }
       ]
     }

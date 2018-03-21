@@ -4,6 +4,93 @@
     {
       "icon": {
         "paths": [
+          "M711.219 891.802c13.722 13.926 13.722 36.301 0 50.125s-35.891 13.875-49.613 0l-400.896-404.89c-13.722-13.824-13.722-36.198 0-50.125l400.896-404.89c13.722-13.824 35.891-13.824 49.613 0 13.722 13.875 13.722 36.301 0 50.125l-365.619 379.853 365.619 379.802z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-thin-left"
+        ],
+        "grid": 20
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 15,
+        "id": 10,
+        "prevSize": 18,
+        "code": 59659,
+        "name": "chevron-thin-left"
+      },
+      "setIdx": 0,
+      "setId": 5,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M678.4 512l-365.619-379.904c-13.722-13.824-13.722-36.198 0-50.125 13.722-13.824 35.891-13.824 49.613 0l400.896 404.89c13.722 13.875 13.722 36.301 0 50.125l-400.896 404.89c-13.722 13.875-35.891 13.824-49.613 0-13.722-13.773-13.722-36.198 0-50.125l365.619-379.75z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-thin-right"
+        ],
+        "grid": 20
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 16,
+        "id": 11,
+        "name": "chevron-thin-right",
+        "prevSize": 18,
+        "code": 59658
+      },
+      "setIdx": 0,
+      "setId": 5,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M663.040 548.198l36.198-36.198-289.638-289.638-72.397 72.397 217.19 217.242-217.19 217.242 72.397 72.397 253.44-253.44z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "cheveron-right"
+        ],
+        "grid": 20
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 25,
+        "id": 8,
+        "name": "cheveron-right",
+        "prevSize": 18,
+        "code": 59652
+      },
+      "setIdx": 0,
+      "setId": 5,
+      "iconIdx": 10
+    },
+    {
+      "icon": {
+        "paths": [
           "M797.867 354.133c-17.067-17.067-42.667-17.067-59.733 0l-226.133 226.133-226.133-226.133c-17.067-17.067-42.667-17.067-59.733 0s-17.067 42.667 0 59.733l256 256c8.533 8.533 21.333 12.8 29.867 12.8s21.333-4.267 29.867-12.8l256-256c17.067-17.067 17.067-42.667 0-59.733z"
         ],
         "attrs": [
@@ -20,7 +107,7 @@
         {}
       ],
       "properties": {
-        "order": 3,
+        "order": 17,
         "id": 0,
         "name": "chevron-down",
         "prevSize": 18,
@@ -28,7 +115,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 0
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -49,7 +136,7 @@
         {}
       ],
       "properties": {
-        "order": 4,
+        "order": 18,
         "id": 1,
         "name": "plus",
         "prevSize": 18,
@@ -57,7 +144,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 1
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -78,7 +165,7 @@
         {}
       ],
       "properties": {
-        "order": 6,
+        "order": 19,
         "id": 2,
         "name": "triangle-down",
         "prevSize": 18,
@@ -86,7 +173,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 2
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -107,7 +194,7 @@
         {}
       ],
       "properties": {
-        "order": 7,
+        "order": 20,
         "id": 3,
         "name": "arrow-down",
         "prevSize": 18,
@@ -115,7 +202,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 3
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -137,7 +224,7 @@
         {}
       ],
       "properties": {
-        "order": 8,
+        "order": 21,
         "id": 4,
         "name": "play",
         "prevSize": 18,
@@ -145,7 +232,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 4
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -167,7 +254,7 @@
         {}
       ],
       "properties": {
-        "order": 9,
+        "order": 22,
         "id": 5,
         "name": "instagram",
         "prevSize": 18,
@@ -175,7 +262,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 5
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -197,7 +284,7 @@
         {}
       ],
       "properties": {
-        "order": 10,
+        "order": 23,
         "id": 6,
         "name": "twitter",
         "prevSize": 18,
@@ -205,7 +292,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 6
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -228,7 +315,7 @@
         {}
       ],
       "properties": {
-        "order": 11,
+        "order": 24,
         "id": 7,
         "name": "facebook, facebook-f",
         "prevSize": 18,
@@ -236,7 +323,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 7
+      "iconIdx": 9
     },
     {
       "icon": {
@@ -261,7 +348,7 @@
         {}
       ],
       "properties": {
-        "order": 5,
+        "order": 26,
         "id": 9,
         "name": "magnifying-glass, search, glass, magnifier, lookup",
         "prevSize": 18,
@@ -269,36 +356,7 @@
       },
       "setIdx": 0,
       "setId": 5,
-      "iconIdx": 9
-    },
-    {
-      "icon": {
-        "paths": [
-          "M663.040 548.198l36.198-36.198-289.638-289.638-72.397 72.397 217.19 217.242-217.19 217.242 72.397 72.397 253.44-253.44z"
-        ],
-        "attrs": [
-          {}
-        ],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "tags": [
-          "cheveron-right"
-        ],
-        "grid": 20
-      },
-      "attrs": [
-        {}
-      ],
-      "properties": {
-        "order": 12,
-        "id": 8,
-        "name": "cheveron-right",
-        "prevSize": 20,
-        "code": 59652
-      },
-      "setIdx": 0,
-      "setId": 5,
-      "iconIdx": 8
+      "iconIdx": 11
     }
   ],
   "height": 1024,

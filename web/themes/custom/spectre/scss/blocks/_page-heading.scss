@@ -11,17 +11,14 @@
     img {
       bottom: auto;
       height: 100%;
-      left: 50%;
       max-width: inherit;
       position: absolute;
       right: auto;
       top: 50%;
-      transform: translate(-50%, -50%);
-      width: auto;
-
-      @include susy-media(mobileOnly) {
-        height: auto;
-      }
+      transform: translateY(-50%);
+      width: 100%;
+      object-position: 100% 50%;
+      object-fit: cover;
     }
   }
 

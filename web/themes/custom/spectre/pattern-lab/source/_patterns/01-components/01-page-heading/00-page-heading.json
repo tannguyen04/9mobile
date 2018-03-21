@@ -5,9 +5,9 @@
         "pattern": "base-elements-image",
         "with": {
           "image": {
-            "src": "../../../../images/pageheading.png",
+            "src": "../../images/pageheading.png",
             "alt": "Image",
-            "width": "1400",
+            "width": "2000",
             "height": "130"
           }
         },
