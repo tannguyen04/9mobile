@@ -4,13 +4,25 @@
   "license": "MIT",
   "dependencies": {
     "susy": "~2.2.6",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "reset-css": "latest",
+    "enquire": "latest",
+    "media-match": "latest"
   },
   "install": {
-    "path": "../vendor",
+    "path": "../bower_components",
     "sources": {
       "susy": [
         "bower_components/susy/sass/**"
+      ],
+      "slick-carousel": {
+        "mapping": [
+          {"bower_components/slick-carousel/slick/slick.scss": "_slick.scss"},
+          {"bower_components/slick-carousel/slick/slick.min.js": "slick.min.js"}
+        ]
+      },
+      "reset-css": [
+        "bower_components/reset-css/_reset.scss"
       ]
     }
   },

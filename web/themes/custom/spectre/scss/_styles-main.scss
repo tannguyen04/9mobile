@@ -5,12 +5,10 @@
 // WARNING: DO NOT EDIT /assets/css/styles.css file manually, this should be generated only by compiler based on this file.
 
 
-//Required imports
-@import '../.npm/bower_components/susy/sass/susy';
-
-
-// Vendors
-@import 'vendors/reset';
+//Required external libraries
+@import '../bower_components/susy/susy';
+@import '../bower_components/slick-carousel/slick';
+@import '../bower_components/reset-css/reset';
 
 //Base
 @import 'base/variables';
@@ -33,8 +31,6 @@
 @import 'base/btn';
 @import 'base/form';
 
-// Vendors
-@import 'vendors/slick';
 
 @import 'blocks/carousel';
 @import 'blocks/page-heading';
