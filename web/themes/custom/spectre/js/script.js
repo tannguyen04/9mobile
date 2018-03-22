@@ -8,8 +8,6 @@
     mobileLandscape = "(min-width:30em)", // 480px.
     tablet = "(min-width:48em)", // 768px.
     desktop = "(min-width: 64em)"; // min-width: 1024px.
-  // Add  functionality here.
-  console.log('test');
 
   $(".js-carousel").slick({
     autoplay: true,
