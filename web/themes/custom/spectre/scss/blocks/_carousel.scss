@@ -68,6 +68,14 @@
       &:hover {
         text-decoration: underline;
       }
+
+      @include susy-media(mobileLargeTabletOnly) {
+        font-size: 1.3125rem;
+
+        &:before {
+          font-size: rem(16px);
+        }
+      }
     }
   }
 

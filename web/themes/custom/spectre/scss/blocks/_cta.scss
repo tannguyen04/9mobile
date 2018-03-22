@@ -1,0 +1,142 @@
+.block-cta {
+  overflow: hidden;
+  position: relative;
+
+  &__grid {
+    @include susy-media(mobileLarge) {
+      align-items: stretch;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      margin-bottom: rem(50px);
+    }
+  }
+
+  &__item {
+    align-items: stretch;
+    margin: rem(0 1px 0 0);
+    padding: rem(22px 5px 23px 20px);
+    position: relative;
+    z-index: 2;
+
+    @include susy-media(mobileLargeOnly) {
+      min-height: rem(230px);
+    }
+
+    @include susy-media(mobileLarge){
+      padding: rem(20px 5px 30px 30px);
+      width: calc((100% - #{2 * rem(1px)}) / 3);
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $red;
+    font-size: .75em;
+    margin: 0 0 .5em;
+    line-height: 1rem;
+
+    @include susy-media(mobileLargeOnly) {
+      margin: 0 0 .5em 134px;
+    }
+
+    @include susy-media(tabletOnly) {
+      min-height: 20px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    height: 70px;
+    @include FrutigerLight;
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(24px);
+    }
+
+    @include susy-media(mobileLargeOnly) {
+      margin: 0 0 20px 134px;
+      height: auto;
+    }
+  }
+
+  &__image {
+    width: 134px;
+    float: left;
+    height: 191px;
+
+    @include susy-media(mobileLargeOnly) {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include susy-media(mobileLarge) {
+      margin-bottom: rem(20px);
+    }
+
+    @include susy-media(tablet) {
+      height: 218px;
+      margin-right: 18px;
+      width: 38%;
+      max-width: 149px;
+    }
+
+    @include susy-media(desktop) {
+      margin-right: 22px;
+    }
+
+    img {
+      object-fit: contain;
+      object-position: 0 0;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    text-align: left;
+    position: relative;
+    margin: 0;
+
+    @include susy-media(mobileLargeTabletOnly) {
+      clear: both;
+    }
+
+    @include susy-media(tablet) {
+      float: left;
+      height: 210px;
+      width: 50%;
+    }
+  }
+
+  &__description {
+    @include susy-media(mobileOnly) {
+      display: none;
+    }
+
+    ul {
+      margin: 10px 0;
+
+      li {
+        font-size: .75em;
+        margin: 0 0 5px;
+      }
+    }
+  }
+
+  &__link {
+    @include susy-media(tablet) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    @include susy-media(mobileLargeOnly) {
+      margin: 0 0 0 134px;
+    }
+  }
+}

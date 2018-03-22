@@ -20,7 +20,7 @@
     color: $white;
   }
 
-  &__cicle-blig {
+  &__cicle-big {
     font-size: .875rem;
     padding-left: rem(28px);
 
@@ -28,15 +28,15 @@
       font-size: rem(12px);
     }
 
-    @include susy-media(mobileLargeTabletOnly) {
-      font-size: 1.3125rem;
+    @include susy-media(tablet) {
+      font-size: 1.25em;
 
       &:before {
         font-size: rem(16px);
       }
     }
 
-    @include susy-media(tablet) {
+    @include susy-media(desktop) {
       font-size: 1.5625rem;
 
       &:before {

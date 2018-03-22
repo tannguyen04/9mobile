@@ -1,0 +1,130 @@
+{
+  "blockCta": {
+    "typeSize": "block-cta--big",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-light--gray",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/cta/best-of-shop-simo-1100-050218.png",
+                      "alt": "Image",
+                      "width": "149",
+                      "height": "218"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Simple Only",
+              "subTitle": "Get 5GB for £16. Ends 2 May.",
+              "description": "<ul><li>£16 tariff</li><li>Unlimited minutes</li><li>Unlimited texts</li><li>5GB data</li><li>12 months</li></ul>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle-big",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-light--gray",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/cta/product-s-light-1100-s9-plus-best-of-shop-210218_0.png",
+                      "alt": "Image",
+                      "width": "149",
+                      "height": "218"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Samsung Galaxy S9 Plus",
+              "subTitle": "Get 25GB data, plus an extra 25GB on us.",
+              "description": "<ul><li>£69 tariff</li><li>£49.99 upfront</li><li>Unlimited minutes </li><li>Unlimited texts</li><li>25GB, plus 25GB data on us</li><li>24 months</li></ul>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle-big",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-light--gray",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/cta/iphone-x-product-s-light-1100_2.png",
+                      "alt": "Image",
+                      "width": "149",
+                      "height": "218"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "iPhone X",
+              "subTitle": "Upgrade on us, after 12 months.",
+              "description": "<ul><li>£77 tariff</li><li>£9.99 upfront </li><li>Unlimited minutes</li><li>Unlimited texts</li><li>25GB data</li><li>24 months</li></ul>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle-big",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

@@ -22,8 +22,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
-  line-height: 1.25em;
+  font-size: 1.25rem;
+
+  @include susy-media(tablet) {
+    line-height: 1.25em;
+    font-size: 1.75rem;
+  }
 }
 
 h4 {

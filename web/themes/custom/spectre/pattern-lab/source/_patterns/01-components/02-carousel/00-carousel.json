@@ -30,7 +30,7 @@
                   "pattern": "base-elements-link",
                   "with": {
                     "link": {
-                      "class": "link--arrow link--arrow__cicle-blig",
+                      "class": "link--arrow link--arrow__cicle-big",
                       "href": "#",
                       "text": "Buy now"
                     }
@@ -72,7 +72,7 @@
                   "pattern": "base-elements-link",
                   "with": {
                     "link": {
-                      "class": "link--arrow link--arrow__cicle-blig",
+                      "class": "link--arrow link--arrow__cicle-big",
                       "href": "#",
                       "text": "Buy now"
                     }
@@ -114,7 +114,7 @@
                   "pattern": "base-elements-link",
                   "with": {
                     "link": {
-                      "class": "link--arrow link--arrow__cicle-blig",
+                      "class": "link--arrow link--arrow__cicle-big",
                       "href": "#",
                       "text": "Buy now"
                     }
@@ -156,7 +156,7 @@
                   "pattern": "base-elements-link",
                   "with": {
                     "link": {
-                      "class": "link--arrow link--arrow__cicle-blig",
+                      "class": "link--arrow link--arrow__cicle-big",
                       "href": "#",
                       "text": "Buy now"
                     }
