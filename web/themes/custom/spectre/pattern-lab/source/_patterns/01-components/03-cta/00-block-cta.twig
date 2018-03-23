@@ -1,6 +1,6 @@
 <div class="block-cta {{ blockCta.typeSize }}">
   <div class="container">
-    <div class="block-cta__grid">
+    <div class="block-cta__grid block-cta__grid--{{ blockCta.items|length }}">
       {% for item in blockCta.items %}
         {{ item }}
       {% endfor %}

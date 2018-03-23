@@ -1,28 +1,25 @@
 .link--arrow {
   font-size: .875em;
-  position: relative;
   display: block;
   @include FrutigerRoman;
-  padding-left: rem(20px);
   margin-bottom: rem(8px);
 
   &:before {
     @extend %icons;
     @extend .icon-cheveron-right;
-    position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    display: inline-block;
     font-size: rem(12px);
     border: rem(1px) solid $primary-color;
     border-radius: 50%;
+    position: relative;
     background-color: $primary-color;
+    margin-right: 8px;
     color: $white;
   }
 
   &__cicle-big {
     font-size: .875rem;
-    padding-left: rem(28px);
 
     &:before {
       font-size: rem(12px);
