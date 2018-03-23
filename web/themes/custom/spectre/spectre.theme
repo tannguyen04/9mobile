@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implements theme_preprocess_field()
+ *
+*/
+function spectre_preprocess_field(&$variables, $hook) {
+  $element = $variables['element'];
+  $items = $element['#items'];
+  $object = $element['#object'];
+  //print_r($element['#field_name']);
+  //Add some class for field_link in slide paragraph
+  if ($element['#field_name'] == 'field_link' && $element['#bundle'] == 'slide') {
+    foreach ($variables['items'] as $key => $value) {
+      if (is_numeric($key)) {
+        $variables['items'][$key]['content']['#options']['attributes']['class'][] = 'link--arrow link--arrow__cicle-blig';
+      }
+    }
+  }
+
+}
