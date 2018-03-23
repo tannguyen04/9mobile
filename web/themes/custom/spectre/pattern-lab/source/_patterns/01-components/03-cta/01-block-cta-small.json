@@ -1,6 +1,5 @@
 {
   "blockCta": {
-    "bgColor": "bg-light--gray",
     "typeSize": "block-cta--small",
     "items": [
       {
@@ -8,15 +7,15 @@
           "pattern": "components-cta-item",
           "with": {
             "ctaItem": {
+              "bgColor": "bg-dark--black",
               "image": {
                 "include()": {
-                  "pattern": "base-elements-image",
+                  "pattern": "base-elements-picture",
                   "with": {
-                    "image": {
-                      "src": "../../images/cta/o2-open-promo-s-short-574x2-dark-020217.jpg",
-                      "alt": "Image",
-                      "width": "1148",
-                      "height": "300"
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop1.jpg",
+                      "src": "../../images/cta/cta-mobile1.jpg",
+                      "alt": "Image"
                     },
                     "only": true
                   }
@@ -47,15 +46,15 @@
           "pattern": "components-cta-item",
           "with": {
             "ctaItem": {
+              "bgColor": "bg-dark--black",
               "image": {
                 "include()": {
-                  "pattern": "base-elements-image",
+                  "pattern": "base-elements-picture",
                   "with": {
-                    "image": {
-                      "src": "../../images/cta/family-plan-promo-s-short-574x2-dark-280218.jpg",
-                      "alt": "Image",
-                      "width": "1148",
-                      "height": "300"
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop2.jpg",
+                      "src": "../../images/cta/cta-mobile2.jpg",
+                      "alt": "Image"
                     },
                     "only": true
                   }
@@ -86,15 +85,15 @@
           "pattern": "components-cta-item",
           "with": {
             "ctaItem": {
+              "bgColor": "bg-dark--black",
               "image": {
                 "include()": {
-                  "pattern": "base-elements-image",
+                  "pattern": "base-elements-picture",
                   "with": {
-                    "image": {
-                      "src": "../../images/cta/promo-s-short-dark-574x2-paym-iphone-6-210318.jpg",
-                      "alt": "Image",
-                      "width": "1148",
-                      "height": "300"
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop3.jpg",
+                      "src": "../../images/cta/cta-mobile3.jpg",
+                      "alt": "Image"
                     },
                     "only": true
                   }
