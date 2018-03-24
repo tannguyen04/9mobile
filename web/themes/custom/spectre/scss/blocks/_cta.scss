@@ -7,7 +7,7 @@
       align-items: stretch;
       display: flex;
       flex-flow: row wrap;
-      justify-content: flex-start;
+      justify-content: center;
       margin-bottom: rem(50px);
     }
 
@@ -257,7 +257,6 @@
       }
 
       &__description {
-        // position: relative;
         line-height: 1.25em;
         flex: 1;
 
