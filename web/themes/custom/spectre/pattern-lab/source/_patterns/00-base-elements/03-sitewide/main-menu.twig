@@ -1,0 +1,32 @@
+<div id="dl-menu" class="main-menu js-expanded-menu dl-menuwrapper">
+  <button class="dl-trigger hidden--tablet-desktop">Open Menu</button>
+  <ul class="menu nav dl-menu">
+    {% for itemLv1 in mainMenu %}
+      {% if itemLv1.childMenuBlock is not empty %}
+        <li class="expanded-menu">
+          <a href="{{ itemLv1.link.href }}" class="{{ itemLv1.link.class }} expanded-menu__link"><span class="expanded-menu__text">{{ itemLv1.link.text }}</span><span class="expanded-menu__subtext">{{ itemLv1.link.subtext }}</span></a>
+            <ul class="sub-menu dl-submenu ">
+              {% for itemLv2 in itemLv1.childMenuBlock.links %}
+                {% if itemLv2.childMenuBlock is not empty %}
+                  <li class="expanded-menu">
+                    <a href="{{ itemLv2.link.href }}" class="{{ itemLv2.link.class }}">{{ itemLv2.link.text }}</a>
+                    <ul class="sub-menu  dl-submenu">
+                      {% for itemLv3 in itemLv2.childMenuBlock.links %}
+                        <li>
+                          <a href="{{ itemLv3.link.href }}" class="{{ itemLv3.link.class }}">{{ itemLv3.link.text }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  <li><a href="{{ itemLv2.link.href }}" class="{{ itemLv2.link.class }}">{{ itemLv2.link.text }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+        </li>
+      {% else %}
+        <li><a href="{{ itemLv1.link.href }}" class="{{ itemLv1.link.class }}"><span class="expanded-menu__text">{{ itemLv1.link.text }}</span><span class="expanded-menu__subtext">{{ itemLv1.link.subtext }}</span></a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

@@ -109,3 +109,11 @@
     text-align: center;
   }
 }
+
+.hidden {
+  &--tablet-desktop {
+    @include susy-media(mobileLarge) {
+      display: none;
+    }
+  }
+}
