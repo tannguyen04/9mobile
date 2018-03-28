@@ -8,7 +8,7 @@
     "reset-css": "latest",
     "enquire": "latest",
     "media-match": "latest",
-    "ResponsiveMultiLevelMenu": "*"
+    "ResponsiveMultiLevelMenu": "https://github.com/codrops/ResponsiveMultiLevelMenu.git"
   },
   "install": {
     "path": "../bower_components",
@@ -28,6 +28,9 @@
       },
       "reset-css": [
         "bower_components/reset-css/_reset.scss"
+      ],
+      "ResponsiveMultiLevelMenu": [
+        "bower_components/ResponsiveMultiLevelMenu/js/**"
       ]
     }
   },
