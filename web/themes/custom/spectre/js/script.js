@@ -87,8 +87,8 @@
     startProgressbar();
   });
 
-  $('#dl-menu').dlmenu({
-    animationClasses : { classin : 'dl-animate-out-2', classout : 'dl-animate-in-2' }
+  $( '#dl-menu' ).dlmenu({
+    animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
   });
 
 }(this, this.document, this.jQuery, this.Drupal));

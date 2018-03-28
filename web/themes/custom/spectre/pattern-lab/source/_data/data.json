@@ -5,66 +5,48 @@
     {
       "link": {
         "href": "#",
-        "text": "Data Ops",
-        "subtext": "Subtext"
+        "text": "Shop",
+        "subtext": "Phones, tariffs, tablets, accessories"
       }
     },
     {
       "link": {
         "href": "#",
-        "text": "Products",
-        "subtext": "Subtext"
+        "text": "More for you",
+        "subtext": "More perks, services, connected, flexibility"
       }
     },
     {
       "link": {
-        "href": "",
-        "text": "Solutions",
-        "subtext": "Subtext"
+        "href": "#",
+        "text": "Apps",
+        "subtext": "Our latest apps, news, reviews"
       },
       "childMenuBlock": {
         "links": [
           {
             "link": {
               "href": "#",
-              "text": "Blog"
+              "text": "More flexibility"
             },
             "childMenuBlock": {
               "links": [
                 {
                   "link": {
                     "href": "#",
-                    "text": "Blog"
+                    "text": "More perks"
                   }
                 },
                 {
                   "link": {
                     "href": "#",
-                    "text": "Resources"
+                    "text": "More service"
                   }
                 },
                 {
                   "link": {
                     "href":"#",
-                    "text": "Events"
-                  }
-                },
-                {
-                  "link": {
-                    "href":"#",
-                    "text": "Company"
-                  }
-                },
-                {
-                  "link": {
-                    "href":"#",
-                    "text": "Careers"
-                  }
-                },
-                {
-                  "link": {
-                    "href":"#",
-                    "text": "Support"
+                    "text": "More connected"
                   }
                 }
               ]
@@ -73,32 +55,19 @@
           {
             "link": {
               "href": "#",
-              "text": "Resources",
-              "class": "active"
+              "text": "More perks"
+            }
+          },
+          {
+            "link": {
+              "href": "#",
+              "text": "More service"
             }
           },
           {
             "link": {
               "href":"#",
-              "text": "Events"
-            }
-          },
-          {
-            "link": {
-              "href":"#",
-              "text": "Company"
-            }
-          },
-          {
-            "link": {
-              "href":"#",
-              "text": "Careers"
-            }
-          },
-          {
-            "link": {
-              "href":"#",
-              "text": "Support"
+              "text": "More connected"
             }
           }
         ]
@@ -107,56 +76,44 @@
     {
       "link": {
         "href": "#",
-        "text": "Customers",
-        "subtext": "Subtext"
+        "text": "Connectivity",
+        "subtext": "4G, O2 Wifi, our network and more"
       }
     },
     {
       "link": {
-        "href": "",
-        "text": "More",
-        "subtext": "Subtext"
+        "href": "#",
+        "text": "Help",
+        "subtext": "Bill and phone help, O2 Gurus and more"
       },
       "childMenuBlock": {
         "links": [
           {
             "link": {
               "href": "#",
-              "text": "Blog"
+              "text": "More perks"
             }
           },
           {
             "link": {
               "href": "#",
-              "text": "Resources",
-              "class": "active"
+              "text": "More service"
             }
           },
           {
             "link": {
               "href":"#",
-              "text": "Events"
-            }
-          },
-          {
-            "link": {
-              "href":"#",
-              "text": "Company"
-            }
-          },
-          {
-            "link": {
-              "href":"#",
-              "text": "Careers"
-            }
-          },
-          {
-            "link": {
-              "href":"#",
-              "text": "Support"
+              "text": "More connected"
             }
           }
         ]
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "My O2",
+        "subtext": "Your bill, account, top up, upgrade"
       }
     }
   ]
