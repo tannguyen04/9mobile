@@ -14,7 +14,6 @@
   &:active,
   &:hover {
     background: #CBCBCB;
-    border-bottom-right-radius: 20px;
     color: black;
   }
 
@@ -29,7 +28,6 @@
     &:hover {
       background: $secondary-color;
       color: $white;
-      border-bottom-right-radius: 0;
     }
   }
 }
