@@ -7,7 +7,8 @@
     "slick-carousel": "^1.8.1",
     "reset-css": "latest",
     "enquire": "latest",
-    "media-match": "latest"
+    "media-match": "latest",
+    "ResponsiveMultiLevelMenu": "https://github.com/codrops/ResponsiveMultiLevelMenu.git"
   },
   "install": {
     "path": "../bower_components",
@@ -17,12 +18,19 @@
       ],
       "slick-carousel": {
         "mapping": [
-          {"bower_components/slick-carousel/slick/slick.scss": "_slick.scss"},
-          {"bower_components/slick-carousel/slick/slick.min.js": "slick.min.js"}
+          {
+            "bower_components/slick-carousel/slick/slick.scss": "_slick.scss"
+          },
+          {
+            "bower_components/slick-carousel/slick/slick.min.js": "slick.min.js"
+          }
         ]
       },
       "reset-css": [
         "bower_components/reset-css/_reset.scss"
+      ],
+      "ResponsiveMultiLevelMenu": [
+        "bower_components/ResponsiveMultiLevelMenu/js/**"
       ]
     }
   },

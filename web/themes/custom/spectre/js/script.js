@@ -5,11 +5,9 @@
   var $html = $('html'),
     mobileOnly = "screen and (max-width:47.9375em)", // 767px.
     mobileTabletOnly = "screen and (max-width: 63.9375em)", // 1023px.
-    mobileLandscape = "(min-width:30em)", // 480px.
+    mobileLandscape = "(min-width: 568px)", // 480px.
     tablet = "(min-width:48em)", // 768px.
     desktop = "(min-width: 64em)"; // min-width: 1024px.
-  // Add  functionality here.
-  console.log('test');
 
   $(".js-carousel").slick({
     autoplay: true,
@@ -89,5 +87,8 @@
     startProgressbar();
   });
 
+  $( '#dl-menu' ).dlmenu({
+    animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
+  });
 
 }(this, this.document, this.jQuery, this.Drupal));

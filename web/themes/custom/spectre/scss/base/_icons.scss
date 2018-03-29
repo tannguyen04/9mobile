@@ -17,14 +17,8 @@
   }
 }
 
-.icon-chevron-thin-left:before {
-  content: "\e90b";
-}
-.icon-chevron-thin-right:before {
-  content: "\e90a";
-}
-.icon-cheveron-right:before {
-  content: "\e904";
+.icon-chevron-left:before {
+  content: "\e90d";
 }
 .icon-chevron-down:before {
   content: "\e900";
@@ -67,4 +61,13 @@
 }
 .icon-lookup:before {
   content: "\e909";
+}
+.icon-chevron-thin-left:before {
+  content: "\e90b";
+}
+.icon-chevron-thin-right:before {
+  content: "\e90a";
+}
+.icon-cheveron-right:before {
+  content: "\e904";
 }
