@@ -1,5 +1,6 @@
 {
   "blockCta": {
+    "columns": "2columns",
     "typeSize": "block-cta--big",
     "items": [
       {
@@ -104,6 +105,46 @@
               "title": "iPhone X",
               "subTitle": "Upgrade on us, after 12 months.",
               "description": "<ul><li>£77 tariff</li><li>£9.99 upfront </li><li>Unlimited minutes</li><li>Unlimited texts</li><li>25GB data</li><li>24 months</li></ul>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle-big",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-light--gray",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcTablet": "../../images/cta/best-of-shop-simo-1100-050218.png",
+                      "src": "../../images/cta/best-of-shop-simo-574x2-050218.png",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Simple Only",
+              "subTitle": "Get 5GB for £16. Ends 2 May.",
+              "description": "<ul><li>£16 tariff</li><li>Unlimited minutes</li><li>Unlimited texts</li><li>5GB data</li><li>12 months</li></ul>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",

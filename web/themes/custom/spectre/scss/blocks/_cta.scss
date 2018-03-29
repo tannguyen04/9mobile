@@ -7,37 +7,37 @@
       align-items: stretch;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
+      justify-content: flex-start;
       margin-bottom: rem(50px);
     }
 
-    &--4 {
-      .block-cta__item {
-        @include susy-media(mobileLargeTabletOnly) {
-          width: calc((100% - #{rem(1px)}) / 2);
+    // &--4 {
+    //   .block-cta__item {
+    //     @include susy-media(mobileLargeTabletOnly) {
+    //       width: calc((100% - #{rem(1px)}) / 2);
 
-          &:nth-child(2n) {
-            margin-right: 0;
-          }
+    //       &:nth-child(2n) {
+    //         margin-right: 0;
+    //       }
 
-          &:nth-child(3n) {
-            margin-right: 1px;
-          }
-        }
+    //       &:nth-child(3n) {
+    //         margin-right: 1px;
+    //       }
+    //     }
 
-        @include susy-media(tablet){
-          width: calc((100% - #{3 * rem(1px)}) / 4);
+    //     @include susy-media(tablet){
+    //       width: calc((100% - #{3 * rem(1px)}) / 4);
 
-          &:nth-child(3n) {
-            margin-right: 1px;
-          }
+    //       &:nth-child(3n) {
+    //         margin-right: 1px;
+    //       }
 
-          &:nth-child(4n) {
-            margin-right: 0;
-          }
-        }
-      }
-    }
+    //       &:nth-child(4n) {
+    //         margin-right: 0;
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   &__item {
@@ -47,12 +47,8 @@
     z-index: 2;
     overflow: hidden;
 
-    @include susy-media(mobileLarge){
-      width: calc((100% - #{2 * rem(1px)}) / 3);
-
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
+    @include susy-media(mobileLarge) {
+      margin-bottom: 1px;
     }
 
     &:hover {
@@ -74,6 +70,45 @@
     }
   }
 
+  &--2columns {
+    .block-cta {
+      &__item {
+        @include susy-media(mobileLarge){
+          width: calc((100% - #{2 * rem(1px)}) / 2);
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &.block-cta--small {
+        .block-cta__image {
+          img {
+            @include susy-media(mobileLarge) {
+              object-position: 100% 50%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+  }
+
+  &--3columns {
+    .block-cta {
+      &__item {
+        @include susy-media(mobileLarge){
+          width: calc((100% - #{2 * rem(1px)}) / 3);
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
   &--big {
     .block-cta {
       &__item {
@@ -81,7 +116,7 @@
 
         @include susy-media(tablet) {
           height: 350px;
-          background: url(../../images/cta/background-color.png) right bottom no-repeat;
+          background: url(../../images/cta/background-color.png) right bottom repeat;
         }
 
         @include susy-media(mobileLargeOnly) {
