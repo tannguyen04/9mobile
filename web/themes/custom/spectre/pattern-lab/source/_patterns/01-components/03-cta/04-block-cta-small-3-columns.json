@@ -1,0 +1,242 @@
+{
+  "blockCta": {
+    "columns": "3columns",
+    "typeSize": "block-cta--small",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-dark--black",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop1.jpg",
+                      "src": "../../images/cta/cta-mobile1.jpg",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "An extra perk of your job",
+              "description": "<p>You could get up to 25% off your Airtime Plan, with O2 Open.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "More about O2 Open"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-dark--black",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop2.jpg",
+                      "src": "../../images/cta/cta-mobile2.jpg",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Save with a Family Plan",
+              "description": "<p>Get up to 50% off airtime, on additional O2 refresh connections.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Find out more"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-dark--black",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop3.jpg",
+                      "src": "../../images/cta/cta-mobile3.jpg",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "iPhone 6",
+              "description": "<p>Get 500MB data for £39.99 upfront, £25 tariff.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-dark--black",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop1.jpg",
+                      "src": "../../images/cta/cta-mobile1.jpg",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "An extra perk of your job",
+              "description": "<p>You could get up to 25% off your Airtime Plan, with O2 Open.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "More about O2 Open"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-dark--black",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop2.jpg",
+                      "src": "../../images/cta/cta-mobile2.jpg",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Save with a Family Plan",
+              "description": "<p>Get up to 50% off airtime, on additional O2 refresh connections.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Find out more"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-cta-item",
+          "with": {
+            "ctaItem": {
+              "bgColor": "bg-dark--black",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcTablet": "../../images/cta/cta-desktop3.jpg",
+                      "src": "../../images/cta/cta-mobile3.jpg",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "iPhone 6",
+              "description": "<p>Get 500MB data for £39.99 upfront, £25 tariff.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Buy now"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}
