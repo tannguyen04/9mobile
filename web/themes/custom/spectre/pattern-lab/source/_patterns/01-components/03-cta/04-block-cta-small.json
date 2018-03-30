@@ -1,38 +1,37 @@
 {
   "blockCta": {
     "columns": "1columns",
-    "typeSize": "block-cta--big",
+    "typeSize": "block-cta--small",
     "items": [
       {
         "include()": {
           "pattern": "components-cta-item",
           "with": {
             "ctaItem": {
-              "bgColor": "bg-light--gray",
+              "bgColor": "bg-dark--black",
               "image": {
                 "include()": {
                   "pattern": "base-elements-picture",
                   "with": {
                     "picture": {
-                      "srcTablet": "../../images/cta/best-of-shop-simo-1100-050218.png",
-                      "src": "../../images/cta/best-of-shop-simo-574x2-050218.png",
+                      "srcTablet": "../../images/cta/cta-desktop1.jpg",
+                      "src": "../../images/cta/cta-mobile1.jpg",
                       "alt": "Image"
                     },
                     "only": true
                   }
                 }
               },
-              "title": "Simple Only",
-              "subTitle": "Get 5GB for £16. Ends 2 May.",
-              "description": "<ul><li>£16 tariff</li><li>Unlimited minutes</li><li>Unlimited texts</li><li>5GB data</li><li>12 months</li></ul>",
+              "title": "An extra perk of your job",
+              "description": "<p>You could get up to 25% off your Airtime Plan, with O2 Open.</p>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
                   "with": {
                     "link": {
-                      "class": "link--arrow link--arrow__cicle-big",
+                      "class": "link--arrow link--arrow__cicle",
                       "href": "#",
-                      "text": "Buy now"
+                      "text": "More about O2 Open"
                     }
                   },
                   "only": true
