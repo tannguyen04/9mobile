@@ -1,30 +1,30 @@
 {
-  "carousel": {
+  "blockCta": {
+    "columns": "2columns",
+    "typeSize": "block-cta--big",
     "items": [
       {
         "include()": {
-          "pattern": "components-carousel-item",
+          "pattern": "components-cta-item",
           "with": {
-            "carouselItem": {
+            "ctaItem": {
               "bgColor": "bg-light--gray",
-              "position": "position--right",
               "image": {
                 "include()": {
                   "pattern": "base-elements-picture",
                   "with": {
                     "picture": {
-                      "srcTablet": "../../images/carousel/carousel1.jpg",
-                      "src": "../../images/carousel/mobile1.jpg",
-                      "alt": "Image",
-                      "dataThumb": "../../images/carousel/thumb1.jpg",
-                      "dataTitle": "Samsung Galaxy S9"
+                      "srcTablet": "../../images/cta/best-of-shop-simo-1100-050218.png",
+                      "src": "../../images/cta/best-of-shop-simo-574x2-050218.png",
+                      "alt": "Image"
                     },
                     "only": true
                   }
                 }
               },
-              "title": "Samsung Galaxy S9",
-              "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "title": "Simple Only",
+              "subTitle": "Get 5GB for £16. Ends 2 May.",
+              "description": "<ul><li>£16 tariff</li><li>Unlimited minutes</li><li>Unlimited texts</li><li>5GB data</li><li>12 months</li></ul>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
@@ -45,28 +45,26 @@
       },
       {
         "include()": {
-          "pattern": "components-carousel-item",
+          "pattern": "components-cta-item",
           "with": {
-            "carouselItem": {
+            "ctaItem": {
               "bgColor": "bg-light--gray",
-              "position": "position--right",
               "image": {
                 "include()": {
                   "pattern": "base-elements-picture",
                   "with": {
                     "picture": {
-                      "srcTablet": "../../images/carousel/carousel2.jpg",
-                      "src": "../../images/carousel/mobile1.jpg",
-                      "alt": "Image",
-                      "dataThumb": "../../images/carousel/thumb2.jpg",
-                      "dataTitle": "SIMO 20GB for £20"
+                      "srcTablet": "../../images/cta/product-s-light-1100-s9-plus-best-of-shop-210218_0.png",
+                      "src": "../../images/cta/product-s-light-574x2-s9-plus-best-of-shop-210218_0.png",
+                      "alt": "Image"
                     },
                     "only": true
                   }
                 }
               },
-              "title": "SIMO 20GB for £20",
-              "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "title": "Samsung Galaxy S9 Plus",
+              "subTitle": "Get 25GB data, plus an extra 25GB on us.",
+              "description": "<ul><li>£69 tariff</li><li>£49.99 upfront</li><li>Unlimited minutes </li><li>Unlimited texts</li><li>25GB, plus 25GB data on us</li><li>24 months</li></ul>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
@@ -87,28 +85,26 @@
       },
       {
         "include()": {
-          "pattern": "components-carousel-item",
+          "pattern": "components-cta-item",
           "with": {
-            "carouselItem": {
-              "bgColor": "bg-dark--black",
-              "position": "position--right",
+            "ctaItem": {
+              "bgColor": "bg-light--gray",
               "image": {
                 "include()": {
                   "pattern": "base-elements-picture",
                   "with": {
                     "picture": {
-                      "srcTablet": "../../images/carousel/carousel3.jpg",
-                      "src": "../../images/carousel/mobile2.jpg",
-                      "alt": "Image",
-                      "dataThumb": "../../images/carousel/thumb3.jpg",
-                      "dataTitle": "Save £100 on iPad 9.7"
+                      "srcTablet": "../../images/cta/iphone-x-product-s-light-574x2_0.png",
+                      "src": "../../images/cta/iphone-x-product-s-light-1100_2.png",
+                      "alt": "Image"
                     },
                     "only": true
                   }
                 }
               },
-              "title": "Save £100 on iPad 9.7",
-              "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "title": "iPhone X",
+              "subTitle": "Upgrade on us, after 12 months.",
+              "description": "<ul><li>£77 tariff</li><li>£9.99 upfront </li><li>Unlimited minutes</li><li>Unlimited texts</li><li>25GB data</li><li>24 months</li></ul>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
@@ -129,28 +125,26 @@
       },
       {
         "include()": {
-          "pattern": "components-carousel-item",
+          "pattern": "components-cta-item",
           "with": {
-            "carouselItem": {
-              "bgColor": "bg-dark--black",
-              "position": "position--right",
+            "ctaItem": {
+              "bgColor": "bg-light--gray",
               "image": {
                 "include()": {
                   "pattern": "base-elements-picture",
                   "with": {
                     "picture": {
-                      "srcTablet": "../../images/carousel/carousel4.jpg",
-                      "src": "../../images/carousel/mobile2.jpg",
-                      "alt": "Image",
-                      "dataThumb": "../../images/carousel/thumb4.jpg",
-                      "dataTitle": "Save £100 on iPad 9.7"
+                      "srcTablet": "../../images/cta/best-of-shop-simo-1100-050218.png",
+                      "src": "../../images/cta/best-of-shop-simo-574x2-050218.png",
+                      "alt": "Image"
                     },
                     "only": true
                   }
                 }
               },
-              "title": "Save £100 on iPad 9.7",
-              "description": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "title": "Simple Only",
+              "subTitle": "Get 5GB for £16. Ends 2 May.",
+              "description": "<ul><li>£16 tariff</li><li>Unlimited minutes</li><li>Unlimited texts</li><li>5GB data</li><li>12 months</li></ul>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",

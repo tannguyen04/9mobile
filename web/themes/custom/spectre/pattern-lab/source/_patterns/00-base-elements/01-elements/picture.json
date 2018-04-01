@@ -1,7 +1,6 @@
 {
   "picture": {
-    "srcDesktop": "//unsplash.it/1920/665",
-    "srcTablet": "//unsplash.it/1024/550",
+    "srcTablet": "",
     "src": "//unsplash.it/768/430",
     "alt": "Image"
   }

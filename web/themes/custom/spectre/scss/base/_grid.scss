@@ -40,8 +40,8 @@ $susy-tablet: (
 );
 
 $susy-desktop: (
-  container-position: rem($container-margin-desktop),
-  container: auto,
+  container-position: center,
+  container: rem($container-desktop-wide),
   columns: $column-desktop,
   gutters: 24px / 76px,
   column-width: false,

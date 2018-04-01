@@ -1,0 +1,13 @@
+<div class="block-cta__item {{ ctaItem.bgColor }}">
+  {% if ctaItem.subTitle is not empty %}
+    <div class="block-cta__subtitle">{{ ctaItem.subTitle }}</div>
+  {% endif %}
+  <h3 class="block-cta__title">{{ ctaItem.title }}</h3>
+  <div class="block-cta__image">{{ ctaItem.image }}</div>
+  <div class="block-cta__content">
+    {% if ctaItem.description is not empty %}
+      <div class="block-cta__description">{{ ctaItem.description }}</div>
+    {% endif %}
+    <div class="block-cta__link">{{ ctaItem.link }}</div>
+  </div>
+</div>
