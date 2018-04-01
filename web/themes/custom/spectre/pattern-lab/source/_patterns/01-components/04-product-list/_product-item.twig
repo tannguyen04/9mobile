@@ -1,0 +1,32 @@
+<div class="product-item bg-light--gray">
+  <div class="product-item__inner">
+    <div class="product-item__status"><span>{{ productItem.status }}</span></div>
+    <div class="product-item__image">{{ productItem.image }}</div>
+    <div class="product-item__top">
+      <div class="product-item__group">
+<!--         <div class="product-item__rate">
+          <select id="product-item__rate">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div> -->
+        <div class="product-item__colours">
+          {% for item in productItem.itemsColor %}
+            <span style="background-color: {{ item.color }}"></span>
+          {% endfor %}
+        </div>
+      </div>
+      <h4 class="product-item__title">{{ productItem.title }}</h4>
+    </div>
+    <div class="product-item__ribbon">{{ productItem.ribbon }}</div>
+    <div class="product-item__bottom">
+      <span>From</span>
+      <span class="product-item__price">{{ productItem.price }}</span>
+      <span class="product-item__upfront">{{ productItem.upfront }}</span>
+    </div>
+  </div>
+  <div class="product-item__compare"><input type="checkbox" name="Compare" value="Compare"><span>Compare</span></div>
+</div>
