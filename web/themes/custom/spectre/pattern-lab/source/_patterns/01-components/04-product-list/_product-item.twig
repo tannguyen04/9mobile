@@ -1,6 +1,8 @@
 <div class="product-item bg-light--gray">
   <div class="product-item__inner">
-    <div class="product-item__status"><span>{{ productItem.status }}</span></div>
+    {% if productItem.status is not empty %}
+      <div class="product-item__status"><span>{{ productItem.status }}</span></div>
+    {% endif %}
     <div class="product-item__image">{{ productItem.image }}</div>
     <div class="product-item__top">
       <div class="product-item__group">
@@ -22,7 +24,7 @@
     <div class="product-item__ribbon">{{ productItem.ribbon }}</div>
     <div class="product-item__bottom">
       <span>From</span>
-      <span class="product-item__price">{{ productItem.price }}</span>
+      <span class="product-item__price">{{ productItem.price }}<span>.00</span></span>
       <span class="product-item__upfront">{{ productItem.upfront }}</span>
     </div>
   </div>

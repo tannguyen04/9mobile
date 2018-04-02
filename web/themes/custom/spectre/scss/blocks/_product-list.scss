@@ -46,6 +46,10 @@
     }
   }
 
+  &:hover {
+    background: url(../../images/cta/hover-down.png) center center repeat;
+  }
+
   &__inner {
     position: relative;
     padding: 30px;
@@ -125,6 +129,7 @@
 
   &__title {
     font-size: 1.375rem;
+    min-height: 58px;
 
     a {
       &:before {
@@ -152,6 +157,13 @@
 
   &__price {
     font-size: 1.5625rem;
+    position: relative;
+
+    span {
+      vertical-align: super;
+      font-size: .875rem;
+      display: inline-block;
+    }
   }
 
   &__compare {
