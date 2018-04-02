@@ -1,6 +1,6 @@
 .product-list {
   &__grid {
-    @include susy-media(desktop) {
+    @include susy-media(mobileLarge) {
       align-items: stretch;
       display: flex;
       flex-flow: row wrap;
@@ -19,13 +19,31 @@
   justify-content: space-between;
   overflow: hidden;
 
+  @include susy-media(mobileLargeTabletOnly) {
+    margin: rem(0 10px 10px 0);
+    width: calc((100% - #{rem(10px)})/2);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @include susy-media(tabletOnly) {
+    margin: rem(0 15px 15px 0);
+    width: calc((100% - #{2 * rem(15px)})/3);
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
   @include susy-media(desktop) {
     margin: rem(0 20px 20px 0);
     width: calc((100% - #{3 * rem(20px)})/4);
-  }
 
-  &:nth-child(4n) {
-    margin-right: 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   &__inner {
@@ -58,8 +76,14 @@
     }
   }
 
-  &__image {
-    margin-bottom: 25px;
+  &__rate {
+    span {
+      color: $gray-93;
+
+      &.checked {
+        color: $yellow;
+      }
+    }
   }
 
   &__ribbon {
@@ -84,13 +108,14 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin: 25px 0 15px;
+    justify-items: center;
   }
 
   &__colours {
     span {
       display: inline-block;
-      margin: 0 5px 5px 0;
+      margin: 0 5px 0 0;
       border: 1px solid $black;
       height: 11px;
       width: 11px;
@@ -186,6 +211,13 @@
   }
 
   &--dark {
+    justify-content: flex-start;
+    @extend .text--white;
+
+    .product-item__inner {
+      min-height: 580px;
+    }
+
     .product-item__image {
       img {
         position: absolute;
@@ -199,6 +231,23 @@
         height: 100%;
         max-width: none;
       }
+    }
+
+    .product-item__title {
+      font-size: 1.75rem;
+      margin-bottom: 10px;
+    }
+
+    .product-item__description {
+      font-size: .875rem;
+      line-height: 1.25em;
+    }
+
+    .product-item__link {
+      position: absolute;
+      flex-grow: 1;
+      bottom: 30px;
+      left: 30px;
     }
   }
 }
