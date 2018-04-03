@@ -89,6 +89,18 @@
   &--right {
     text-align: right;
   }
+
+  &--white {
+    color: $white;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 }
 
 

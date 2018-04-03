@@ -40,5 +40,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "jquery-bar-rating": "^1.2.2"
+  }
 }

@@ -1,0 +1,365 @@
+{
+  "productList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-product-item",
+          "with": {
+            "productItem": {
+              "status": "New",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/product/product1.png",
+                      "alt": "Image",
+                      "width": "200",
+                      "height": "200"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "itemsColor": [
+                {
+                  "color": "#5d6261"
+                },
+                {
+                  "color": "#8d7293"
+                },
+                {
+                  "color": "#64718e"
+                }
+              ],
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class":"",
+                      "href": "#",
+                      "text": "Samsung Galaxy S9"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "ribbon": "<p>Buy 50GB and get an extra 50GB on us. Terms apply.</p>",
+              "price": "£61",
+              "upfront": "a month + £49.99 upfront"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-product-item",
+          "with": {
+            "productItem": {
+              "status": "PRE-ORDER",
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/product/product2.png",
+                      "alt": "Image",
+                      "width": "200",
+                      "height": "200"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "itemsColor": [
+                {
+                  "color": "#5d6261"
+                },
+                {
+                  "color": "#8d7293"
+                },
+                {
+                  "color": "#64718e"
+                }
+              ],
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class":"",
+                      "href": "#",
+                      "text": "Huawei"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "ribbon": "<p>Buy 50GB and get an extra 50GB on us. Terms apply.</p>",
+              "price": "£61",
+              "upfront": "a month + £49.99 upfront"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-product-item",
+          "with": {
+            "productItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/product/product3.png",
+                      "alt": "Image",
+                      "width": "200",
+                      "height": "200"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "itemsColor": [
+                {
+                  "color": "#5d6261"
+                },
+                {
+                  "color": "#8d7293"
+                },
+                {
+                  "color": "#64718e"
+                }
+              ],
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class":"",
+                      "href": "#",
+                      "text": "Apple IphoneX"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "ribbon": "<p>Buy 50GB and get an extra 50GB on us. Terms apply.</p>",
+              "price": "£61",
+              "upfront": "a month + £49.99 upfront"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-product-item-dark",
+          "with": {
+            "productItemDark": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/product/dark1.jpg",
+                      "alt": "Image",
+                      "width": "200",
+                      "height": "200"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class":"",
+                      "href": "#",
+                      "text": "Samsung Galaxy S9"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "description": "Buy 50GB and get an extra 50GB on us. Terms apply.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Learn more"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-product-item",
+          "with": {
+            "productItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/product/product1.png",
+                      "alt": "Image",
+                      "width": "200",
+                      "height": "200"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "itemsColor": [
+                {
+                  "color": "#5d6261"
+                },
+                {
+                  "color": "#8d7293"
+                },
+                {
+                  "color": "#64718e"
+                }
+              ],
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class":"",
+                      "href": "#",
+                      "text": "Apple IphoneX"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "ribbon": "<p>Buy 50GB and get an extra 50GB on us. Terms apply.</p>",
+              "price": "£61",
+              "upfront": "a month + £49.99 upfront"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-product-item",
+          "with": {
+            "productItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/product/product3.png",
+                      "alt": "Image",
+                      "width": "200",
+                      "height": "200"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "itemsColor": [
+                {
+                  "color": "#5d6261"
+                },
+                {
+                  "color": "#8d7293"
+                },
+                {
+                  "color": "#64718e"
+                }
+              ],
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class":"",
+                      "href": "#",
+                      "text": "Apple IphoneX"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "ribbon": "<p>Buy 50GB and get an extra 50GB on us. Terms apply.</p>",
+              "price": "£61",
+              "upfront": "a month + £49.99 upfront"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-product-item",
+          "with": {
+            "productItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/product/product2.png",
+                      "alt": "Image",
+                      "width": "200",
+                      "height": "200"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "itemsColor": [
+                {
+                  "color": "#5d6261"
+                },
+                {
+                  "color": "#8d7293"
+                },
+                {
+                  "color": "#64718e"
+                }
+              ],
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class":"",
+                      "href": "#",
+                      "text": "Apple IphoneX"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "ribbon": "<p>Buy 50GB and get an extra 50GB on us. Terms apply.</p>",
+              "price": "£61",
+              "upfront": "a month + £49.99 upfront"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

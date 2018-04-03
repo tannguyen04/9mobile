@@ -91,4 +91,8 @@
     animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
   });
 
+  // $('#product-item__rate').barrating({
+  //   theme: 'fontawesome-stars'
+  // });
+
 }(this, this.document, this.jQuery, this.Drupal));
