@@ -1,0 +1,117 @@
+.block-media {
+  font-size: rem(18px);
+  padding: rem(40px 0 10px);
+
+  @include susy-media(desktop) {
+    padding: rem(70px 0 20px);
+  }
+
+  &__text,
+  &__media {
+    margin-bottom: rem(30px);
+  }
+
+  .video-wrap {
+    padding-bottom: calc(100% * 388 / 600);
+  }
+
+  @include susy-media(tablet) {
+    &__text,
+    &__media {
+      overflow: hidden;
+      position: relative;
+      width: 50%;
+    }
+
+    &__text {
+      padding-right: 2.5%;
+    }
+
+    &__media {
+      text-align: right;
+    }
+
+    &__inner {
+      align-items: flex-start;
+      clear: both;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+
+      &.media-text {
+        .block-media__text {
+          padding-left: 2.5%;
+          padding-right: 0;
+        }
+
+        .block-media__media {
+          padding-left: 0;
+          text-align: left;
+        }
+      }
+
+      &.text-text {
+        .block-media__text {
+          &:nth-child(2n) {
+            padding-left: 2.5%;
+            padding-right: 0;
+          }
+        }
+      }
+
+      &.media-none,
+      &.media-media {
+        .block-media__media {
+          &:nth-child(2n + 1) {
+            padding-left: 0;
+            padding-right: 2.5%;
+          }
+        }
+      }
+    }
+
+    &.media-left {
+      .block-media__inner {
+        flex-direction: row-reverse;
+      }
+
+      .block-media__text {
+        padding-left: 2.5%;
+        padding-right: 0;
+      }
+
+      .block-media__media {
+        padding-left: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  @include susy-media(desktop) {
+    &__text {
+      padding-right: 5%;
+    }
+
+    &__inner {
+      &.media-text {
+        .block-media__text {
+          padding-left: 5%;
+        }
+      }
+
+      &.text-text {
+        .block-media__text {
+          &:nth-child(2n) {
+            padding-left: 5%;
+          }
+        }
+      }
+    }
+
+    &.media-left {
+      .block-media__text {
+        padding-left: 5%;
+      }
+    }
+  }
+}

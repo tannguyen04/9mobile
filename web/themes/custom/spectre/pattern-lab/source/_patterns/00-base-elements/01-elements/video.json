@@ -1,0 +1,9 @@
+{
+  "video": {
+    "videoItem": {
+      "include()": {
+        "pattern": "base-elements-youtube-embed"
+      }
+    }
+  }
+}
