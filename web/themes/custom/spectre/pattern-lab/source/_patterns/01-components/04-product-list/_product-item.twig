@@ -1,0 +1,32 @@
+<div class="product-item bg-light--gray">
+  <div class="product-item__inner">
+    {% if productItem.status is not empty %}
+      <div class="product-item__status"><span>{{ productItem.status }}</span></div>
+    {% endif %}
+    <div class="product-item__image">{{ productItem.image }}</div>
+    <div class="product-item__top">
+      <div class="product-item__group">
+        <div class="product-item__rate">
+          <span class="icon-star checked"></span>
+          <span class="icon-star checked"></span>
+          <span class="icon-star checked"></span>
+          <span class="icon-star"></span>
+          <span class="icon-star"></span>
+        </div>
+        <div class="product-item__colours">
+          {% for item in productItem.itemsColor %}
+            <span style="background-color: {{ item.color }}"></span>
+          {% endfor %}
+        </div>
+      </div>
+      <h4 class="product-item__title">{{ productItem.title }}</h4>
+    </div>
+    <div class="product-item__ribbon">{{ productItem.ribbon }}</div>
+    <div class="product-item__bottom">
+      <span>From</span>
+      <span class="product-item__price">{{ productItem.price }}<span>.00</span></span>
+      <span class="product-item__upfront">{{ productItem.upfront }}</span>
+    </div>
+  </div>
+  <div class="product-item__compare"><input type="checkbox" name="Compare" value="Compare"><span>Compare</span></div>
+</div>
