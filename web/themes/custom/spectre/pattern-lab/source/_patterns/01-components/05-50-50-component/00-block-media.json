@@ -9,7 +9,8 @@
               "pattern": "components-block-media-text-item",
               "with": {
                 "blockMediaTextItem": {
-                  "text": "<p>Every day, industry leaders like Google, Amazon and Etsy make thousands of deployments, turning to the Lean Startup and DevOps movements to power that market-driven necessity. However, these companies are outliers--many others struggle to make significant gains despite the investment of time and money into new programs.</p><p>What sets the exceptional outliers apart from those who are failing to keep pace is a robust strategy around data. This 'Data Gap' disproportionately affects companies with large ERP implementations or other complex systems of record. Join Gene Kim, along with Adam Bowen from Image, to explore how to bolster your approach to data management for a stronger, more efficient software development lifecycle.</p>"
+                  "title": "Take stunning photos, all night long",
+                  "text": "<p>From all-night raves to family bonfires, sometimes we want to capture our memories in low light. And with the Galaxy S9, you can take crystal clear snaps, all night long. It features a re-imagined camera with super low aperture. So you’ll be able to capture the moment, whatever the lighting – with no more blurry faces.</p>"
                 }
               },
               "only": true
@@ -25,13 +26,118 @@
                       "pattern": "base-elements-image",
                       "with": {
                         "image": {
-                          "src": "https://picsum.photos/600/388?random",
+                          "src": "https://picsum.photos/600/310?random",
                           "alt": "Image image",
                           "width": "600",
-                          "height": "388"
+                          "height": "310"
                         }
                       },
                       "only": true
+                    }
+                  }
+                }
+              },
+              "only": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "media-text",
+        "content": [
+          {
+            "include()": {
+              "pattern": "components-block-media-text-item",
+              "with": {
+                "blockMediaTextItem": {
+                  "title": "Take stunning photos, all night long",
+                  "text": "<p>From all-night raves to family bonfires, sometimes we want to capture our memories in low light. And with the Galaxy S9, you can take crystal clear snaps, all night long. It features a re-imagined camera with super low aperture. So you’ll be able to capture the moment, whatever the lighting – with no more blurry faces.</p>"
+                }
+              },
+              "only": true
+            }
+          },
+          {
+            "include()": {
+              "pattern": "components-block-media-media-item",
+              "with": {
+                "blockMediaMediaItem": {
+                  "media": {
+                    "include()": {
+                      "pattern": "base-elements-image",
+                      "with": {
+                        "image": {
+                          "src": "https://picsum.photos/600/310?random",
+                          "alt": "Image image",
+                          "width": "600",
+                          "height": "310"
+                        }
+                      },
+                      "only": true
+                    }
+                  }
+                }
+              },
+              "only": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "text-media",
+        "content": [
+          {
+            "include()": {
+              "pattern": "components-block-media-text-item",
+              "with": {
+                "blockMediaTextItem": {
+                  "title": "Take stunning photos, all night long",
+                  "text": "<p>From all-night raves to family bonfires, sometimes we want to capture our memories in low light. And with the Galaxy S9, you can take crystal clear snaps, all night long. It features a re-imagined camera with super low aperture. So you’ll be able to capture the moment, whatever the lighting – with no more blurry faces.</p>"
+                }
+              },
+              "only": true
+            }
+          },
+          {
+            "include()": {
+              "pattern": "components-block-media-media-item",
+              "with": {
+                "blockMediaMediaItem": {
+                  "media": {
+                    "include()": {
+                      "pattern": "base-elements-video"
+                    }
+                  }
+                }
+              },
+              "only": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "media-text",
+        "content": [
+          {
+            "include()": {
+              "pattern": "components-block-media-text-item",
+              "with": {
+                "blockMediaTextItem": {
+                  "title": "Take stunning photos, all night long",
+                  "text": "<p>From all-night raves to family bonfires, sometimes we want to capture our memories in low light. And with the Galaxy S9, you can take crystal clear snaps, all night long. It features a re-imagined camera with super low aperture. So you’ll be able to capture the moment, whatever the lighting – with no more blurry faces.</p>"
+                }
+              },
+              "only": true
+            }
+          },
+          {
+            "include()": {
+              "pattern": "components-block-media-media-item",
+              "with": {
+                "blockMediaMediaItem": {
+                  "media": {
+                    "include()": {
+                      "pattern": "base-elements-video"
                     }
                   }
                 }
