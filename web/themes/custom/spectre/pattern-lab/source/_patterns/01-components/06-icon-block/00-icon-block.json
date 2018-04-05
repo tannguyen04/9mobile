@@ -1,0 +1,103 @@
+{
+  "iconBlock": {
+    "backgroundColor": "bg--primary text--white",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-icon-item",
+          "with": {
+            "iconItem": {
+              "icon": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/icon/product-promo-xs-free-delivery-bp3-011615.png",
+                      "alt": "Image image",
+                      "width": "36",
+                      "height": "40"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "title": "Free next day delivery when you order before midnight "
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-icon-item",
+          "with": {
+            "iconItem": {
+              "icon": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/icon/product-promo-xs-priority-bp3-011615.png",
+                      "alt": "Image image",
+                      "width": "36",
+                      "height": "40"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "title": "Exclusive tickets, offers and experiences with Priority"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-icon-item",
+          "with": {
+            "iconItem": {
+              "icon": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/icon/product-promo-xs-priority-bp3-011615.png",
+                      "alt": "Image image",
+                      "width": "36",
+                      "height": "40"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "title": "Already an O2 customer? Sign in to upgrade"
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-icon-item",
+          "with": {
+            "iconItem": {
+              "icon": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "../../images/icon/o2-business-promo-image-xs-bp3-17022015.png",
+                      "alt": "Image image",
+                      "width": "36",
+                      "height": "40"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "title": "Get the Samsung Galaxy S9 on our Business tariffs."
+            }
+          }
+        }
+      }
+    ]
+  }
+}
