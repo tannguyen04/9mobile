@@ -12,7 +12,7 @@ $show-image: 'hide';
 $susy: (
   flow: ltr,
   math: fluid,
-  container-position: rem($container-margin),
+  container-position: $container-margin,
   container: auto,
   columns: $column-mobile,
   gutters: 5px / 26px,
@@ -26,7 +26,7 @@ $susy: (
 );
 
 $susy-tablet: (
-  container-position: rem($container-margin-tablet),
+  container-position: $container-margin-tablet,
   container: auto,
   columns: $column-tablet,
   gutters: 5px / 59px,
@@ -40,8 +40,8 @@ $susy-tablet: (
 );
 
 $susy-desktop: (
-  container-position: center,
-  container: rem($container-desktop-wide),
+  container-position: $container-margin-desktop,
+  container: auto,
   columns: $column-desktop,
   gutters: 24px / 76px,
   column-width: false,
@@ -55,7 +55,7 @@ $susy-desktop: (
 
 $susy-desktop-wide: (
   gutters: 24px / 76px,
-  container: rem($container-desktop-wide),
+  container: $container-desktop-wide,
   container-position: center,
   columns: $column-desktop,
 );
