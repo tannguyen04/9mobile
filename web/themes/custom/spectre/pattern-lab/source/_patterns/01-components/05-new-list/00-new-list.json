@@ -1,0 +1,252 @@
+{
+  "newList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-new-list-item",
+          "with": {
+            "newListItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/960/540",
+                      "width": "960px",
+                      "height": "540px",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "backgroundColor": "bg-light--gray--gradient",
+              "date": "27/03/18",
+              "title": "Samsung Galaxy S9",
+              "body": "Now £18.99 upfront, £29 tariff. Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-new-list-item",
+          "with": {
+            "newListItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/960/540",
+                      "width": "960px",
+                      "height": "540px",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "backgroundColor": "bg-dark--blue-gradient",
+              "date": "27/03/18",
+              "title": "Samsung Galaxy S9",
+              "body": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-new-list-item",
+          "with": {
+            "newListItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/960/540",
+                      "width": "960px",
+                      "height": "540px",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "backgroundColor": "bg-dark--blue-gradient",
+              "date": "27/03/18",
+              "title": "Samsung Galaxy S9",
+              "body": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-new-list-item",
+          "with": {
+            "newListItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/960/540",
+                      "width": "960px",
+                      "height": "540px",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "backgroundColor": "bg-light--gray--gradient",
+              "date": "27/03/18",
+              "title": "Samsung Galaxy S9",
+              "body": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-new-list-item",
+          "with": {
+            "newListItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/960/540",
+                      "width": "960px",
+                      "height": "540px",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "backgroundColor": "bg-dark--blue-gradient",
+              "date": "27/03/18",
+              "title": "Samsung Galaxy S9",
+              "body": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-new-list-item",
+          "with": {
+            "newListItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-image",
+                  "with": {
+                    "image": {
+                      "src": "//unsplash.it/960/540",
+                      "width": "960px",
+                      "height": "540px",
+                      "alt": "Image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "backgroundColor": "bg-light--gray--gradient",
+              "date": "27/03/18",
+              "title": "Samsung Galaxy S9",
+              "body": "Now £18.99 upfront, £29 tariff. Was £22.99 upfront, £33 tariff. 5GB data. Ends 21 March.",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

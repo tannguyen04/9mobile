@@ -58,6 +58,11 @@
       background-color: $gray-ef;
       color: $text-color;
     }
+
+    &--gray-gradient {
+      background-image: linear-gradient(to top,#fff 0%,#efefef 50%,#efefef 100%);
+      color: $text-color;
+    }
   }
 
   &-dark {
@@ -72,6 +77,11 @@
           color: $white;
         }
       }
+    }
+
+    &--blue-gradient {
+      @extend .text--white;
+      background-image: linear-gradient(to bottom,#032b5a 0%,#3487bc 100%);
     }
   }
 }

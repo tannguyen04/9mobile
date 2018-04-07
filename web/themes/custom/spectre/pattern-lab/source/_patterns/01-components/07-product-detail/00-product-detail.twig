@@ -1,12 +1,13 @@
 <div class="product-detail">
+  <div class="product-detail__background bg-dark--blue-gradient"></div>
   <div class="container">
     <div class="product-detail__grid">
       <div class="product-detail__left">
         <div class="product-detail__image">{{ productDetail.image }}</div>
         <div class="product-detail__device-views">
           <ul>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">3D View</a></li>
+            <li><a href="#" class="icon-link icon--gallery">Gallery</a></li>
+            <li><a href="#" class="icon-link icon--view">3D View</a></li>
           </ul>
         </div>
       </div>
@@ -28,32 +29,31 @@
           <div class="product-detail__description">{{ productDetail.description }}</div>
           <div class="product-detail__link-looking">{{ productDetail.linkLooking }}</div>
           <div class="product-detail__price">
-            <p>Pay Monthly from: </p>
             <div class="product-detail__price__group">
-              <div class="product-detail__price__upfront">{{ productDetail.priceUpfront }}<span>.99</span><span>upfront</span></div>
-              <div class="product-detail__price__month">{{ productDetail.priceMonth }}<span>.00</span><span>monthly</span></div>
+              <div class="product-detail__price__upfront"><p>Pay Monthly from: </p><h3>{{ productDetail.priceUpfront }}</h3><div><span>.99</span><span>upfront</span></div></div>
+              <div class="product-detail__price__month"><h3>{{ productDetail.priceMonth }}</h3><div><span>.00</span><span>monthly</span></div></div>
               <div class="product-detail__price__link">{{ productDetail.priceLink }}</div>
             </div>
           </div>
           <div class="product-detail__color-capacity">
             <div class="product-detail__color">
               <label>Colour</label>
-              <ul name="Colour" form="Colour">
+              <select name="Colour" form="Colour">
                 {% for item in productDetail.itemsColour %}
-                  <li><span style="background-color: {{ item.color}}"></span>{{ item.name}}</li>
+                  <option>{{ item.name}}</option>
                 {% endfor %}
-              </ul>
+              </select>
             </div>
             <div class="product-detail__capacity">
-              <span>Capacity</span><span>{{ productDetail.capacity }}</span>
+              <span>Capacity:</span><span>{{ productDetail.capacity }}</span>
             </div>
           </div>
           <div class="product-detail__delivery-checklist">
-            <div class="product-detail__delivery">
+            <div class="product-detail__delivery icon-image icon--status">
               <span class="product-detail__status">{{ productDetail.status }}</span>
               Order by midnight for free next working day delivery
             </div>
-            <div class="product-detail__checklist">
+            <div class="product-detail__checklist icon-image icon--checklist">
               {{ productDetail.checklist }}
             </div>
           </div>

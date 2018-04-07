@@ -1,15 +1,64 @@
 .product-detail {
+  position: relative;
+
+  .container {
+    @include susy-media(desktop) {
+      max-width: 1110px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    max-height: 420px;
+  }
+
   &__grid {
+    padding: 40px 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-content: center;
     align-items: flex-start;
+    position: relative;
+    z-index: 2;
   }
 
   &__left,
   &__right {
     width: 50%;
+  }
+
+  &__inner {
+    max-width: 80%;
+  }
+
+  &__image {
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__device-views {
+    ul {
+      text-align: center;
+
+      li {
+        display: inline-block;
+
+        a {
+          font-size: 0.8125rem;
+          padding: 5px 2.125em;
+        }
+      }
+    }
   }
 
   &__group {
@@ -18,10 +67,12 @@
     justify-content: flex-start;
     align-content: center;
     align-items: center;
+    margin-bottom: 1.25rem;
   }
 
   &__description {
     margin-bottom: 30px;
+    font-size: 14px;
   }
 
   &__price__group {
@@ -29,7 +80,7 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-content: center;
-    align-items: center;
+    align-items: flex-end;
   }
 
   &__color-capacity {
@@ -38,6 +89,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    color: $black;
   }
 
   &__delivery-checklist {
@@ -46,5 +98,160 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
+  }
+
+  &__title,
+  &__group,
+  &__description,
+  &__link-looking,
+  &__price {
+    @extend .text--white;
+  }
+
+  &__title {
+    font-size: 2.125rem;
+  }
+
+  &__rate {
+    padding-right: 8px;
+  }
+
+  &__number-rate {
+    padding-right: 8px;
+    border-right: 1px solid $gray;
+    margin-right: 8px;
+  }
+
+  &__counter-rate {
+    padding-right: 20px;
+  }
+
+  &__link-info {
+    a {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link-looking {
+    margin-bottom: 1.875rem;
+
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  &__price {
+    margin-bottom: 60px;
+
+    p {
+      color: $gray-b3;
+      margin-bottom: 15px;
+    }
+
+    &__group {
+      > div {
+        flex: 1;
+      }
+    }
+
+    &__upfront,
+    &__month {
+      > div {
+        float: left;
+
+        span {
+          display: block;
+          font-size: 12px;
+        }
+      }
+
+      h3 {
+        float: left;
+      }
+    }
+
+    &__link {
+      border-left: 1px solid $gray-1b;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: 1px;
+        content: "";
+        border-left: 1px solid $gray-09;
+        height: 100%;
+      }
+
+      a {
+        padding: 28px 0 15px 20px;
+      }
+    }
+  }
+
+  &__color-capacity {
+    margin-bottom: 30px;
+  }
+
+  &__color {
+    padding-right: 20px;
+  }
+
+  &__capacity {
+    > span {
+      margin-right: 10px;
+    }
+  }
+
+  &__delivery-checklist {
+    font-size: 12px;
+  }
+
+  &__checklist,
+  &__delivery {
+    flex: 1;
+    padding-left: 30px;
+  }
+
+  &__delivery {
+    padding-right: 30px;
+  }
+
+  .icon-link {
+    padding: 0 0 0 2.125rem;
+    height: 2.125rem;
+    line-height: 2.125rem;
+    color: #3d9ece;
+    display: block;
+    background-image: url("../../images/icons-sprite.png");
+
+    &.icon--gallery {
+      background-repeat: no-repeat;
+      background-position: 0 -199px;
+    }
+
+    &.icon--view {
+      background-repeat: no-repeat;
+      background-position: 0 -247px;
+    }
+  }
+
+  .icon-image {
+    height: 1.5rem;
+    margin-right: 0.3125rem;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    background-image: url("../../images/icons-sprite.png");
+
+    &.icon--status {
+      background-repeat: no-repeat;
+      background-position: 0 -374px;
+    }
+
+    &.icon--checklist {
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 }
