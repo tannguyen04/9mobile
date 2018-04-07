@@ -53,8 +53,8 @@ jobs:
           name: Just test
           command: echo $GCLOUD_SERVICE_KEY | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json
       - run: |
-          source /root/google-cloud-sdk/completion.bash.inc
-          source /root/google-cloud-sdk/path.bash.inc
+          sudo apt-get --assume-yes install python
+          source ~/.profile && source ~/.bashrc
           gcloud --quiet components update
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
           ./scripts/gcloud/deploy.sh
