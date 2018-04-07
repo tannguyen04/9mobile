@@ -46,6 +46,9 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "c6:a8:cc:ad:e4:fe:de:62:c6:e4:20:0a:e1:f8:ae:67"
+      - run: 
+          name: Install Python
+          command: sudo apt-get --assume-yes install python
       - run: |
           export CLOUDSDK_CORE_DISABLE_PROMPTS=1
           curl https://sdk.cloud.google.com | bash
@@ -53,7 +56,6 @@ jobs:
           name: Just test
           command: echo $GCLOUD_SERVICE_KEY | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json
       - run: |
-          sudo apt-get --assume-yes install python
           source ~/.profile && source ~/.bashrc
           gcloud --quiet components update
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
@@ -74,11 +76,11 @@ workflows:
   version: 2
   checking_standard_code_and_build:
     jobs:
-      - checking_standard_code
-      - test
+      #- checking_standard_code
+      #- test
       - deploy_9mobile_google_cloud:
-          requires:
-            - test
+          #requires:
+            #- test
           filters:
             branches:
               only: dev
