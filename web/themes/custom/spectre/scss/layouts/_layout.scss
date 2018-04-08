@@ -26,6 +26,7 @@ body {
   color: $text-color;
   font-size: rem(14px);
   text-size-adjust: none;
+  line-height: $base-line-height;
   word-wrap: break-word;
   height: 100%;
 }

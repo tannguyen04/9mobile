@@ -1,0 +1,14 @@
+{% set src = 'https://www.youtube.com/embed/' ~ youtubeEmbed.id ~ '?autoplay=' ~ youtubeEmbed.autoplay ~ '&amp;start=' ~ youtubeEmbed.start ~ '&amp;rel=' ~ youtubeEmbed.rel %}
+{% set loop = youtubeEmbed.loop == 1 ? '&amp;version=3&amp;loop=1&amp;playlist=' ~ youtubeEmbed.id : '' %}
+
+<iframe
+  class="youtube-embed"
+  width="{{ youtubeEmbed.width }}"
+  height="{{ youtubeEmbed.height }}"
+  allowfullscreen="allowfullscreen"
+  mozallowfullscreen="mozallowfullscreen"
+  msallowfullscreen="msallowfullscreen"
+  oallowfullscreen="oallowfullscreen"
+  webkitallowfullscreen="webkitallowfullscreen"
+  src="{{ src }}{{ loop }}&amp;enablejsapi=1">
+</iframe>

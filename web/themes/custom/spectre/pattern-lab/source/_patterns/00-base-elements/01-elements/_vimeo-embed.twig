@@ -1,0 +1,9 @@
+{% set src = 'https://player.vimeo.com/video/' ~ vimeoEmbed.id ~ '?autoplay=' ~ vimeoEmbed.autoplay ~ '&amp;loop=' ~ vimeoEmbed.loop ~ '&amp;autopause=0&amp;api=1' %}
+
+<iframe
+  class="vimeo-embed"
+  width="{{ vimeoEmbed.width }}"
+  height="{{ vimeoEmbed.height }}"
+  allowfullscreen="{{ vimeoEmbed.allowfullscreen }}"
+  src="{{ src }}">
+</iframe>

@@ -1,0 +1,11 @@
+<div class="block-media">
+  <div class="container">
+    {% for row in blockMedia.items %}
+      <div class="block-media__inner {{ row.type }}">
+        {% for column in row.content %}
+          {{ column }}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "pageclass" : "",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-product-detail"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-icon-block"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-media"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  }
+}

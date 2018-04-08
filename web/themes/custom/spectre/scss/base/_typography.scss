@@ -94,3 +94,56 @@ strong {
   }
 }
 
+.video-wrap {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: rem(20px);
+
+  video,
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__poster {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(0);
+    transition: transform .8s ease;
+    width: 100%;
+    overflow: hidden;
+
+    &:after {
+      z-index: 2;
+    }
+
+    img {
+      height: 100%;
+      left: 0;
+      max-width: inherit;
+      position: absolute;
+      width: auto;
+      z-index: 1;
+    }
+  }
+
+  &--bigger {
+    // Image style 960x674
+    padding-bottom: 70.25%;
+  }
+
+  &.is-iframe-embed {
+    video,
+    iframe {
+      opacity: 1;
+    }
+  }
+}
