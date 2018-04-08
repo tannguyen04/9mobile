@@ -1,0 +1,48 @@
+.new-related {
+  background-color: $gray-e9;
+  padding: 30px 20px;
+
+  &__item {
+    margin-bottom: 30px;
+    border-top: 1px solid $gray-e4;
+    padding-top: 20px;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    color: $black;
+  }
+
+  &__published {
+    margin-bottom: 15px;
+    color: $primary-color;
+    font-size: 13px;
+  }
+
+  &__date {
+    padding-right: 10px;
+    margin-right: 5px;
+    position: relative;
+
+    &:before {
+      content: "|";
+      color: $gray-e4;
+      position: absolute;
+      right: 0;
+      top: 1px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    a {
+      color: $text-color;
+    }
+  }
+
+  &__description {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}

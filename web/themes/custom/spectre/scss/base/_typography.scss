@@ -11,7 +11,8 @@ h1 {
   font-size: 1.875em;
   line-height: 1em;
 
-  @include susy-media($tablet) {
+  @include susy-media(tablet) {
+    line-height: 1.2em;
     font-size: 2.875em;
   }
 }
@@ -32,6 +33,7 @@ h3 {
 
 h4 {
   font-size: 1.25em;
+  line-height: 1.25em;
 }
 
 a {
@@ -41,6 +43,54 @@ a {
   &:active,
   &:hover {
     color: $link-color;
+  }
+}
+
+p,
+figcaption {
+  line-height: 1.15rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+%list,
+.list {
+  padding-left: 40px;
+  margin-bottom: 10px;
+
+  li {
+    padding-left: 20px;
+    margin-bottom: rem(13px);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &--dot {
+    li {
+      position: relative;
+
+      &:before {
+        content: '\2022';
+        display: block;
+        font-size: 21px;
+        left: 0;
+        margin-top: rem(-3px);
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
+
+%list-in-article,
+.list-in-article {
+  ul {
+    @extend %list;
+    @extend %list--dot;
   }
 }
 
