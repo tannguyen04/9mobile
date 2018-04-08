@@ -13,48 +13,52 @@
       </div>
       <div class="product-detail__right">
         <div class="product-detail__inner">
-          <h3 class="product-detail__title">{{ productDetail.title }}</h3>
-          <div class="product-detail__group">
-            <div class="product-detail__rate">
-              <span class="icon-star checked"></span>
-              <span class="icon-star checked"></span>
-              <span class="icon-star checked"></span>
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
+          <div class="product-detail__inner__top">
+            <h3 class="product-detail__title">{{ productDetail.title }}</h3>
+            <div class="product-detail__group">
+              <div class="product-detail__rate">
+                <span class="icon-star checked"></span>
+                <span class="icon-star checked"></span>
+                <span class="icon-star checked"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <div class="product-detail__number-rate">4.0</div>
+              <div class="product-detail__counter-rate">{{ productDetail.couterRate }}</div>
+              <div class="product-detail__link-info">{{ productDetail.linkInfo }}</div>
             </div>
-            <div class="product-detail__number-rate">4.0</div>
-            <div class="product-detail__counter-rate">{{ productDetail.couterRate }}</div>
-            <div class="product-detail__link-info">{{ productDetail.linkInfo }}</div>
-          </div>
-          <div class="product-detail__description">{{ productDetail.description }}</div>
-          <div class="product-detail__link-looking">{{ productDetail.linkLooking }}</div>
-          <div class="product-detail__price">
-            <div class="product-detail__price__group">
-              <div class="product-detail__price__upfront"><p>Pay Monthly from: </p><h3>{{ productDetail.priceUpfront }}</h3><div><span>.99</span><span>upfront</span></div></div>
-              <div class="product-detail__price__month"><h3>{{ productDetail.priceMonth }}</h3><div><span>.00</span><span>monthly</span></div></div>
-              <div class="product-detail__price__link">{{ productDetail.priceLink }}</div>
-            </div>
-          </div>
-          <div class="product-detail__color-capacity">
-            <div class="product-detail__color">
-              <label>Colour</label>
-              <select name="Colour" form="Colour">
-                {% for item in productDetail.itemsColour %}
-                  <option>{{ item.name}}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="product-detail__capacity">
-              <span>Capacity:</span><span>{{ productDetail.capacity }}</span>
+            <div class="product-detail__description">{{ productDetail.description }}</div>
+            <div class="product-detail__link-looking">{{ productDetail.linkLooking }}</div>
+            <div class="product-detail__price">
+              <div class="product-detail__price__group">
+                <div class="product-detail__price__upfront"><p>Pay Monthly from: </p><h3>{{ productDetail.priceUpfront }}</h3><div><span>.99</span><span>upfront</span></div></div>
+                <div class="product-detail__price__month"><h3>{{ productDetail.priceMonth }}</h3><div><span>.00</span><span>monthly</span></div></div>
+                <div class="product-detail__price__link">{{ productDetail.priceLink }}</div>
+              </div>
             </div>
           </div>
-          <div class="product-detail__delivery-checklist">
-            <div class="product-detail__delivery icon-image icon--status">
-              <span class="product-detail__status">{{ productDetail.status }}</span>
-              Order by midnight for free next working day delivery
+          <div class="product-detail__inner__bottom">
+            <div class="product-detail__color-capacity">
+              <div class="product-detail__color">
+                <label>Colour</label>
+                <select name="Colour" form="Colour">
+                  {% for item in productDetail.itemsColour %}
+                    <option>{{ item.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="product-detail__capacity">
+                <span>Capacity:</span><span>{{ productDetail.capacity }}</span>
+              </div>
             </div>
-            <div class="product-detail__checklist icon-image icon--checklist">
-              {{ productDetail.checklist }}
+            <div class="product-detail__delivery-checklist">
+              <div class="product-detail__delivery icon-image icon--status">
+                <span class="product-detail__status">{{ productDetail.status }}</span>
+                <span>Order by midnight for free next working day delivery</span>
+              </div>
+              <div class="product-detail__checklist icon-image icon--checklist">
+                {{ productDetail.checklist }}
+              </div>
             </div>
           </div>
         </div>
