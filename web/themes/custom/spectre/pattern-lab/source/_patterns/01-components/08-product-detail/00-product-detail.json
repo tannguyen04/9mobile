@@ -1,0 +1,99 @@
+{
+  "productDetail": {
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "../../images/product/productdetail.png",
+            "alt": "Image image",
+            "width": "430",
+            "height": "430"
+          }
+        },
+        "only": true
+      }
+    },
+    "title": "Samsung Galaxy S9",
+    "couterRate": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class":"",
+            "href": "#",
+            "text": "23 Reviews"
+          }
+        },
+        "only": true
+      }
+    },
+    "linkInfo": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class":"link--arrow link--arrow__cicle",
+            "href": "#",
+            "text": "Product information"
+          }
+        },
+        "only": true
+      }
+    },
+    "description": "<p><strong>Get our best ever data deal, with a massive 100GB. Buy 50GB and get an extra 50GB on us, for 24 months. Terms apply.</strong>Take crystal clear photos in any light and capture your memories in super slow motion. And enjoy movies on the signature infinity display, with Dolby Atmos surround sound.</p>",
+    "linkLooking": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class":"",
+            "href": "#",
+            "text": "Looking for the Samsung Galaxy S9 Plus?"
+          }
+        },
+        "only": true
+      }
+    },
+    "priceUpfront": "£49",
+    "priceMonth": "£56",
+    "priceLink": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class":"link--arrow link--arrow__cicle",
+            "href": "#",
+            "text": "Also available on Pay As You Go"
+          }
+        },
+        "only": true
+      }
+    },
+    "itemsColour": [
+      {
+        "color": "#000000",
+        "name": "Midnight Black"
+      },
+      {
+        "color": "#8d7293",
+        "name": "Lilac Purple"
+      }
+    ],
+    "capacity": "64GB",
+    "status": "Instock",
+    "checklist": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class":"",
+            "href": "#",
+            "text": "Check click and collect"
+          }
+        },
+        "only": true
+      }
+    }
+  }
+}
