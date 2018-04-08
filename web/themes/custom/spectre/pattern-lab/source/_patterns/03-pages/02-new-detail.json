@@ -45,5 +45,21 @@
       },
       "only": true
     }
+  },
+  "rightRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-new-related"
+              }
+            }
+          ]
+        }
+      }
+    }
   }
 }

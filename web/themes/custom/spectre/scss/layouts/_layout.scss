@@ -32,17 +32,42 @@ body {
 
 .group-region {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  justify-items: flex-start;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 30px 0;
 
-  .left-region {
-    width: 75%;
-    margin-right: 35px;
+  @include susy-media(mobileOnly) {
+    .left-region {
+      margin-bottom: 40px;
+    }
   }
 
-  .right-region {
-    width: 25%;
+  @include susy-media(tablet) {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-items: flex-start;
+
+    .left-region {
+      width: 75%;
+      margin-right: 35px;
+    }
+
+    .right-region {
+      width: 25%;
+    }
+  }
+
+  @include susy-media(tabletOnly) {
+    .left-region {
+      width: 70%;
+      margin-right: 25px;
+    }
+
+    .right-region {
+      width: 30%;
+    }
   }
 }

@@ -20,7 +20,7 @@
                   "only": true
                 }
               },
-              "description": "Derek McManus, COO O2 I often get asked how do you get better mobile signal on trains? Unfortunately there’s no simple ...",
+              "description": "<p>Derek McManus, COO O2 I often get asked how do you get better mobile signal on trains? Unfortunately there’s no simple ...</p>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
@@ -57,7 +57,7 @@
                   "only": true
                 }
               },
-              "description": "Derek McManus, COO O2 I often get asked how do you get better mobile signal on trains? Unfortunately there’s no simple ...",
+              "description": "<p>Derek McManus, COO O2 I often get asked how do you get better mobile signal on trains? Unfortunately there’s no simple ...</p>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",

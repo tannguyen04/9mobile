@@ -33,6 +33,7 @@ h3 {
 
 h4 {
   font-size: 1.25em;
+  line-height: 1.25em;
 }
 
 a {
@@ -47,7 +48,7 @@ a {
 
 p,
 figcaption {
-  line-height: $base-line-height;
+  line-height: 1.15rem;
 }
 
 strong {

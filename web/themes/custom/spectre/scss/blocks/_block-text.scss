@@ -87,6 +87,14 @@
   .align-left {
     float: none;
 
+    @include susy-media(mobileOnly) {
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
     figcaption {
       padding-top: 15px;
     }
