@@ -26,10 +26,10 @@
                       "pattern": "base-elements-image",
                       "with": {
                         "image": {
-                          "src": "https://picsum.photos/600/310?random",
+                          "src": "https://picsum.photos/768/410?random",
                           "alt": "Image image",
-                          "width": "600",
-                          "height": "310"
+                          "width": "768",
+                          "height": "410"
                         }
                       },
                       "only": true
@@ -67,10 +67,10 @@
                       "pattern": "base-elements-image",
                       "with": {
                         "image": {
-                          "src": "https://picsum.photos/600/310?random",
+                          "src": "https://picsum.photos/768/410?random",
                           "alt": "Image image",
-                          "width": "600",
-                          "height": "310"
+                          "width": "768",
+                          "height": "410"
                         }
                       },
                       "only": true
