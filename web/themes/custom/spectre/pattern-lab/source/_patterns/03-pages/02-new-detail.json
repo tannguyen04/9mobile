@@ -1,0 +1,49 @@
+{
+  "leftRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "base-elements-image",
+                "with": {
+                  "image": {
+                    "src": "../../images/new-detail-920x400.png",
+                    "alt": "Image",
+                    "width": "920",
+                    "height": "400"
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-social-share"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-page-title"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-text",
+                "with": {
+                  "blockText": {
+                    "content": "<ul><li><strong>The latest Samsung flagships are available to pre-order from O2 online from today </strong></li><li><strong>Those who pre-order before 8<sup>th</sup> March will receive their new device seven days earlier than the general public<sup>1</sup> </strong></li><li><strong>Customers can benefit from a range of flexible tariffs and promotions, including O2’s best ever data deal<sup>2</sup> </strong></li></ul><p>O2 has announced that its customers can now pre-order the hotly anticipated Samsung Galaxy S9 and S9+ flagships, before they go on sale on 16th March. Keen fans who put in their order for either handset before 8th March will receive it seven days earlier than general sale.</p><figure role='group' class='caption caption-img align-right'><img alt='this is alt text' height='360' src='https://picsum.photos/275/360' width='275'><figcaption>Choosing The Best Audio Player Software For Your Computer</figcaption></figure><p>Available for pre-order on O2’s market leading O2 Refresh and flexible tariffs, customers can now get their hands on both the Samsung Galaxy S9 and S9+ in Midnight Black, Coral Blue and Lilac Purple colour variants tariffs offering O2’s best ever data deal – buy 5GB and get an extra 10GB on us, up to an enormous 90GB; when you buy 50GB and get an extra 40GB on us. </p><p>With flexible tariffs, customers can move their bills up or down each month, giving freedom to adjust how much data they expect to use – giving customers greater flexibility and control over their monthly bills.</p><p>The Galaxy S9 and S9+ builds on Samsung’s heritage of creating stunning designs and functional devices. The 5.8-inch and 6.2-inch models offer an Infinity Display that allows users to see more and hold less, for a deeper experience when viewing photos or movies as well as new re-imagined camera technology that allows for great photos, even in dark settings.</p><p>The Galaxy S9 and S9+ builds on Samsung’s heritage of creating stunning designs and functional devices. The 5.8-inch and 6.2-inch models offer an Infinity Display that allows users to see more and hold less, for a deeper experience when viewing photos or movies as well as new re-imagined camera technology that allows for great photos, even in dark settings.</p><p>The Galaxy S9 and S9+ builds on Samsung’s heritage of creating stunning designs and functional devices. The 5.8-inch and 6.2-inch models offer an Infinity Display that allows users to see more and hold less, for a deeper experience when viewing photos or movies as well as new re-imagined camera technology that allows for great photos, even in dark settings.</p>"
+                  }
+                },
+                "only": true
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  }
+}

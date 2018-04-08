@@ -1,0 +1,4 @@
+{
+  "leftRegion": "<div class=\"text--center\"><h2 style=\"padding: 100px 0; margin: 0\">Left Region</h2></div>",
+  "rightRegion": "<div class=\"text--center\"><h2 style=\"padding: 100px 0; margin: 0\">Right Region</h2></div>"
+}

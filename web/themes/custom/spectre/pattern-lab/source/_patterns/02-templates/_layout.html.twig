@@ -1,10 +1,12 @@
-<div class="page-wrapper {{ pageClass }}">
+<div class="page-wrapper {{ pageclass }}">
   {% block header %}
-    {% include "header.twig" %}
+    {{ header }}
   {% endblock %}
   <main id="main" class="main">
     {% block content %}
     {% endblock %}
   </main>
-  {{ footer }}
+  {% block footer %}
+    {{ footer }}
+  {% endblock %}
 </div>

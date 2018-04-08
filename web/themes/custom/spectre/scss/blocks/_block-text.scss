@@ -1,0 +1,114 @@
+.node--base--full {
+  @extend %clearfix;
+
+  .field--name-field-media {
+    margin: 0
+  }
+}
+
+%style-field-label-wrap,
+.style-field-label-wrap {
+  .field--label-above,
+  .field--label-inline {
+    line-height: 1.71;
+    font-size: rem(14px);
+    color: $text-color;
+    margin-bottom: rem(15px);
+
+    .field__label {
+      @include susy-media(mobileOnly) {
+        min-width: rem(45px);
+      }
+
+      &:after {
+        content: ':'
+      }
+    }
+  }
+
+  .field--label-inline {
+    align-content: stretch;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    .field__items {
+      padding-left: rem(24px);
+    }
+
+    .field__item {
+      display: inline-block;
+      margin-right: rem(24px);
+      text-transform: capitalize;
+      margin-bottom: rem(10px);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      &:active,
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+  }
+}
+
+.block-text {
+  @extend %style-field-label-wrap;
+  @extend %list-in-article;
+  margin-bottom: rem(30px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(40px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(60px);
+  }
+
+  p {
+    margin-bottom: rem(30px);
+  }
+
+  .table-responsive {
+    margin-bottom: rem(40px);
+  }
+
+  &__content {
+    @include susy-media(desktop) {
+      width: 100%;
+    }
+  }
+
+  .align-right,
+  .align-left {
+    float: none;
+
+    figcaption {
+      padding-top: 15px;
+    }
+  }
+
+  .align-left {
+    @include susy-media(tablet) {
+      float: left;
+      margin: rem(5px 15px 15px 0);
+      width: 35%;
+
+      figcaption {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .align-right {
+    @include susy-media(tablet) {
+      float: right;
+      margin: rem(5px 0 15px 15px);
+      width: 35%;
+    }
+  }
+}

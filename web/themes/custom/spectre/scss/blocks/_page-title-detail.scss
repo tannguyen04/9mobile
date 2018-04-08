@@ -1,0 +1,18 @@
+.page-title-detail {
+  padding: 20px 0;
+
+  &__published {
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+
+  &__date {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid $gray-c3;
+  }
+
+  &__author {
+    margin-left: 3px;
+  }
+}

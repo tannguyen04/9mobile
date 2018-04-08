@@ -1,0 +1,80 @@
+{
+  "newRelated": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-new-item",
+          "with": {
+            "newItem": {
+              "date": "19/01/2018",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Connecting Britain's railways with mobile"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "description": "Derek McManus, COO O2 I often get asked how do you get better mobile signal on trains? Unfortunately there’s no simple ...",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-new-item",
+          "with": {
+            "newItem": {
+              "date": "19/01/2018",
+              "title": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "Connecting Britain's railways with mobile"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              "description": "Derek McManus, COO O2 I often get asked how do you get better mobile signal on trains? Unfortunately there’s no simple ...",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "link--arrow link--arrow__cicle",
+                      "href": "#",
+                      "text": "Read More"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

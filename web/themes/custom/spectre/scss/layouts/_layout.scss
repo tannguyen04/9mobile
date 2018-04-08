@@ -29,3 +29,20 @@ body {
   word-wrap: break-word;
   height: 100%;
 }
+
+.group-region {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-items: flex-start;
+
+  .left-region {
+    width: 75%;
+    margin-right: 35px;
+  }
+
+  .right-region {
+    width: 25%;
+  }
+}
