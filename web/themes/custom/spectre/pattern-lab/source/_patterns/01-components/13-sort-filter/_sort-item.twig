@@ -1,0 +1,12 @@
+<div class="block-filter__sort__item">
+  <h4 class="block-filter__title">{{ sortItem.title }}</h4>
+  <ul>
+    {% for item in sortItem.items %}
+      <li>
+        <input type="radio" name="{{ item.name }}">
+        <label>{{ item.name }}</label>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<span>Or</span>

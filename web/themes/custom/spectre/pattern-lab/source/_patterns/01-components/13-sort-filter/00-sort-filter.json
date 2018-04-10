@@ -1,0 +1,260 @@
+{
+  "blockFilter": {
+    "itemsFilter": [
+      {
+        "include()": {
+          "pattern": "components-filter-item",
+          "with": {
+            "filterItem": {
+              "title": "Brand",
+              "items": [
+                {
+                  "name": "Alcatel",
+                  "count": "1"
+                },
+                {
+                  "name": "Apple",
+                  "count": "19"
+                },
+                {
+                  "name": "Doro",
+                  "count": "1"
+                },
+                {
+                  "name": "HTC",
+                  "count": "2"
+                },
+                {
+                  "name": "Huawei",
+                  "count": "4"
+                },
+                {
+                  "name": "LG",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-filter-item",
+          "with": {
+            "filterItem": {
+              "title": "Colour",
+              "items": [
+                {
+                  "name": "Alcatel",
+                  "count": "1"
+                },
+                {
+                  "name": "Apple",
+                  "count": "19"
+                },
+                {
+                  "name": "Doro",
+                  "count": "1"
+                },
+                {
+                  "name": "HTC",
+                  "count": "2"
+                },
+                {
+                  "name": "Huawei",
+                  "count": "4"
+                },
+                {
+                  "name": "LG",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-filter-item",
+          "with": {
+            "filterItem": {
+              "title": "Operating System ",
+              "items": [
+                {
+                  "name": "Alcatel",
+                  "count": "1"
+                },
+                {
+                  "name": "Apple",
+                  "count": "19"
+                },
+                {
+                  "name": "Doro",
+                  "count": "1"
+                },
+                {
+                  "name": "HTC",
+                  "count": "2"
+                },
+                {
+                  "name": "Huawei",
+                  "count": "4"
+                },
+                {
+                  "name": "LG",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-filter-item",
+          "with": {
+            "filterItem": {
+              "title": "Feature",
+              "items": [
+                {
+                  "name": "Alcatel",
+                  "count": "1"
+                },
+                {
+                  "name": "Apple",
+                  "count": "19"
+                },
+                {
+                  "name": "Doro",
+                  "count": "1"
+                },
+                {
+                  "name": "HTC",
+                  "count": "2"
+                },
+                {
+                  "name": "Huawei",
+                  "count": "4"
+                },
+                {
+                  "name": "LG",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-filter-item",
+          "with": {
+            "filterItem": {
+              "title": "Conditional/Availability",
+              "items": [
+                {
+                  "name": "Alcatel",
+                  "count": "1"
+                },
+                {
+                  "name": "Apple",
+                  "count": "19"
+                },
+                {
+                  "name": "Doro",
+                  "count": "1"
+                },
+                {
+                  "name": "HTC",
+                  "count": "2"
+                },
+                {
+                  "name": "Huawei",
+                  "count": "4"
+                },
+                {
+                  "name": "LG",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "itemsSort": [
+      {
+        "include()": {
+          "pattern": "components-sort-item",
+          "with": {
+            "sortItem": {
+              "title": "Cost",
+              "items": [
+                {
+                  "name": "Monthy: High to low"
+                },
+                {
+                  "name": "Monthy: Low to high"
+                },
+                {
+                  "name": "Upfront: High to low"
+                },
+                {
+                  "name": "Upfront: Low to high"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-sort-item",
+          "with": {
+            "sortItem": {
+              "title": "Feature",
+              "items": [
+                {
+                  "name": "Screen size"
+                },
+                {
+                  "name": "Weight"
+                },
+                {
+                  "name": "Battery life"
+                },
+                {
+                  "name": "Camera resolution"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-sort-item",
+          "with": {
+            "sortItem": {
+              "title": "Feature",
+              "items": [
+                {
+                  "name": "Screen size"
+                },
+                {
+                  "name": "Weight"
+                },
+                {
+                  "name": "Battery life"
+                },
+                {
+                  "name": "Camera resolution"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

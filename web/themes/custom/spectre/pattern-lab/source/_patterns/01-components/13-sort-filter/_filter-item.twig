@@ -1,0 +1,15 @@
+<div class="block-filter__filter__item">
+  <h4 class="block-filter__title">{{ filterItem.title }}</h4>
+  <ul>
+    {% for item in filterItem.items %}
+      <li>
+        <input type="checkbox" name="{{ item.name }}">
+        {% if item.color is not empty %}
+          <label>{{ item.color }}</label>
+        {% endif %}
+        <label>{{ item.name }}</label>
+        <label>{{ item.count }}</label>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

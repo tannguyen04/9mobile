@@ -1,0 +1,18 @@
+<div class="block-filter">
+  <div class="block-filter__filter">
+    <div class="block-filter__heading"><a href="#">Filter<span>Showing 66 of 66</span></a></div>
+    <div class="block-filter__filter__list">
+      {% for item in blockFilter.itemsFilter %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="block-filter__sort">
+    <div class="block-filter__heading">Sort</div>
+    <div class="block-filter__sort__list">
+    {% for item in blockFilter.itemsSort %}
+      {{ item }}
+    {% endfor %}
+    </div>
+  </div>
+</div>
