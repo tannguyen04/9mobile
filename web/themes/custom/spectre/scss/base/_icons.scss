@@ -17,6 +17,18 @@
   }
 }
 
+.icon-chevron-thin-up:before {
+  content: "\e912";
+}
+.icon-chevron-thin-left:before {
+  content: "\e90b";
+}
+.icon-chevron-thin-right:before {
+  content: "\e90a";
+}
+.icon-cheveron-right:before {
+  content: "\e904";
+}
 .icon-chevron-thin-down:before {
   content: "\e90f";
 }
@@ -76,13 +88,4 @@
 }
 .icon-lookup:before {
   content: "\e909";
-}
-.icon-chevron-thin-left:before {
-  content: "\e90b";
-}
-.icon-chevron-thin-right:before {
-  content: "\e90a";
-}
-.icon-cheveron-right:before {
-  content: "\e904";
 }

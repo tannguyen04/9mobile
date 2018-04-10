@@ -9,26 +9,38 @@
               "title": "Brand",
               "items": [
                 {
+                  "id": "1",
+                  "value": "Alcatel",
                   "name": "Alcatel",
                   "count": "1"
                 },
                 {
+                  "id": "2",
+                  "value": "Apple",
                   "name": "Apple",
                   "count": "19"
                 },
                 {
+                  "id": "3",
+                  "value": "Doro",
                   "name": "Doro",
                   "count": "1"
                 },
                 {
+                  "id": "4",
+                  "value": "HTC",
                   "name": "HTC",
                   "count": "2"
                 },
                 {
+                  "id": "5",
+                  "value": "Huawei",
                   "name": "Huawei",
                   "count": "4"
                 },
                 {
+                  "id": "6",
+                  "value": "LG",
                   "name": "LG",
                   "count": "2"
                 }
@@ -45,26 +57,38 @@
               "title": "Colour",
               "items": [
                 {
+                  "id": "7",
+                  "value": "Alcatel",
                   "name": "Alcatel",
                   "count": "1"
                 },
                 {
+                  "id": "8",
+                  "value": "Apple",
                   "name": "Apple",
                   "count": "19"
                 },
                 {
+                  "id": "9",
+                  "value": "Doro",
                   "name": "Doro",
                   "count": "1"
                 },
                 {
+                  "id": "10",
+                  "value": "HTC",
                   "name": "HTC",
                   "count": "2"
                 },
                 {
+                  "id": "11",
+                  "value": "Huawei",
                   "name": "Huawei",
                   "count": "4"
                 },
                 {
+                  "id": "12",
+                  "value": "LG",
                   "name": "LG",
                   "count": "2"
                 }
@@ -81,26 +105,38 @@
               "title": "Operating System ",
               "items": [
                 {
+                  "id": "13",
+                  "value": "Alcatel",
                   "name": "Alcatel",
                   "count": "1"
                 },
                 {
+                  "id": "22",
+                  "value": "Apple",
                   "name": "Apple",
                   "count": "19"
                 },
                 {
+                  "id": "33",
+                  "value": "Doro",
                   "name": "Doro",
                   "count": "1"
                 },
                 {
+                  "id": "44",
+                  "value": "HTC",
                   "name": "HTC",
                   "count": "2"
                 },
                 {
+                  "id": "55",
+                  "value": "Huawei",
                   "name": "Huawei",
                   "count": "4"
                 },
                 {
+                  "id": "66",
+                  "value": "LG",
                   "name": "LG",
                   "count": "2"
                 }
@@ -117,26 +153,38 @@
               "title": "Feature",
               "items": [
                 {
+                  "id": "13",
+                  "value": "Alcatel",
                   "name": "Alcatel",
                   "count": "1"
                 },
                 {
+                  "id": "23",
+                  "value": "Apple",
                   "name": "Apple",
                   "count": "19"
                 },
                 {
+                  "id": "34",
+                  "value": "Doro",
                   "name": "Doro",
                   "count": "1"
                 },
                 {
+                  "id": "45",
+                  "value": "HTC",
                   "name": "HTC",
                   "count": "2"
                 },
                 {
+                  "id": "56",
+                  "value": "Huawei",
                   "name": "Huawei",
                   "count": "4"
                 },
                 {
+                  "id": "67",
+                  "value": "LG",
                   "name": "LG",
                   "count": "2"
                 }
@@ -153,26 +201,38 @@
               "title": "Conditional/Availability",
               "items": [
                 {
+                  "id": "14",
+                  "value": "Alcatel",
                   "name": "Alcatel",
                   "count": "1"
                 },
                 {
+                  "id": "24",
+                  "value": "Apple",
                   "name": "Apple",
                   "count": "19"
                 },
                 {
+                  "id": "35",
+                  "value": "Doro",
                   "name": "Doro",
                   "count": "1"
                 },
                 {
+                  "id": "46",
+                  "value": "HTC",
                   "name": "HTC",
                   "count": "2"
                 },
                 {
+                  "id": "57",
+                  "value": "Huawei",
                   "name": "Huawei",
                   "count": "4"
                 },
                 {
+                  "id": "68",
+                  "value": "LG",
                   "name": "LG",
                   "count": "2"
                 }
@@ -191,15 +251,23 @@
               "title": "Cost",
               "items": [
                 {
+                  "id": "1",
+                  "value": "Monthy",
                   "name": "Monthy: High to low"
                 },
                 {
+                  "id": "2",
+                  "value": "Monthy",
                   "name": "Monthy: Low to high"
                 },
                 {
+                  "id": "3",
+                  "value": "Upfront",
                   "name": "Upfront: High to low"
                 },
                 {
+                  "id": "4",
+                  "value": "Upfront",
                   "name": "Upfront: Low to high"
                 }
               ]
@@ -212,19 +280,27 @@
           "pattern": "components-sort-item",
           "with": {
             "sortItem": {
-              "title": "Feature",
+              "title": "Cost",
               "items": [
                 {
-                  "name": "Screen size"
+                  "id": "5",
+                  "value": "Monthy",
+                  "name": "Monthy: High to low"
                 },
                 {
-                  "name": "Weight"
+                  "id": "6",
+                  "value": "Monthy",
+                  "name": "Monthy: Low to high"
                 },
                 {
-                  "name": "Battery life"
+                  "id": "7",
+                  "value": "Upfront",
+                  "name": "Upfront: High to low"
                 },
                 {
-                  "name": "Camera resolution"
+                  "id": "8",
+                  "value": "Upfront",
+                  "name": "Upfront: Low to high"
                 }
               ]
             }
@@ -236,19 +312,27 @@
           "pattern": "components-sort-item",
           "with": {
             "sortItem": {
-              "title": "Feature",
+              "title": "Cost",
               "items": [
                 {
-                  "name": "Screen size"
+                  "id": "9",
+                  "value": "Monthy",
+                  "name": "Monthy: High to low"
                 },
                 {
-                  "name": "Weight"
+                  "id": "10",
+                  "value": "Monthy",
+                  "name": "Monthy: Low to high"
                 },
                 {
-                  "name": "Battery life"
+                  "id": "11",
+                  "value": "Upfront",
+                  "name": "Upfront: High to low"
                 },
                 {
-                  "name": "Camera resolution"
+                  "id": "12",
+                  "value": "Upfront",
+                  "name": "Upfront: Low to high"
                 }
               ]
             }

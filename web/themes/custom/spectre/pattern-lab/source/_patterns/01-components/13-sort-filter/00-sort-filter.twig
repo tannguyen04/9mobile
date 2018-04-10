@@ -1,18 +1,29 @@
 <div class="block-filter">
-  <div class="block-filter__filter">
-    <div class="block-filter__heading"><a href="#">Filter<span>Showing 66 of 66</span></a></div>
-    <div class="block-filter__filter__list">
-      {% for item in blockFilter.itemsFilter %}
-        {{ item }}
-      {% endfor %}
-    </div>
-  </div>
-  <div class="block-filter__sort">
-    <div class="block-filter__heading">Sort</div>
-    <div class="block-filter__sort__list">
-    {% for item in blockFilter.itemsSort %}
-      {{ item }}
-    {% endfor %}
+  <div class="container">
+    <div class="block-filter__grid">
+      <div class="block-filter__left">Left</div>
+      <div class="block-filter__right">
+        <div class="block-filter__filter js-filter">
+          <a class="block-filter__heading js-filter-click" href="#">Filter<span>Showing 66 of 66</span></a>
+          <div class="block-filter__content">
+            <div class="block-filter__content__inner">
+              {% for item in blockFilter.itemsFilter %}
+                {{ item }}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="block-filter__sort js-filter">
+          <a class="block-filter__heading js-filter-click" href="#">Sort</a>
+          <div class="block-filter__content">
+            <div class="block-filter__content__inner">
+              {% for item in blockFilter.itemsSort %}
+                {{ item }}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
