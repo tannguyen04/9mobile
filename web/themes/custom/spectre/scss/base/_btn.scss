@@ -1,33 +1,19 @@
 // Button
 .btn {
-  background: $white;
+  background: $blue-24;
   color: white;
   display: inline-block;
-  font-weight: bold;
   letter-spacing: 1px;
   padding: 11px 60px;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.3s ease;
   font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 
   &:active,
   &:hover {
-    background: #CBCBCB;
-    color: black;
-  }
-
-  &--primary {
-    font-size: 10px;
-    letter-spacing: 0;
-    padding: 13px 20px;
-    text-transform: capitalize;
-    background: $primary-color;
-
-    &:active,
-    &:hover {
-      background: $secondary-color;
-      color: $white;
-    }
   }
 }

@@ -1,5 +1,18 @@
 {
   "blockFilter": {
+    "linkSignIn": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class": "link--arrow link--arrow__cicle",
+            "href": "#",
+            "text": "Sign in for upgrades"
+          }
+        },
+        "only": true
+      }
+    },
     "itemsFilter": [
       {
         "include()": {
@@ -251,22 +264,22 @@
               "title": "Cost",
               "items": [
                 {
-                  "id": "1",
+                  "id": "radio1",
                   "value": "Monthy",
                   "name": "Monthy: High to low"
                 },
                 {
-                  "id": "2",
+                  "id": "radio2",
                   "value": "Monthy",
                   "name": "Monthy: Low to high"
                 },
                 {
-                  "id": "3",
+                  "id": "radio3",
                   "value": "Upfront",
                   "name": "Upfront: High to low"
                 },
                 {
-                  "id": "4",
+                  "id": "radio4",
                   "value": "Upfront",
                   "name": "Upfront: Low to high"
                 }
@@ -283,22 +296,22 @@
               "title": "Cost",
               "items": [
                 {
-                  "id": "5",
+                  "id": "radio5",
                   "value": "Monthy",
                   "name": "Monthy: High to low"
                 },
                 {
-                  "id": "6",
+                  "id": "radio6",
                   "value": "Monthy",
                   "name": "Monthy: Low to high"
                 },
                 {
-                  "id": "7",
+                  "id": "radio7",
                   "value": "Upfront",
                   "name": "Upfront: High to low"
                 },
                 {
-                  "id": "8",
+                  "id": "radio8",
                   "value": "Upfront",
                   "name": "Upfront: Low to high"
                 }
@@ -315,22 +328,22 @@
               "title": "Cost",
               "items": [
                 {
-                  "id": "9",
+                  "id": "radio9",
                   "value": "Monthy",
                   "name": "Monthy: High to low"
                 },
                 {
-                  "id": "10",
+                  "id": "radio10",
                   "value": "Monthy",
                   "name": "Monthy: Low to high"
                 },
                 {
-                  "id": "11",
+                  "id": "radio11",
                   "value": "Upfront",
                   "name": "Upfront: High to low"
                 },
                 {
-                  "id": "12",
+                  "id": "radio12",
                   "value": "Upfront",
                   "name": "Upfront: Low to high"
                 }

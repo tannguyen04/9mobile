@@ -115,3 +115,74 @@ input[type='tel'],
   font-weight: 700;
   margin-bottom: rem(8px);
 }
+
+input[type="radio"] {
+  @extend %invisible;
+
+  + label{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: rem(0 0 2px 30px);
+
+    &:focus,
+    &:hover,
+    &:active{
+      border-color: $primary-color;
+    }
+
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      width: rem(16px);
+      height: rem(16px);
+      top: rem(3px);
+      border: rem(1px) solid $gray-d0;
+    }
+
+    &:after {
+      content: "";
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: rem(4px);
+      transition: opacity .3s ease;
+    }
+  }
+
+  &:checked {
+    & + label {
+      &:before {
+        border-color: $primary-color;
+      }
+    }
+  }
+}
+
+input[type="radio"] {
+  + label {
+    &:before {
+      border-radius: 50%;
+    }
+  }
+
+  &:checked {
+    & + label {
+      &:before {
+        border-width: rem(2px);
+        height: rem(14px);
+        width: rem(14px);
+      }
+
+      &:after {
+        width: rem(13px);
+        height: rem(13px);
+        opacity: 1;
+        background: $primary-color;
+        border-radius: 100%;
+      }
+    }
+  }
+}

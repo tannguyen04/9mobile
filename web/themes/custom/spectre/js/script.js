@@ -109,14 +109,14 @@
     }
   });
 
-  $(".js-filter-item .js-click").on("click", function() {
+  $(".js-filter-item  > .js-click").on("click", function() {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
       $(this)
         .siblings(".block-filter__content__list")
         .slideUp(500);
     } else {
-      $(".js-filter-item .js-click").removeClass("active");
+      $(".js-filter-item > .js-click").removeClass("active");
       $(this).addClass("active");
       $(".block-filter__content__list").slideUp(500);
       $(this)

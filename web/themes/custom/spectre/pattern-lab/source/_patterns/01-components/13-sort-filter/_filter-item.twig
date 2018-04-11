@@ -3,13 +3,13 @@
   <div class="block-filter__content__list">
     <div id="edit-months" class="webform-options-display-one-column form-checkboxes">
       {% for item in filterItem.items %}
-        <div class="form-item form-type-checkbox form-item-months-focused">
-          <input type="checkbox" id="{{ item.id }}" name="months[Focused]" value="{{ item.value }}" class="form-checkbox focused">
+        <div class="form-item form-type-checkbox">
+          <input type="checkbox" id="{{ item.id }}" name="filter" value="{{ item.value }}" class="form-checkbox">
           {% if item.color is not empty %}
             <label>{{ item.color }}</label>
           {% endif %}
           <label for="{{ item.id }}" class="option">{{ item.name }}</label>
-          <label>({{ item.count }})</label>
+          <label class="block-filter__counter">({{ item.count }})</label>
         </div>
       {% endfor %}
     </div>

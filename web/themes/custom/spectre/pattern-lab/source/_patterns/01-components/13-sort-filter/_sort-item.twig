@@ -1,11 +1,11 @@
-<div class="block-filter__content__item js-filter-item">
-  <h4 class="block-filter__content__title js-click">{{ sortItem.title }}</h4>
-  <div class="block-filter__content__list">
-    <div id="edit-radios" class="webform-options-display-one-column form-radios">
+<div class="block-filter__sort__item">
+  <h4 class="block-filter__sort__title">{{ sortItem.title }}</h4>
+  <div class="block-filter__sort__list">
+    <div id="edit-radios">
       {% for item in sortItem.items %}
         <div class="form-item form-type-radio form-item-radios">
-          <input type="radio" id="{{ item.id }}" name="radios" value="{{ item.value }}" class="form-radio focused">
-          <label for="{{ item.id }}" class="option">{{ item.name }}</label>
+          <input type="radio" id="{{ item.id }}" name="radios" value="{{ item.value }}" class="form-radio">
+          <label for="{{ item.id }}">{{ item.name }}</label>
         </div>
       {% endfor %}
     </div>
