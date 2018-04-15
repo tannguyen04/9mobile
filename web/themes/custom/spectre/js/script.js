@@ -91,8 +91,38 @@
     animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
   });
 
-  // $('#product-item__rate').barrating({
-  //   theme: 'fontawesome-stars'
-  // });
+  $(".js-filter .js-filter-click").on("click", function() {
+    if ($(this).hasClass("active")) {
+      console.log('1');
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".block-filter__content")
+        .slideUp(500);
+    } else {
+      console.log('2');
+      $(".js-filter .js-filter-click").removeClass("active");
+      $(this).addClass("active");
+      $(".block-filter__content").slideUp(500);
+      $(this)
+        .siblings(".block-filter__content")
+        .slideDown(500);
+    }
+  });
+
+  $(".js-filter-item  > .js-click").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".block-filter__content__list")
+        .slideUp(500);
+    } else {
+      $(".js-filter-item > .js-click").removeClass("active");
+      $(this).addClass("active");
+      $(".block-filter__content__list").slideUp(500);
+      $(this)
+        .siblings(".block-filter__content__list")
+        .slideDown(500);
+    }
+  });
 
 }(this, this.document, this.jQuery, this.Drupal));

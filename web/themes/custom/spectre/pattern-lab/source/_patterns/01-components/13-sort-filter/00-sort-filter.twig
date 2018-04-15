@@ -1,0 +1,37 @@
+<div class="block-filter">
+  <div class="container">
+    <div class="block-filter__grid">
+      <div class="block-filter__left"><div class="block-filter__link-signin">{{ blockFilter.linkSignIn}}</div></div>
+      <div class="block-filter__right">
+        <div class="block-filter__filter js-filter">
+          <a class="block-filter__heading js-filter-click" href="#">Filter<span>Showing 66 of 66</span></a>
+          <div class="block-filter__content">
+            <div class="block-filter__content__inner">
+              {% for item in blockFilter.itemsFilter %}
+                {{ item }}
+              {% endfor %}
+            </div>
+            <div class="block-filter__content__cta">
+              <button type="button">Done</button>
+              <a href="#">Reset Filter</a>
+            </div>
+          </div>
+        </div>
+        <div class="block-filter__sort js-filter">
+          <a class="block-filter__heading js-filter-click" href="#">Sort</a>
+          <div class="block-filter__content">
+            <div class="block-filter__content__inner">
+              {% for item in blockFilter.itemsSort %}
+                {{ item }}
+              {% endfor %}
+            </div>
+            <div class="block-filter__content__cta">
+              <button type="button">Done</button>
+              <a href="#">Reset Sort</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

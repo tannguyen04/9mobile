@@ -2,10 +2,6 @@
   padding: rem(40px 0 10px);
   background-color: $gray-f8;
 
-  @include susy-media(mobileOnly) {
-    display: none;
-  }
-
   @include susy-media(desktop) {
     padding: rem(70px 0 20px);
   }
@@ -29,19 +25,20 @@
   }
 
   .video-wrap {
-    padding-bottom: calc(100% * 410 / 768);
     margin-bottom: 0;
+
+    @include susy-media(tablet) {
+      padding-bottom: calc(100% * 410 / 768);
+    }
   }
 
   &__inner {
-    align-items: flex-start;
-    clear: both;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-
     @include susy-media(tablet) {
-      flex-flow: row wrap;
+      align-items: flex-start;
+      clear: both;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
     }
 
     &.media-text {
