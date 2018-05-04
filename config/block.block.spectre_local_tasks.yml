@@ -1,0 +1,22 @@
+uuid: 48c2245d-45b9-4d3e-be18-b48c48b9f144
+langcode: en
+status: true
+dependencies:
+  theme:
+    - spectre
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: spectre_local_tasks
+theme: spectre
+region: content
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

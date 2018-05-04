@@ -1,0 +1,39 @@
+uuid: 2082b725-fbdd-4c9a-87c4-e1599a0cbfdf
+langcode: vi
+status: true
+dependencies:
+  config:
+    - views.view.service
+  module:
+    - block_visibility_groups
+    - node
+    - views
+  theme:
+    - nine9_mobile_2018
+id: nine9_mobile_2018_views_block__service_block_1
+theme: nine9_mobile_2018
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:service-block_1'
+settings:
+  id: 'views_block:service-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      landing_service: landing_service
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

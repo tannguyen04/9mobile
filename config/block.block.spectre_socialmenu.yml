@@ -1,0 +1,32 @@
+uuid: 2efc67dd-85dd-4688-a615-f9237d684f7a
+langcode: vi
+status: true
+dependencies:
+  config:
+    - system.menu.social-menu
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - spectre
+_core:
+  default_config_hash: x5NUly1YE07exmApuEpPMQQM4VBqre01xCyQ0bzUcyI
+id: spectre_socialmenu
+theme: spectre
+region: footer_third
+weight: -9
+provider: null
+plugin: 'system_menu_block:social-menu'
+settings:
+  id: 'system_menu_block:social-menu'
+  label: 'Follow us'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

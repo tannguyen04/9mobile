@@ -1,0 +1,28 @@
+uuid: 4ddf5dfe-3700-4feb-aea0-660208be5612
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.operating_system
+  module:
+    - facets
+    - system
+  theme:
+    - spectre
+id: spectre_operatingsystem_2
+theme: spectre
+region: primary_menu
+weight: -15
+provider: null
+plugin: 'facet_block:operating_system'
+settings:
+  id: 'facet_block:operating_system'
+  label: 'Hệ điều hành'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /dien-thoai
+    negate: false
+    context_mapping: {  }

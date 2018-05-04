@@ -1,0 +1,25 @@
+uuid: cb994238-124b-41e9-9737-eecdd6d17212
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:337c9f52-e492-44cb-bc7a-a33885848bbc'
+  module:
+    - block_content
+  theme:
+    - nine9_mobile_2018
+id: nine9_mobile_2018_footercopyright
+theme: nine9_mobile_2018
+region: primary_menu
+weight: -12
+provider: null
+plugin: 'block_content:337c9f52-e492-44cb-bc7a-a33885848bbc'
+settings:
+  id: 'block_content:337c9f52-e492-44cb-bc7a-a33885848bbc'
+  label: '<none>'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

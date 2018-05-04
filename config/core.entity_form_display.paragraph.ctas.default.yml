@@ -1,0 +1,48 @@
+uuid: d9b48a7e-cb07-45ae-b596-af4a2746bba3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ctas.field_cta_types
+    - field.field.paragraph.ctas.field_grid_collumns
+    - field.field.paragraph.ctas.field_paragraph
+    - paragraphs.paragraphs_type.ctas
+  module:
+    - paragraphs
+id: paragraph.ctas.default
+targetEntityType: paragraph
+bundle: ctas
+mode: default
+content:
+  field_cta_types:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_grid_collumns:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_paragraph:
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: cta
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

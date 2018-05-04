@@ -1,0 +1,26 @@
+uuid: 71019206-eeb2-43c7-98c8-127ea86ba442
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - nine9_mobile_2018
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: nine9_mobile_2018_tools
+theme: nine9_mobile_2018
+region: primary_menu
+weight: -9
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

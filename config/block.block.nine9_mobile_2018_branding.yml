@@ -1,0 +1,25 @@
+uuid: e425d2e0-abd5-40e1-a718-8698912ba343
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - nine9_mobile_2018
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: nine9_mobile_2018_branding
+theme: nine9_mobile_2018
+region: primary_menu
+weight: -10
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

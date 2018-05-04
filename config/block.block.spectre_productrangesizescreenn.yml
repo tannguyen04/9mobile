@@ -1,0 +1,28 @@
+uuid: 1ef2e296-241f-4de0-8fef-1c52cb10cd82
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_range_size_screenn
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - spectre
+id: spectre_productrangesizescreenn
+theme: spectre
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'facet_block:product_range_size_screenn'
+settings:
+  id: 'facet_block:product_range_size_screenn'
+  label: 'Kích thước màn hình'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

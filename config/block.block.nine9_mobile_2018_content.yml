@@ -1,0 +1,22 @@
+uuid: 555461d7-7ba6-4fb9-ad27-cd488bd5a50a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nine9_mobile_2018
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: nine9_mobile_2018_content
+theme: nine9_mobile_2018
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

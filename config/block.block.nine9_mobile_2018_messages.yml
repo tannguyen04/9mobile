@@ -1,0 +1,22 @@
+uuid: 24cb0f42-0da1-404d-aaf9-cf0db1ea81f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nine9_mobile_2018
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: nine9_mobile_2018_messages
+theme: nine9_mobile_2018
+region: content
+weight: -11
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

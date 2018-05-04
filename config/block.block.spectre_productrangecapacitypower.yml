@@ -1,0 +1,28 @@
+uuid: f1297bcd-4caf-456c-8e57-147ca9b2d5ce
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_range_capacity_power
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - spectre
+id: spectre_productrangecapacitypower
+theme: spectre
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'facet_block:product_range_capacity_power'
+settings:
+  id: 'facet_block:product_range_capacity_power'
+  label: 'Dung lượng pin'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

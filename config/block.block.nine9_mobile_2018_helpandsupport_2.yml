@@ -1,0 +1,25 @@
+uuid: f945f508-bf96-4dd7-818a-d72a6a646717
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:874fa832-7b29-4e86-9e8e-c78baf7346a6'
+  module:
+    - block_content
+  theme:
+    - nine9_mobile_2018
+id: nine9_mobile_2018_helpandsupport_2
+theme: nine9_mobile_2018
+region: primary_menu
+weight: -10
+provider: null
+plugin: 'block_content:874fa832-7b29-4e86-9e8e-c78baf7346a6'
+settings:
+  id: 'block_content:874fa832-7b29-4e86-9e8e-c78baf7346a6'
+  label: 'Help and support'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

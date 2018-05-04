@@ -1,51 +1,49 @@
-uuid: d5041f46-08cd-4895-9132-357186e65f4a
-langcode: vi
+uuid: 86e8b333-3ce6-4823-9887-a3005ddb06b8
+langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.slide.field_bg_text_style
-    - field.field.paragraph.slide.field_description
-    - field.field.paragraph.slide.field_image
-    - field.field.paragraph.slide.field_link
-    - field.field.paragraph.slide.field_position
-    - field.field.paragraph.slide.field_text
-    - paragraphs.paragraphs_type.slide
+    - field.field.paragraph.cta.field_bg_text_style
+    - field.field.paragraph.cta.field_description
+    - field.field.paragraph.cta.field_image
+    - field.field.paragraph.cta.field_link
+    - field.field.paragraph.cta.field_sub_title
+    - field.field.paragraph.cta.field_text
+    - paragraphs.paragraphs_type.cta
   module:
     - link
     - nine_mobile_product
     - options
     - text
-_core:
-  default_config_hash: doz7FLdAvZvuMrqe2XRM46VtOeh2IMazjOkGy5DVGNY
-id: paragraph.slide.default
+id: paragraph.cta.default
 targetEntityType: paragraph
-bundle: slide
+bundle: cta
 mode: default
 content:
   field_bg_text_style:
-    weight: 5
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_key
+    type: list_default
     region: content
   field_description:
-    weight: 3
-    label: hidden
+    weight: 4
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_image:
-    weight: 0
-    label: hidden
+    weight: 3
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: nine_mobile_image_responsive
     region: content
   field_link:
-    weight: 2
-    label: hidden
+    weight: 5
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -55,15 +53,16 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_position:
-    weight: 4
+  field_sub_title:
+    weight: 1
     label: hidden
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: list_key
+    type: string
     region: content
   field_text:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false

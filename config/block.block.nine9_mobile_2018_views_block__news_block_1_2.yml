@@ -1,0 +1,31 @@
+uuid: 94170d9e-ddde-4129-a718-5f129a1c1823
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.news_sidebar
+    - views.view.news
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - nine9_mobile_2018
+id: nine9_mobile_2018_views_block__news_block_1_2
+theme: nine9_mobile_2018
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: 'Top tin mới nhất'
+  provider: views
+  label_display: visible
+  views_label: 'Top tin mới nhất'
+  items_per_page: '5'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: news_sidebar
+    context_mapping: {  }

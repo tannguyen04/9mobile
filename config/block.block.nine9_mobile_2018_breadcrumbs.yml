@@ -1,0 +1,22 @@
+uuid: 27c236f1-b809-4876-9a38-8d8c829950d8
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - nine9_mobile_2018
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: nine9_mobile_2018_breadcrumbs
+theme: nine9_mobile_2018
+region: primary_menu
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

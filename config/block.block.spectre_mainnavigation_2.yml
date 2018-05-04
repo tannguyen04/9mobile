@@ -1,0 +1,33 @@
+uuid: 30832f99-7f6f-465f-a29a-8771ca0bab6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - spectre
+id: spectre_mainnavigation_2
+theme: spectre
+region: footer_second
+weight: -9
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Tablets
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'main:menu_link_content:052b4022-3a60-41f7-b42e-48183e1451e8'
+  suggestion: footer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

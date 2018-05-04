@@ -1,0 +1,28 @@
+uuid: b08c1ad6-82b0-4e7c-803a-f9cb07a54524
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_brand
+  module:
+    - facets
+    - system
+  theme:
+    - spectre
+id: spectre_productbrand_2
+theme: spectre
+region: primary_menu
+weight: -16
+provider: null
+plugin: 'facet_block:product_brand'
+settings:
+  id: 'facet_block:product_brand'
+  label: 'Thương hiệu'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /dien-thoai
+    negate: false
+    context_mapping: {  }

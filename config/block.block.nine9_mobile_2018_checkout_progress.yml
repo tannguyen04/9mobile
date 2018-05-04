@@ -1,0 +1,28 @@
+uuid: 25543cf4-b568-468b-8af3-b052a7952a3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - nine9_mobile_2018
+_core:
+  default_config_hash: OawPvVMFMZhrfbLL6TEVWKRLl-SVdAKUW56fyMKavT4
+id: nine9_mobile_2018_checkout_progress
+theme: nine9_mobile_2018
+region: content
+weight: -6
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

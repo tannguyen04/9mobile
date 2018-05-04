@@ -1,0 +1,34 @@
+uuid: f54b1459-2d25-43ad-863e-1f591772fb06
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.condition_availability
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - spectre
+id: spectre_conditionavailability_2
+theme: spectre
+region: primary_menu
+weight: -14
+provider: null
+plugin: 'facet_block:condition_availability'
+settings:
+  id: 'facet_block:condition_availability'
+  label: 'Tình trạng'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /dien-thoai
+    negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,27 @@
+uuid: a1dc9da2-e090-44e1-9574-4d90b0c4de5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - nine9_mobile_2018
+id: nine9_mobile_2018_mainnavigation
+theme: nine9_mobile_2018
+region: primary_menu
+weight: -10
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Phones
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'main:menu_link_content:a4269536-9008-433b-9e2a-67bb85a0d883'
+  suggestion: footer
+visibility: {  }

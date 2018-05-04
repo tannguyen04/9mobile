@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_paragraphs
     - node.type.landing_page
     - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.ctas
     - paragraphs.paragraphs_type.item_list
     - paragraphs.paragraphs_type.page_title
     - paragraphs.paragraphs_type.product_list
@@ -30,6 +31,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       carousel: carousel
       page_title: page_title
@@ -38,6 +40,7 @@ settings:
       promotion: promotion
       item_list: item_list
       stack_left_right: stack_left_right
+      ctas: ctas
       wide_text: wide_text
     target_bundles_drag_drop:
       carousel:
@@ -55,18 +58,21 @@ settings:
       promotion:
         enabled: true
         weight: 13
+      cta:
+        weight: 14
+        enabled: false
       item_list:
         enabled: true
         weight: 14
       slide:
         weight: 14
         enabled: false
-      list_item:
-        weight: 15
-        enabled: false
       stack_left_right:
         enabled: true
         weight: 15
+      ctas:
+        enabled: true
+        weight: 16
       wide_text:
         enabled: true
         weight: 16

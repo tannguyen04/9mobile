@@ -1,0 +1,28 @@
+uuid: 073614ab-d4c3-49e0-80ba-e71c6c63016f
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.supporting_charge
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - spectre
+id: spectre_supportingcharge
+theme: spectre
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'facet_block:supporting_charge'
+settings:
+  id: 'facet_block:supporting_charge'
+  label: 'Supporting charge'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

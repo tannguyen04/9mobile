@@ -1,0 +1,28 @@
+uuid: bb13010d-74dd-438e-b33b-d2ef48233b8c
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_front_camera
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - spectre
+id: spectre_productfrontcamera
+theme: spectre
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'facet_block:product_front_camera'
+settings:
+  id: 'facet_block:product_front_camera'
+  label: 'Camera trước'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

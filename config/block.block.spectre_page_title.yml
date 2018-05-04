@@ -1,0 +1,20 @@
+uuid: 3b07ba3c-f4a4-41f8-95bf-309b09a69478
+langcode: en
+status: true
+dependencies:
+  theme:
+    - spectre
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: spectre_page_title
+theme: spectre
+region: highlighted
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

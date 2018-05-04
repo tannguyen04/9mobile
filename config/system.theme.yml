@@ -1,5 +1,5 @@
-admin: seven
-default: nine9_mobile
+admin: adminimal_theme
+default: spectre
 _core:
   default_config_hash: fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg
 langcode: vi

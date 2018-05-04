@@ -1,0 +1,31 @@
+uuid: a71eee7e-2e99-4e66-9e0a-5dc8901c0371
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:337c9f52-e492-44cb-bc7a-a33885848bbc'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - spectre
+id: spectre_footercopyright
+theme: spectre
+region: footer_fifth
+weight: -12
+provider: null
+plugin: 'block_content:337c9f52-e492-44cb-bc7a-a33885848bbc'
+settings:
+  id: 'block_content:337c9f52-e492-44cb-bc7a-a33885848bbc'
+  label: '<none>'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

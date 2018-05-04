@@ -1,0 +1,33 @@
+uuid: a73f062f-8c73-40be-891b-60a85fa33760
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - spectre
+id: spectre_mainnavigation
+theme: spectre
+region: footer_first
+weight: -10
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Phones
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'main:menu_link_content:a4269536-9008-433b-9e2a-67bb85a0d883'
+  suggestion: footer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

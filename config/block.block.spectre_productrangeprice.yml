@@ -1,0 +1,28 @@
+uuid: 3f7a8bbc-a52c-474a-8372-d969293fdbab
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_range_price
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - spectre
+id: spectre_productrangeprice
+theme: spectre
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'facet_block:product_range_price'
+settings:
+  id: 'facet_block:product_range_price'
+  label: Giá
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

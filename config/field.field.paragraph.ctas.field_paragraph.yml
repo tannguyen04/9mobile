@@ -1,0 +1,67 @@
+uuid: 13d09776-0781-4591-8719-f4b5708517c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph
+    - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.ctas
+  module:
+    - entity_reference_revisions
+id: paragraph.ctas.field_paragraph
+field_name: field_paragraph
+entity_type: paragraph
+bundle: ctas
+label: CTA
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cta: cta
+    target_bundles_drag_drop:
+      cta:
+        enabled: true
+        weight: 14
+      carousel:
+        weight: 15
+        enabled: false
+      ctas:
+        weight: 16
+        enabled: false
+      item_list:
+        weight: 17
+        enabled: false
+      page_title:
+        weight: 18
+        enabled: false
+      product_list:
+        weight: 19
+        enabled: false
+      product_promotion:
+        weight: 20
+        enabled: false
+      promotion:
+        weight: 21
+        enabled: false
+      slide:
+        weight: 22
+        enabled: false
+      stack:
+        weight: 23
+        enabled: false
+      stack_item:
+        weight: 24
+        enabled: false
+      stack_left_right:
+        weight: 25
+        enabled: false
+      wide_text:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

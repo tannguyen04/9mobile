@@ -1,0 +1,28 @@
+uuid: 4c65ca7b-4e4b-48d0-9919-dca644660ff9
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_front_camera
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - nine9_mobile_2018
+id: nine9_mobile_2018_productfrontcamera
+theme: nine9_mobile_2018
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'facet_block:product_front_camera'
+settings:
+  id: 'facet_block:product_front_camera'
+  label: 'Camera trước'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
