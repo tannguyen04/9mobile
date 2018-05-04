@@ -1,0 +1,12 @@
+{%
+  set ctaItem = {
+    bgColor: content.field_bg_text_style[0],
+    subTitle: content.field_sub_title[0],
+    title: content.field_text[0],
+    image: content.field_image[0],
+    description: content.field_description[0],
+    link: content.field_link[0],
+  }
+%}
+
+{% include "@components/03-cta/_cta-item.twig" %}

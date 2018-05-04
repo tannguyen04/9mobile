@@ -1,0 +1,16 @@
+
+{% set items = [] %}
+
+{% for key, item in content.field_paragraph if key matches '/^\\d+$/'  %}
+  {% set items = items|merge([item]) %}
+{% endfor %}
+
+{%
+  set blockCta = {
+    typeSize: 'block-cta--' ~ content.field_cta_types[0]|render,
+    columns: content.field_grid_collumns[0]|render ~ 'columns',
+    items: items,
+  }
+%}
+
+{% include "@components/03-cta/00-block-cta.twig" %}

@@ -1,4 +1,4 @@
-name: 9mobile 2018
+name: Spectre 2018 - ABC
 type: theme
 description: "A great theme for D8 with styleguide"
 packgage: Custom
@@ -29,3 +29,9 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
+
+component-libraries:
+  components:
+    paths:
+      - pattern-lab/source/_patterns/00-base-elements
+      - pattern-lab/source/_patterns/01-components
