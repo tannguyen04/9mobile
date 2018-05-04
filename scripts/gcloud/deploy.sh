@@ -1,5 +1,5 @@
 #!/bin/bash
-ssh -o "StrictHostKeyChecking no" raucaixanh04@35.186.148.73 << EOF
+ssh -o "StrictHostKeyChecking no" raucaixanh04@35.187.248.15 << EOF
   cd /var/www/html/9mobile.vn
   git fetch origin
   git checkout dev
