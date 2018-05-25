@@ -68,7 +68,7 @@ display:
       style:
         type: default
         options:
-          row_class: grid__item
+          row_class: 'product-item bg-light--gray'
           default_row_class: false
           uses_fields: false
       row:
@@ -353,7 +353,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: false
-      css_class: grid--3column
+      css_class: product-list
     cache_metadata:
       max-age: -1
       contexts:
