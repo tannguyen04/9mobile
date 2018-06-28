@@ -1,0 +1,28 @@
+uuid: e719ab3d-a491-4863-ad93-e665b5e16bea
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - spectre
+_core:
+  default_config_hash: OawPvVMFMZhrfbLL6TEVWKRLl-SVdAKUW56fyMKavT4
+id: spectre_checkout_progress
+theme: spectre
+region: content
+weight: -6
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

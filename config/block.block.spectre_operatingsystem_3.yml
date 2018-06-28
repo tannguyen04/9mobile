@@ -1,0 +1,34 @@
+uuid: f39a8548-e179-4edb-a2d1-669cef5990a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.operating_system_tablet
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - spectre
+id: spectre_operatingsystem_3
+theme: spectre
+region: content_top
+weight: -12
+provider: null
+plugin: 'facet_block:operating_system_tablet'
+settings:
+  id: 'facet_block:operating_system_tablet'
+  label: 'Hệ điều hành'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /tablet
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,20 @@
+uuid: c73fd21f-b73a-488f-8867-1de49573c7ba
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nine9_mobile
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: nine9_mobile_page_title
+theme: nine9_mobile
+region: highlighted
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

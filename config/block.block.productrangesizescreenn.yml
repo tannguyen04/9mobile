@@ -1,0 +1,34 @@
+uuid: 5055a2a8-9d7f-451f-a036-f9b31b7f2b03
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_range_size_screenn
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - nine9_mobile
+id: productrangesizescreenn
+theme: nine9_mobile
+region: content_top
+weight: 0
+provider: null
+plugin: 'facet_block:product_range_size_screenn'
+settings:
+  id: 'facet_block:product_range_size_screenn'
+  label: 'Kích thước màn hình'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /dien-thoai
+    negate: false
+    context_mapping: {  }

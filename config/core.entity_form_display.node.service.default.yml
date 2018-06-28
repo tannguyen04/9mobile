@@ -11,14 +11,17 @@ dependencies:
     - field.field.node.service.field_number_integer
     - field.field.node.service.field_paragraphs
     - field.field.node.service.field_service_ref
+    - field.field.node.service.field_sharing
     - field.field.node.service.field_summary
     - field.field.node.service.field_tags
     - field.field.node.service.field_text
     - field.field.node.service.field_text_title
     - field.field.node.service.field_yoast_seo
+    - image.style.thumbnail
     - node.type.service
   module:
     - entity_browser
+    - image
     - metatag
     - path
     - text
@@ -76,6 +79,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_sharing:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_summary:
     weight: 7
@@ -151,9 +162,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
-  url_redirects:
-    weight: 50
     region: content
 hidden:
   field_link: true

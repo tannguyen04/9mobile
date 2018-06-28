@@ -1,11 +1,10 @@
-uuid: 2efc67dd-85dd-4688-a615-f9237d684f7a
+uuid: b7c6716c-7938-4d91-9ec6-de20cf301c21
 langcode: vi
 status: true
 dependencies:
   config:
     - system.menu.social-menu
   module:
-    - block_visibility_groups
     - system
   theme:
     - spectre
@@ -24,9 +23,4 @@ settings:
   label_display: visible
   level: 1
   depth: 0
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
+visibility: {  }

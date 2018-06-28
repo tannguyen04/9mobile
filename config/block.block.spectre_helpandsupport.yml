@@ -1,4 +1,4 @@
-uuid: 82c489c4-70fd-4460-b232-c8fd4447ade6
+uuid: e34f3697-ced1-4bcf-8cdb-1cc7e0893698
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:basic:874fa832-7b29-4e86-9e8e-c78baf7346a6'
   module:
     - block_content
-    - block_visibility_groups
   theme:
     - spectre
 id: spectre_helpandsupport
@@ -23,9 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
+visibility: {  }

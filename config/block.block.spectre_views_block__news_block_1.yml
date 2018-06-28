@@ -1,0 +1,26 @@
+uuid: 6d249e65-6f1d-4dbd-9e17-f2a8b853523c
+langcode: vi
+status: false
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - views
+  theme:
+    - spectre
+_core:
+  default_config_hash: mqafMUp45CGgFIx8LZUP6DQx93Jrg5sblnOVvrSElIA
+id: spectre_views_block__news_block_1
+theme: spectre
+region: header
+weight: -5
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: fba60b9b-686b-44c4-b212-430583c74527
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nine9_mobile
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: nine9_mobile_local_actions
+theme: nine9_mobile
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
