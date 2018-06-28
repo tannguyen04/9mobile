@@ -3,6 +3,8 @@ global-style:
   css:
     theme:
       css/styles.css: {}
+
+global-js:
   js:
     bower_components/slick-carousel/slick.min.js: {}
     js/script.js: {}

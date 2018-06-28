@@ -8,7 +8,7 @@
 //Required external libraries
 @import '../bower_components/susy/susy';
 @import '../bower_components/slick-carousel/slick';
-@import '../bower_components/reset-css/reset';
+// @import '../bower_components/reset-css/reset';
 
 //Base
 @import 'base/variables';
@@ -22,7 +22,7 @@
 @import 'helpers/helpers';
 
 // Reset
-// @import 'base/reset';
+@import 'base/reset';
 
 @import 'base/base';
 @import 'base/fonts';
@@ -49,6 +49,8 @@
 // Layouts
 
 @import 'layouts/main-menu';
+@import 'layouts/header';
+@import 'layouts/footer';
 @import 'layouts/layout';
 
 // Pages
