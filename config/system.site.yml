@@ -1,7 +1,7 @@
 uuid: edfd345e-52b9-4970-90ec-b60395a0d76e
 name: 9Mobile.vn
 mail: raucaixanh04@gmail.com
-slogan: lala
+slogan: ''
 page:
   403: /node/55
   404: /node/54
@@ -9,6 +9,6 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 langcode: vi
-default_langcode: en
+default_langcode: vi
 _core:
   default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

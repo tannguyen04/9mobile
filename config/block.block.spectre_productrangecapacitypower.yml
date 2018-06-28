@@ -1,0 +1,34 @@
+uuid: 2c8f4762-d0b1-44ae-bb4b-595cc2bdb908
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_range_capacity_power
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - spectre
+id: spectre_productrangecapacitypower
+theme: spectre
+region: content_top
+weight: 0
+provider: null
+plugin: 'facet_block:product_range_capacity_power'
+settings:
+  id: 'facet_block:product_range_capacity_power'
+  label: 'Dung lượng pin'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /dien-thoai
+    negate: false
+    context_mapping: {  }

@@ -1,11 +1,10 @@
-uuid: a73f062f-8c73-40be-891b-60a85fa33760
+uuid: 857ce938-922b-46e6-9870-890e436e7b96
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.main
   module:
-    - block_visibility_groups
     - menu_block
   theme:
     - spectre
@@ -25,9 +24,4 @@ settings:
   expand: 0
   parent: 'main:menu_link_content:a4269536-9008-433b-9e2a-67bb85a0d883'
   suggestion: footer
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
+visibility: {  }
