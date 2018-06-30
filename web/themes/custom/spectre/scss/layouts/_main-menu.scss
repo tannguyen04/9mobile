@@ -1,7 +1,4 @@
 .main-menu {
-  background-color: $gray-f9;
-  background-image: linear-gradient(to bottom,#f9f9f9 0,#eaeaea 100%);
-
   .menu {
     display: inline-block;
     width: 100%;
@@ -30,10 +27,12 @@
           width: auto;
           display: none;
           left: 0;
+          right: 0;
           background-color: $gray-f7;
           border: 1px solid $gray-d9;
           border-top: none;
           min-width: 124px;
+          z-index: 9;
         }
 
         li {
@@ -106,8 +105,8 @@
         }
 
         @include susy-media(desktop) {
-          padding: 25px 25px 25px 10px;
-          min-height: 100px;
+          padding: 15px 15px 15px 10px;
+          height: 100px;
         }
       }
     }
