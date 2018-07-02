@@ -46,11 +46,12 @@
 .bg {
   &--secondary {
     background-color: $secondary-color;
+    color: $primary-color;
   }
 
   &--primary{
     background-color: $primary-color;
-    color: $white;
+    color: $secondary-color;
   }
 
   &-light {

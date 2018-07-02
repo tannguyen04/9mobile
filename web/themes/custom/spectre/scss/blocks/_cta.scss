@@ -150,7 +150,7 @@
 
         @include susy-media(tablet) {
           height: 350px;
-          background: url(../../images/cta/background-color.png) right bottom repeat;
+          background: url(images/cta/background-color.png) right bottom repeat;
         }
 
         @include susy-media(mobileLargeOnly) {
@@ -163,7 +163,7 @@
         }
 
         &:hover {
-          background: url(../../images/cta/hover-down.png) center center repeat;
+          background: url(images/cta/hover-down.png) center center repeat;
         }
       }
 
@@ -290,7 +290,7 @@
         }
 
         &:before {
-          background: url(../../images/hover-down-light.png) center center repeat;
+          background: url(images/hover-down-light.png) center center repeat;
           content: '';
           height: 100%;
           left: 0;
