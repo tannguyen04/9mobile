@@ -10,7 +10,7 @@
     desktop = "(min-width: 64em)"; // min-width: 1024px.
 
   $(".js-carousel").slick({
-    autoplay: true,
+    autoplay: false,
     dots: true,
     speed: 500,
     customPaging: function(slick,index) {

@@ -256,5 +256,20 @@
         padding-left: 50px;
       }
     }
+
+    &--left {
+      @include susy-media(mobileLargeOnly) {
+        float: right;
+      }
+
+      @include susy-media(mobileLarge) {
+        padding-right: 50px;
+      }
+
+      @include susy-media(desktop) {
+        padding-left: 100px;
+        padding-right: 50px;
+      }
+    }
   }
 }
