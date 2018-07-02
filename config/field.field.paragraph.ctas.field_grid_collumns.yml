@@ -1,0 +1,21 @@
+uuid: d8930d2d-47bb-486a-9d37-066bb1d62b09
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_collumns
+    - paragraphs.paragraphs_type.ctas
+  module:
+    - options
+id: paragraph.ctas.field_grid_collumns
+field_name: field_grid_collumns
+entity_type: paragraph
+bundle: ctas
+label: 'Grid collumns'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

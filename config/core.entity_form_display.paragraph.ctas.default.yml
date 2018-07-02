@@ -1,0 +1,50 @@
+uuid: d3b90b70-8fb4-457d-8e15-6bf225432690
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ctas.field_cta_types
+    - field.field.paragraph.ctas.field_grid_collumns
+    - field.field.paragraph.ctas.field_paragraph
+    - paragraphs.paragraphs_type.ctas
+  module:
+    - paragraphs
+id: paragraph.ctas.default
+targetEntityType: paragraph
+bundle: ctas
+mode: default
+content:
+  field_cta_types:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_grid_collumns:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_paragraph:
+    weight: 0
+    settings:
+      title: Đoạn
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: cta
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -192,14 +192,6 @@
         ".htaccess",
         "web.config"
       ]
-    },
-    "patches": {
-      "drupal/facets": {
-        "critical error thrown": "https://www.drupal.org/files/issues/critical_error_thrown-2917323-14.patch"
-      },
-      "drupal/page_manager": {
-        "Update 'page_manager.variant_route_filter' service according to core changes": "https://www.drupal.org/files/issues/2918564-22.patch"
-      }
     }
   },
   "config": {

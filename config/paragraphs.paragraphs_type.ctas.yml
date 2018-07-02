@@ -1,0 +1,9 @@
+uuid: 9960e7e7-734b-4572-9490-0dd34e51a452
+langcode: vi
+status: true
+dependencies: {  }
+id: ctas
+label: CTas
+icon_uuid: null
+description: 'Build Call To Action Block'
+behavior_plugins: {  }

@@ -1,0 +1,41 @@
+uuid: 20292cb1-59d9-47c0-8508-747e43b155f7
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ctas.field_cta_types
+    - field.field.paragraph.ctas.field_grid_collumns
+    - field.field.paragraph.ctas.field_paragraph
+    - paragraphs.paragraphs_type.ctas
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.ctas.default
+targetEntityType: paragraph
+bundle: ctas
+mode: default
+content:
+  field_cta_types:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_grid_collumns:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_paragraph:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {  }
