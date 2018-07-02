@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\image\Entity\ImageStyle;
+
 /**
  * Implements theme_preprocess_field()
  *
@@ -31,6 +33,20 @@ function spectre_preprocess_paragraph(&$variables) {
       }
       break;
     case 'slide':
+      // We repare value.
+      if (isset($variables['content']['field_image'][0]['#item'])) {
+        $item = $variables['content']['field_image'][0]['#item'];
+        $variables['content']['field_image'][0]['#item_attributes']['data-title'] = $item->get('title')->getString();
+        $style = ImageStyle::load('thumbnail');
+        $uri = $item->entity->getFileUri();
+        $data_thumb = $style->buildUrl($uri);
+        $variables['content']['field_image'][0]['#item_attributes']['data-thumb'] = $data_thumb;
+        if (isset($variables['content']['field_image'][1])) {
+          $style = ImageStyle::load($variables['content']['field_image'][1]['#image_style']);
+          $uri = $variables['content']['field_image'][1]['#item']->entity->getFileUri();
+          $variables['content']['field_image']['image_tablet_url'] = $style->buildUrl($uri);
+        }
+      }
       break;
     default:
       # code...

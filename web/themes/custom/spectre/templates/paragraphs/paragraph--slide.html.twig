@@ -46,7 +46,10 @@
 
 <div class="carousel__item {{ background_color }}">
   <div class="carousel__media">
-    {{ content.field_image }}
+    <picture>
+      <source media="(min-width: 567px)" srcset="{{ content.field_image.image_tablet_url }}">
+      {{ content.field_image[0] }}
+    </picture>
   </div>
   <div class="carousel__content">
     <div class="carousel__caption">
