@@ -1,0 +1,34 @@
+uuid: 885848aa-af11-4f56-b340-aeeab28d52fa
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.supporting_charge
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - spectre
+id: spectre_supportingcharge
+theme: spectre
+region: content_top
+weight: 0
+provider: null
+plugin: 'facet_block:supporting_charge'
+settings:
+  id: 'facet_block:supporting_charge'
+  label: 'Supporting charge'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /dien-thoai
+    negate: false
+    context_mapping: {  }

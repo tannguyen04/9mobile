@@ -1,0 +1,34 @@
+uuid: b476a55b-bf03-4d1b-a8b7-fe5c3ab3159f
+langcode: vi
+status: true
+dependencies:
+  config:
+    - facets.facet.product_back_camera
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - spectre
+id: spectre_productbackcamera
+theme: spectre
+region: content_top
+weight: 0
+provider: null
+plugin: 'facet_block:product_back_camera'
+settings:
+  id: 'facet_block:product_back_camera'
+  label: 'Camera sau'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /dien-thoai
+    negate: false
+    context_mapping: {  }

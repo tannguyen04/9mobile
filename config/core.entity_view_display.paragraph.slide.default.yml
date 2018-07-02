@@ -9,10 +9,11 @@ dependencies:
     - field.field.paragraph.slide.field_link
     - field.field.paragraph.slide.field_position
     - field.field.paragraph.slide.field_text
+    - image.style.slide_desktop
     - paragraphs.paragraphs_type.slide
   module:
+    - image
     - link
-    - nine_mobile_product
     - options
     - text
 _core:
@@ -24,14 +25,14 @@ mode: default
 content:
   field_bg_text_style:
     weight: 5
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: list_key
     region: content
   field_description:
     weight: 3
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -39,13 +40,15 @@ content:
   field_image:
     weight: 0
     label: hidden
-    settings: {  }
+    settings:
+      image_style: slide_desktop
+      image_link: ''
     third_party_settings: {  }
-    type: nine_mobile_image_responsive
+    type: image
     region: content
   field_link:
     weight: 2
-    label: hidden
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -57,10 +60,10 @@ content:
     region: content
   field_position:
     weight: 4
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_key
+    type: list_default
     region: content
   field_text:
     weight: 1

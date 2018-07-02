@@ -1,0 +1,24 @@
+uuid: a1e18ad7-22ff-4302-9b03-c2e6b6e01cbe
+langcode: en
+status: false
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - spectre
+_core:
+  default_config_hash: UQ9l8BkgFPcF7r-8VwsTIxC1bOMlI0iQLrJUS95c1E8
+id: spectre_shopping_cart
+theme: spectre
+region: header
+weight: -10
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+  item_text: items
+visibility: {  }

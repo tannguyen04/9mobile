@@ -1,0 +1,25 @@
+uuid: d0c1c4bb-0dac-47e4-8596-19d035f746a0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - spectre
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: spectre_branding
+theme: spectre
+region: header
+weight: -10
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,34 @@
+uuid: ed150128-8beb-463b-8664-8588180a809d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.brand
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - spectre
+id: spectre_brand
+theme: spectre
+region: content_top
+weight: -13
+provider: null
+plugin: 'facet_block:brand'
+settings:
+  id: 'facet_block:brand'
+  label: 'Thương hiệu'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /tablet
+    negate: false
+    context_mapping: {  }

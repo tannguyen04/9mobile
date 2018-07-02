@@ -7,6 +7,7 @@ base theme: classy
 
 libraries:
   - spectre/global-style
+  - spectre/global-js
 
 regions:
   header: Header
@@ -35,3 +36,10 @@ component-libraries:
     paths:
       - pattern-lab/source/_patterns/00-base-elements
       - pattern-lab/source/_patterns/01-components
+  layouts:
+    paths:
+      - pattern-lab/source/_layouts
+stylesheets-remove:
+  - '@classy/css/components/menu.css'
+  - '@classy/css/components/field.css'
+  - 'core/assets/vendor/normalize-css/normalize.css'

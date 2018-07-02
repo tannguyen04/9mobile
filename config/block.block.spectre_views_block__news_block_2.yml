@@ -1,0 +1,30 @@
+uuid: aa8deccb-e2e5-42a0-a329-7ac9508962b6
+langcode: vi
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - spectre
+id: spectre_views_block__news_block_2
+theme: spectre
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'views_block:news-block_2'
+settings:
+  id: 'views_block:news-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /tin-cong-nghe
+    negate: false
+    context_mapping: {  }

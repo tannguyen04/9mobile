@@ -1,0 +1,15 @@
+uuid: a3f93eed-e954-443c-8904-672f7534ac8e
+langcode: vi
+status: true
+dependencies: {  }
+id: node__landing_page
+label: 'Nội dung: Landing Page'
+tags:
+  abstract: '[node:summary]'
+  title: '[node:title] | [site:name]'
+  description: '[node:summary]'
+  og_image: '[node:field_sharing:sharing]'
+  og_description: '[node:summary]'
+  og_site_name: '[site:name]'
+  og_type: website
+  og_title: '[node:title] | [site:name]'

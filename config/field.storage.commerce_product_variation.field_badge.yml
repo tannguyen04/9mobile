@@ -16,7 +16,7 @@ settings:
       label: 'Hàng đang về'
     -
       value: tmp_out_stock
-      label: 'Hànd tạm hết'
+      label: 'Hàng tạm hết'
   allowed_values_function: ''
 module: options
 locked: false

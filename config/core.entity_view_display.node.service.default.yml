@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.service.field_number_integer
     - field.field.node.service.field_paragraphs
     - field.field.node.service.field_service_ref
+    - field.field.node.service.field_sharing
     - field.field.node.service.field_summary
     - field.field.node.service.field_tags
     - field.field.node.service.field_text
@@ -67,6 +68,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_sharing:
+    weight: 115
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_summary:
     weight: 110

@@ -1,0 +1,31 @@
+uuid: b6edef16-0010-46d6-9730-95232a88d538
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.news_sidebar
+    - views.view.news
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - spectre
+id: spectre_views_block__news_block_1_2
+theme: spectre
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: 'Top tin mới nhất'
+  provider: views
+  label_display: visible
+  views_label: 'Top tin mới nhất'
+  items_per_page: '5'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: news_sidebar
+    context_mapping: {  }

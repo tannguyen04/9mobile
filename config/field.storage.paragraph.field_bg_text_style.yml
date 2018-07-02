@@ -17,18 +17,6 @@ settings:
     -
       value: white
       label: White
-    -
-      value: bg-light--gray
-      label: bg-light--gray
-    -
-      value: bg--primary
-      label: bg--primary
-    -
-      value: bg--secondary
-      label: bg--secondary
-    -
-      value: bg-dark--black
-      label: bg-dark--black
   allowed_values_function: ''
 module: options
 locked: false
