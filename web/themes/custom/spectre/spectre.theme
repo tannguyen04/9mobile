@@ -25,28 +25,13 @@ function spectre_preprocess_paragraph(&$variables) {
   $entity = $variables['paragraph'];
   $entity_bundle = $entity->bundle();
   switch ($entity_bundle) {
-    case 'ctas':
-      // $blockCta = array();
-      // $blockCta['typeSize'] = 'block-cta--big';
-      // $blockCta['columns']  = '2columns';
-      // $blockCta['items'] = array();
-      // //items
-      // if (isset($variables['content']['field_paragraph']['#items'])) {
-      //   $count_items = $variables['content']['field_paragraph']['#items']->count();
-      //   $i = 0;
-      //   while (isset($variables['content']['field_paragraph'][$i])) {
-      //     $blockCta['items'][] = $variables['content']['field_paragraph'][$i];
-      //     $i++;
-      //   }
-      // }
-      // $variables['blockCta'] = $blockCta;
-      break;
     case 'cta':
       if (isset($variables['content']['field_link'][0])) {
         $variables['content']['field_link'][0]['#options']['attributes']['class'] = array('link--arrow link--arrow__cicle-blig');
       }
       break;
-
+    case 'slide':
+      break;
     default:
       # code...
       break;
