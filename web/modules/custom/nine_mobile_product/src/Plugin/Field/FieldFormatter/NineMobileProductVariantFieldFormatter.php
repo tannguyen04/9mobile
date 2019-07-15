@@ -53,10 +53,6 @@ class NineMobileProductVariantFieldFormatter extends FormatterBase {
    * {@inheritdoc}
    */
   public function viewElements(FieldItemListInterface $items, $langcode) {
-    $elements = [];
-    foreach ($items as $delta => $item) {
-      $elements[$delta] = ['#markup' => $this->viewValue($item)];
-    }
     $form = \Drupal::formBuilder()->getForm('Drupal\nine_mobile_product\Form\NineMobileProductSelectAttributesForm', $items);
     return $form;
   }

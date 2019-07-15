@@ -5,13 +5,9 @@ namespace Drupal\nine_mobile_product\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Ajax\AjaxResponse;
-use Drupal\Core\Ajax\AlertCommand;
-use Drupal\Core\Ajax\HtmlCommand;
-use Drupal\Core\Ajax\ReplaceCommand;
-use Drupal\Core\Ajax\AppendCommand;
 use Drupal\Core\Ajax\InvokeCommand;
 use Drupal\Core\Field\FieldItemListInterface;
-use CommerceGuys\Intl\Formatter\NumberFormatterInterface;
+use Drupal\commerce_price\CurrencyFormatter;
 use Drupal\commerce_price\NumberFormatterFactoryInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -27,17 +23,15 @@ class NineMobileProductSelectAttributesForm extends FormBase {
    *
    * @var \CommerceGuys\Intl\Formatter\NumberFormatterInterface
    */
-  protected $numberFormatter;
+  protected $currencyFormatter;
+  protected $currencyStorage;
 
   /**
    * Class constructor.
    */
-  public function __construct(EntityTypeManagerInterface $entity_type_manager, NumberFormatterFactoryInterface $number_formatter_factory) {
+  public function __construct(EntityTypeManagerInterface $entity_type_manager, CurrencyFormatter $commerce_price_currency_formatter) {
     $this->currencyStorage = $entity_type_manager->getStorage('commerce_currency');
-    $this->numberFormatter = $number_formatter_factory->createInstance();
-    $this->numberFormatter->setMaximumFractionDigits(6);
-    $this->numberFormatter->setMinimumFractionDigits(0);
-    //$this->numberFormatter->setCurrencyDisplay(NumberFormatterInterface::CURRENCY_DISPLAY_CODE);
+    $this->currencyFormatter = $commerce_price_currency_formatter;
   }
 
   /**
@@ -46,7 +40,7 @@ class NineMobileProductSelectAttributesForm extends FormBase {
   public static function create(ContainerInterface $container) {
     return new static(
       $container->get('entity_type.manager'),
-      $container->get('commerce_price.number_formatter_factory')
+      $container->get('commerce_price.currency_formatter')
     );
   }
 
@@ -62,22 +56,18 @@ class NineMobileProductSelectAttributesForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state, FieldItemListInterface $items = NULL) {
     $form['#attached']['library'][] = 'nine_mobile_product/mobile_product_select_attributes';
-    $product_variation_ids = array();
     //Build array product variation with attributes
     $product_variations = array();
     foreach ($items as $delta => $item) {
       $product_variation = $item->entity;
       $currency_codes[] = $product_variation->getPrice()->getCurrencyCode();
     }
-    $currencies = $this->currencyStorage->loadMultiple($currency_codes);
-
     foreach ($items as $key => $item) {
       $product_variation = $item->entity;
       if (!$product_variation->isActive()) {
         continue;
       }
       $currency_code = $product_variation->getPrice()->getCurrencyCode();
-      $currency = $currencies[$currency_code];
       $color = $product_variation->getAttributeValue('attribute_color')->get('field_color')->first()->getValue();
 
       if (!$product_variation->get('field_badge')->isEmpty()) {
@@ -85,7 +75,7 @@ class NineMobileProductSelectAttributesForm extends FormBase {
         $price = \Drupal::service('renderer')->render($price);
       }else {
         $price = $product_variation->getPrice()->getNumber();
-        $price = $this->numberFormatter->formatCurrency($price, $currency);
+        $price = $this->currencyFormatter->format($price, $currency_code);
       }
       $product_variations[] = array(
         'product_variant_id' => $product_variation->Id(),
